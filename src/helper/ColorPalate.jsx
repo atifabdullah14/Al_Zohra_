@@ -3,10 +3,10 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 const themes = [
+  { name: "green-color", file: "assets/css/green-theme.css" },
   { name: "default-color", file: "assets/css/default-theme.css" },
   { name: "blue-color", file: "assets/css/blue-theme.css" },
   { name: "brown-color", file: "assets/css/brown-theme.css" },
-  { name: "green-color", file: "assets/css/green-theme.css" },
   { name: "orange-color", file: "assets/css/orange-theme.css" },
   { name: "purple-color", file: "assets/css/purple-theme.css" },
   { name: "teal-color", file: "assets/css/teal-theme.css" },
@@ -15,7 +15,7 @@ const themes = [
 
 const ColorPalate = () => {
   const [active, setActive] = useState(false);
-  const [activeTheme, setActiveTheme] = useState("default-color");
+  const [activeTheme, setActiveTheme] = useState("green-color");
   const [layout, setLayout] = useState(""); // 'box-layout'
   const [dark, setDark] = useState(false);
   const [stickyHeader, setStickyHeader] = useState(false);

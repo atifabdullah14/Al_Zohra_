@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
 
         <link
           rel="stylesheet"
-          href="/assets/css/default-theme.css"
+          href="/assets/css/green-theme.css"
           id="switch-color"
         />
         <link rel="stylesheet" href="/assets/css/sticky-header.css" />
