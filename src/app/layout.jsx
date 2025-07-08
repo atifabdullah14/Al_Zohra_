@@ -6,7 +6,7 @@ import "./globals.scss";
 
 import InitializeAOS from "@/helper/InitializeAOS";
 import RouteScrollToTop from "@/helper/RouteScrollToTop";
-import ColorPalate from "@/helper/ColorPalate";
+// import ColorPalate from "@/helper/ColorPalate";
 
 export const metadata = {
   title: "Al Zohra Welfare Association",
