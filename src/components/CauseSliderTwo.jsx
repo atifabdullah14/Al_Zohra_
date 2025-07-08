@@ -4,12 +4,12 @@ import React, { useRef, useState, useEffect } from "react";
 import Slider from "react-slick";
 
 const images = [
+    "assets/images/cause/five.jpeg",
+  "assets/images/cause/six.jpeg",
+  "assets/images/cause/seven.jpg",
   "assets/images/cause/five.jpeg",
   "assets/images/cause/six.jpeg",
   "assets/images/cause/seven.jpg",
-  "assets/images/cause/five.png",
-  "assets/images/cause/six.png",
-  "assets/images/cause/seven.png",
 ];
 
 const texts = [
