@@ -1250,3 +1250,9 @@
 /* ==== 
  --------- (4.01) header styles end ---------
  ==== */
+
+.topbar, .topbar--secondary, .topbar--tertiary {
+  i, .topbar__list i, .topbar__items i, .social i {
+    color: var(--white) !important;
+  }
+}

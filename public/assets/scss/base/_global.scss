@@ -1245,3 +1245,13 @@ div {
 /* ==== 
  --------- (2.03) global styles end ---------
  ==== */
+
+body {
+  background-color: var(--template-bg); // Use updated white background
+  color: var(--template-color); // Use updated soft grey for text
+}
+
+// Update border colors for divs, sections, and cards
+section, .card, .container, .row, .col {
+  border-color: var(--quinary-color); // Use new soft grey for borders
+}

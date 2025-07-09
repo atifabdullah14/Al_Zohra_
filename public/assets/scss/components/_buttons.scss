@@ -4,8 +4,8 @@
 
 .btn--primary {
   padding: 13px 24px;
-  background-color: var(--base-color);
-  color: var(--black);
+  background-color: var(--primary-color);
+  color: var(--white);
   position: relative;
   font-weight: 800;
   z-index: 1;
@@ -41,7 +41,7 @@
   }
   &:hover {
     color: var(--white);
-    background-color: var(--quaternary-color);
+    background-color: var(--secondary-color);
     path {
       fill: white;
     }
@@ -91,8 +91,8 @@
     inset-inline-end: 0px;
   }
   &:hover {
-    color: var(--secondary-color);
-    background-color: var(--base-color);
+    color: var(--white);
+    background-color: var(--primary-color);
     path {
       fill: var(--secondary-color);
     }
@@ -137,6 +137,44 @@
     &::before,
     &::after {
       width: 0%;
+    }
+  }
+}
+
+.header .btn--primary, .navbar__options .btn--primary, .mobile-menu__cta .btn--primary, .cta .btn--primary, .banner__content-cta .btn--primary, .section__cta .btn--primary {
+  background-color: var(--primary-color) !important;
+  color: var(--white) !important;
+  &::before, &::after {
+    background-color: var(--primary-color) !important;
+  }
+  &:hover {
+    background-color: var(--secondary-color) !important;
+    color: var(--white) !important;
+    &::before, &::after {
+      background-color: var(--secondary-color) !important;
+    }
+  }
+}
+
+.cta-section .btn--primary, .cta-section .btn--tertiary {
+  background-color: var(--primary-color) !important;
+  color: var(--white) !important;
+  &::before, &::after {
+    background-color: var(--primary-color) !important;
+  }
+  svg path, i {
+    fill: var(--white) !important;
+    color: var(--white) !important;
+  }
+  &:hover {
+    background-color: var(--secondary-color) !important;
+    color: var(--white) !important;
+    &::before, &::after {
+      background-color: var(--secondary-color) !important;
+    }
+    svg path, i {
+      fill: var(--white) !important;
+      color: var(--white) !important;
     }
   }
 }

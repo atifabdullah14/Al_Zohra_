@@ -12,19 +12,20 @@
   // template default
   --template-font: var(--nunito);
   --template-bg: #ffffff;
-  --template-color: #667471;
+  --template-color: #6c757d; // Soft grey for text
 
   // colors
   --white: #ffffff;
   --black: #000000;
-  --primary-color: #046a58;
-  --secondary-color: #122f2a;
-  --tertiary-color: #046a58;
-  --quaternary-color: #00715d;
-  --quinary-color: #061408;
-  --septenary-color: #0c141f;
-  --senary-color: #d9d9d9;
-  --hover-color: #6b5103;
+  --primary-color: #d32f2f; // Red for primary theme
+  --secondary-color: #388e3c; // Green for secondary/success
+  --tertiary-color: #d32f2f; // Red for tertiary/CTA
+  --quaternary-color: #388e3c; // Green for accents
+  --quinary-color: #adb5bd; // Softer grey for borders/UI
+  --septenary-color: #6c757d; // Soft grey for text/icons
+  --senary-color: #e0e0e0; // Light grey for backgrounds/dividers
+  --hover-color: #b71c1c; // Darker red for hover states
+  --base-color: var(--primary-color); // Ensure base-color is red for button overlays
 
   // transitions
   --transition: all 0.5s ease;

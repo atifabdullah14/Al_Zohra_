@@ -249,7 +249,7 @@ const FooterOne = () => {
                 <div className='footer-two__copyright-inner text-center text-lg-start'>
                   <p>
                    Al Zohra <span id='copyrightYear' />{" "}
-                    <Link href='/'>Powered</Link>. By Teztar Sollutions
+                    <Link href='/'>Powered</Link>. By Teztar Support
                   </p>
                 </div>
               </div>

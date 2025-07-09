@@ -902,3 +902,24 @@
 /* ==== 
  --------- (4.03) footer styles end ---------
  ==== */
+
+.footer, .footer-two, .footer-three, .footer-four, .footer-five {
+  background-color: var(--secondary-color) !important;
+  color: var(--white) !important;
+
+  a, p, h1, h2, h3, h4, h5, h6, li, span, i {
+    color: var(--white) !important;
+  }
+
+  .social a, .footer__list-items a, .footer__list-group a, .footer__bottom-list a {
+    color: var(--white) !important;
+    &:hover {
+      color: var(--primary-color) !important;
+    }
+  }
+
+  // Remove or override any previous background gradients or dark backgrounds
+  &::before, &::after {
+    background: none !important;
+  }
+}
