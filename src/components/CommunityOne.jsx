@@ -34,7 +34,7 @@ const CommunityOne = () => {
               >
                 <div className='community-donation__inner'>
                   <h4>Support Where It Counts.</h4>
-                  <div className='warning'>
+                  {/* <div className='warning'>
                     <div className='line'>
                       <i className='fa-solid fa-triangle-exclamation' />
                     </div>
@@ -42,7 +42,7 @@ const CommunityOne = () => {
                       <strong>Notice:</strong> Test mode is enabled. While in
                       test mode no live donations are processed.
                     </p>
-                  </div>
+                  </div> */}
                   <div className='donation-form'>
                     <div className='donation-form__single'>
                       <h5>Your Donation:</h5>
@@ -101,7 +101,7 @@ const CommunityOne = () => {
                         </span>
                       </div>
                     </div>
-                    <div className='donation-form__single'>
+                    {/* <div className='donation-form__single'>
                       <h5>Select Payment Method</h5>
                       <div className='radio-wrapper'>
                         <div className='radio-single'>
@@ -134,7 +134,7 @@ const CommunityOne = () => {
                           <label htmlFor='cardDonation'>Credit Card</label>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                     <div className='cta'>
                       <Link
                         href='/donate-us'

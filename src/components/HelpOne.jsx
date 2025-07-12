@@ -127,11 +127,13 @@ const HelpOne = () => {
                   </Link>
                   <div className='contact-btn'>
                     <div className='contact-icon'>
-                      <i className='icon-phone' />
+                      <i className='fa-brands fa-whatsapp' style={{ color: '#25D366' }} />
                     </div>
                     <div className='contact-content'>
-                      <p>Phone</p>
-                      <a href='tel:01-793-7938'>+236 (456) 896 22</a>
+                      <p>WhatsApp Online</p>
+                      <a href='https://wa.me/923201431143' target='_blank' rel='noopener noreferrer' style={{ color: '#25D366', fontWeight: 600 }}>
+                        +92 320 1431143
+                      </a>
                     </div>
                   </div>
                 </div>

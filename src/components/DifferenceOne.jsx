@@ -85,12 +85,10 @@ const DifferenceOne = () => {
                           </div>
                           <div className='difference__single-content'>
                             <h5>
-                              <Link href='/cause-details'>Child Education</Link>
+                              <Link href='/vocational-training'>Vocational Training</Link>
                             </h5>
                             <p>
-                              Set up a secure and user-friendly online donation
-                              platform that accepts multiple
-                            </p>
+                            Our Vocational Training Center is  also registered with STEVTA (Sindh Technical Education and Vocational Training Authority) and more ...                            </p>
                           </div>
                         </div>
                       </div>
@@ -109,12 +107,10 @@ const DifferenceOne = () => {
                           </div>
                           <div className='difference__single-content'>
                             <h5>
-                              <Link href='/cause-details'>Healthy Food</Link>
+                              <Link href='/welfare-assistance'>Welfare Assistance</Link>
                             </h5>
                             <p>
-                              Set up a secure and user-friendly online donation
-                              platform that accepts multiple
-                            </p>
+                            Under privileged women from all over Karachi are issued Al Zohra Welfare cards to lessen the burden of running their households through ...                            </p>
                           </div>
                         </div>
                       </div>
@@ -129,15 +125,14 @@ const DifferenceOne = () => {
                           }}
                         >
                           <div className='difference__single-thumb'>
-                            <i className='icon-health' />
+                            <i className='icon-education' />
                           </div>
                           <div className='difference__single-content'>
                             <h5>
-                              <Link href='/cause-details'>Medical Care</Link>
+                              <Link href='/alzohra-secondary-school'>AlZOHRA SECONDARY SCHOOL (Regd)</Link>
                             </h5>
                             <p>
-                              Set up a secure and user-friendly online donation
-                              platform that accepts multiple
+                            Al Zohra currently teaches more than 250 students from Pre-Nursery to Matric. It provides a high standard of education ...
                             </p>
                           </div>
                         </div>
@@ -157,12 +152,10 @@ const DifferenceOne = () => {
                           </div>
                           <div className='difference__single-content'>
                             <h5>
-                              <Link href='/cause-details'>Child Education</Link>
+                              <Link href='/cause-details'>Vocational Training</Link>
                             </h5>
                             <p>
-                              Set up a secure and user-friendly online donation
-                              platform that accepts multiple
-                            </p>
+                            Our Vocational Training Center is  also registered with STEVTA (Sindh Technical Education and Vocational Training Authority) and more ...                            </p>
                           </div>
                         </div>
                       </div>
@@ -181,12 +174,10 @@ const DifferenceOne = () => {
                           </div>
                           <div className='difference__single-content'>
                             <h5>
-                              <Link href='/cause-details'>Healthy Food</Link>
+                              <Link href='/cause-details'>Welfare Assistance</Link>
                             </h5>
                             <p>
-                              Set up a secure and user-friendly online donation
-                              platform that accepts multiple
-                            </p>
+                            Under privileged women from all over Karachi are issued Al Zohra Welfare cards to lessen the burden of running their households through ...                            </p>
                           </div>
                         </div>
                       </div>
@@ -201,20 +192,20 @@ const DifferenceOne = () => {
                           }}
                         >
                           <div className='difference__single-thumb'>
-                            <i className='icon-health' />
+                            <i className='icon-education' />
                           </div>
                           <div className='difference__single-content'>
                             <h5>
-                              <Link href='/cause-details'>Medical Care</Link>
+                              <Link href='/cause-details'>AlZOHRA SECONDARY SCHOOL (Regd)</Link>
                             </h5>
                             <p>
-                              Set up a secure and user-friendly online donation
-                              platform that accepts multiple
+                            Al Zohra currently teaches more than 250 students from Pre-Nursery to Matric. It provides a high standard of education ...
                             </p>
                           </div>
                         </div>
                       </div>
                     </div>
+                    
                   </Slider>
                 </div>
               </div>

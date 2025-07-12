@@ -72,7 +72,7 @@ const page = () => {
         <DifferenceTwo />
 
         {/* BlogOne */}
-        <BlogOne />
+        {/* <BlogOne /> */}
 
         {/* FooterOne */}
         <FooterOne />
