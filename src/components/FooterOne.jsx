@@ -51,7 +51,7 @@ const FooterOne = () => {
               >
                 <div className='footer-two__widget-logo'>
                   <Link href='/'>
-                    <img src='assets/images/logo-light.png' alt='Image_inner' />
+                    <img src='assets/images/logo-white.png' alt='Image_inner' />
                   </Link>
                 </div>
                 <div className='footer-two__widget-content'>

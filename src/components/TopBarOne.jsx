@@ -50,7 +50,7 @@ const TopBarOne = () => {
                 </div>
                 <div className="col-12 col-lg-6 col-xxl-4">
                   <div className="topbar__items justify-content-end">
-                    <div className="select-currency ">
+                    {/* <div className="select-currency ">
                       <select
                         ref={currencyRef_one}
                         name="currency"
@@ -62,8 +62,8 @@ const TopBarOne = () => {
                         <option value="aud">AUD</option>
                         <option value="euro">Euro</option>
                       </select>
-                    </div>
-                    <div className="select-country ">
+                    </div> */}
+                    {/* <div className="select-country ">
                       <select
                         ref={countryRef_one}
                         name="country"
@@ -83,7 +83,7 @@ const TopBarOne = () => {
                           Italian
                         </option>
                       </select>
-                    </div>
+                    </div> */}
                     <div className="social">
                       <a
                         href="https://www.facebook.com/"

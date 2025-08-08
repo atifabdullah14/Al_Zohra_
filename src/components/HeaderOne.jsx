@@ -107,372 +107,112 @@ const HeaderOne = () => {
                   <div className='navbar__menu-wrapper'>
                     <div className='navbar__menu d-none d-xl-block'>
                       <ul className='navbar__list'>
+                        {/* Home */}
                         <li
-                          className={`navbar__item navbar__item--has-children nav-fade ${
-                            pathname === "/" ? "active" : ""
-                          }`}
+                          className={`navbar__item nav-fade ${pathname === "/" ? "active" : ""}`}
                         >
-                          <Link
-                            href='/'
-                            aria-label=' menu'
-                            className=''
-                          >
-                            Home
-                          </Link>
-                          {/* <ul className='navbar__sub-menu mega-menu'>
-                            <li>
-                              <div className='mega-content-wrapper'>
-                                <img
-                                  src='/assets/images/home-one.png'
-                                  alt='Image_inner'
-                                />
-                                <div className='mega-content'>
-                                  <Link href='/' className='btn--primary'>
-                                    Demo
-                                  </Link>
-                                </div>
-                              </div>
-                              <Link href='/'>Home One</Link>
-                            </li>
-                            <li>
-                              <div className='mega-content-wrapper'>
-                                <img
-                                  src='/assets/images/home-two.png'
-                                  alt='Image_inner'
-                                />
-                                <div className='mega-content'>
-                                  <Link
-                                    href='/index-two'
-                                    className='btn--secondary'
-                                  >
-                                    Demo
-                                  </Link>
-                                </div>
-                              </div>
-                              <Link href='/index-two'>Home Two</Link>
-                            </li>
-                            <li>
-                              <div className='mega-content-wrapper'>
-                                <img
-                                  src='/assets/images/home-three.png'
-                                  alt='Image_inner'
-                                />
-                                <div className='mega-content'>
-                                  <Link
-                                    href='/index-three'
-                                    className='btn--primary'
-                                  >
-                                    Demo
-                                  </Link>
-                                </div>
-                              </div>
-                              <Link href='/index-three'>Home Three</Link>
-                            </li>
-                            <li>
-                              <div className='mega-content-wrapper'>
-                                <img
-                                  src='/assets/images/home-four.png'
-                                  alt='Image_inner'
-                                />
-                                <div className='mega-content'>
-                                  <Link
-                                    href='/index-four'
-                                    className='btn--primary'
-                                  >
-                                    Demo
-                                  </Link>
-                                </div>
-                                <span className='new'>New</span>
-                              </div>
-                              <Link href='/index-four'>Home Four</Link>
-                            </li>
-                            <li>
-                              <div className='mega-content-wrapper'>
-                                <img
-                                  src='/assets/images/home-five.png'
-                                  alt='Image_inner'
-                                />
-                                <div className='mega-content'>
-                                  <Link
-                                    href='/index-five'
-                                    className='btn--primary'
-                                  >
-                                    Demo
-                                  </Link>
-                                </div>
-                                <span className='new'>New</span>
-                              </div>
-                              <Link href='/index-five'>Home Five</Link>
-                            </li>
-                          </ul> */}
-                        </li>
-                         <li
-                          className={`navbar__item navbar__item--has-children nav-fade ${
-                            ["/our-causes", "/cause-details"].includes(pathname)
-                              ? "active"
-                              : ""
-                          }`}
-                        >
-                          <Link
-                            href='/about-us'
-                            aria-label='dropdown menu'
-                            className='navbar__dropdown-label dropdown-label-alter'
-                          >
-                             About Us
-                          </Link>
-                          <ul className='navbar__sub-menu'>
-                            <li
-                              className={
-                                ["/annual-reports"].includes(pathname)
-                                  ? "active"
-                                  : ""
-                              }
-                            >
-                              <Link href='/our-story'>Our Story</Link>
-                            </li>
-                            
-                            <li
-                              className={
-                                ["/media-and-news"].includes(pathname)
-                                  ? "active"
-                                  : ""
-                              }
-                            >
-                              <Link href='/media-and-news'>Mission & Vision</Link>
-                            </li>
-                            <li
-                              className={
-                                ["/events-workshops"].includes(pathname)
-                                  ? "active"
-                                  : ""
-                              }
-                            >
-                              <Link href='/our-team'>Leadership & Team</Link>
-                            </li>
-                            <li
-                              className={
-                                ["/blog"].includes(pathname)
-                                  ? "active"
-                                  : ""
-                              }
-                            >
-                              <Link href='/blog'>Legal & Certifications</Link>
-                            </li>
-                          </ul>
-                        </li>
-                      {/* <li
-                          className={`navbar__item nav-fade ${
-                            ["/about-us"].includes(pathname) ? "active" : ""
-                          }`}
-                        >
-                          <Link href='/about-us'>About Us</Link>
-                        </li> */}
-
-
-                        <li
-                          className={`navbar__item navbar__item--has-children nav-fade ${
-                            ["/our-causes", "/cause-details"].includes(pathname)
-                              ? "active"
-                              : ""
-                          }`}
-                        >
-                          <Link
-                            href='#'
-                            aria-label='dropdown menu'
-                            className='navbar__dropdown-label dropdown-label-alter'
-                          >
-                            Resources
-                          </Link>
-                          <ul className='navbar__sub-menu'>
-                            <li
-                              className={
-                                ["/annuel-reports"].includes(pathname)
-                                  ? "active"
-                                  : ""
-                              }
-                            >
-                              <Link href='/annual-reports'>Annual Reports</Link>
-                            </li>
-                            
-                            <li
-                              className={
-                                ["/media-and-news"].includes(pathname)
-                                  ? "active"
-                                  : ""
-                              }
-                            >
-                              <Link href='/media-and-news'>Media & News</Link>
-                            </li>
-                            <li
-                              className={
-                                ["/events-workshops"].includes(pathname)
-                                  ? "active"
-                                  : ""
-                              }
-                            >
-                              <Link href='/events-workshops'>Events & Workshops</Link>
-                            </li>
-                            <li
-                              className={
-                                ["/blog"].includes(pathname)
-                                  ? "active"
-                                  : ""
-                              }
-                            >
-                              <Link href='/blog'>Blog</Link>
-                            </li>
-                          </ul>
+                          <Link href='/' aria-label='Home'>Home</Link>
                         </li>
 
-                        
-                                                <li
-                          className={`navbar__item navbar__item--has-children nav-fade ${
-                            ["/our-causes", "/cause-details"].includes(pathname)
-                              ? "active"
-                              : ""
-                          }`}
-                        >
-                          <Link
-                            href='#'
-                            aria-label='dropdown menu'
-                            className='navbar__dropdown-label dropdown-label-alter'
-                          >
-                            Get Involved
-                          </Link>
-                          <ul className='navbar__sub-menu'>
-                            <li
-                              className={
-                                ["/our-causes"].includes(pathname)
-                                  ? "active"
-                                  : ""
-                              }
-                            >
-                              <Link href='/become-volunteer'>Become Volunteer</Link>
-                            </li>
-                            <li
-                              className={
-                                ["/cause-details"].includes(pathname)
-                                  ? "active"
-                                  : ""
-                              }
-                            >
-                              <Link href='/partner-with-us'>Partner with Us</Link>
-                            </li>
-                            
-                          </ul>
-                        </li>
+                        {/* Programs */}
                         <li
-                          className={`navbar__item navbar__item--has-children nav-fade ${
-                            [
-                              "/faq",
-                              "/donate-us",
-                              "/become-volunteer",
-                              "/events",
-                              "/event-details",
-                              "/shop",
-                              "/product-details",
-                              "/cart",
-                              "/checkout",
-                            ].includes(pathname)
-                              ? "active"
-                              : ""
-                          }`}
+                          className={`navbar__item navbar__item--has-children nav-fade ${[
+                            "/vocational-training",
+                            "/welfare-assistance",
+                            "/alzohra-secondary-school"
+                          ].includes(pathname) ? "active" : ""}`}
                         >
-                          <Link
-                            href='#'
-                            aria-label='dropdown menu'
-                            className='navbar__dropdown-label dropdown-label-alter'
-                          >
-                            Programs
-                          </Link>
+                          <Link href='#' aria-label='Programs' className='navbar__dropdown-label dropdown-label-alter'>Programs</Link>
                           <ul className='navbar__sub-menu'>
-                            <li
-                              className={
-                                ["/vocational-training"].includes(pathname) ? "active" : ""
-                              }
-                            >
+                            <li className={pathname === "/vocational-training" ? "active" : ""}>
                               <Link href='/vocational-training'>Vocational Training</Link>
                             </li>
-                            <li
-                              className={
-                                ["/welfare-assistance"].includes(pathname)
-                                  ? "active"
-                                  : ""
-                              }
-                            >
+                            <li className={pathname === "/welfare-assistance" ? "active" : ""}>
                               <Link href='/welfare-assistance'>Welfare Assistance</Link>
                             </li>
-                            <li
-                              className={
-                                ["/alzohra-secondary-school"].includes(pathname)
-                                  ? "active"
-                                  : ""
-                              }
-                            >
-                              <Link href='/alzohra-secondary-school'>
-                                AlZOHRA SECONDARY SCHOOL (Regd)
-                              </Link>
+                            <li className={pathname === "/alzohra-secondary-school" ? "active" : ""}>
+                              <Link href='/alzohra-secondary-school'>Alzohra <span>Secondary</span>  <span>School</span> </Link>
                             </li>
-                            
                           </ul>
                         </li>
+
+                        {/* Resources */}
                         <li
-                          className={`navbar__item navbar__item--has-children nav-fade ${
-                            [
-                              "/blog-list",
-                              "/blog-grid",
-                              "/blog-details",
-                            ].includes(pathname)
-                              ? "active"
-                              : ""
-                          } `}
+                          className={`navbar__item navbar__item--has-children nav-fade ${[
+                            "/annual-reports",
+                            "/media-and-news",
+                            "/events-workshops",
+                            // "/blog"
+                          ].includes(pathname) ? "active" : ""}`}
                         >
-                          <Link
-                            href='/donate-us'
-                            aria-label='dropdown menu'
-                            className='navbar__dropdown-label dropdown-label-alter'
-                          >
-                            Donate
-                          </Link>
+                          <Link href='#' aria-label='Resources' className='navbar__dropdown-label dropdown-label-alter'>Resources</Link>
                           <ul className='navbar__sub-menu'>
-                            <li
-                              className={
-                                ["/blog-list"].includes(pathname)
-                                  ? "active"
-                                  : ""
-                              }
-                            >
+                            <li className={pathname === "/annual-reports" ? "active" : ""}>
+                              <Link href='/annual-reports'>Annual Reports</Link>
+                            </li>
+                            <li className={pathname === "/media-and-news" ? "active" : ""}>
+                              <Link href='/media-and-news'>Media & News</Link>
+                            </li>
+                            <li className={pathname === "/events-workshops" ? "active" : ""}>
+                              <Link href='/events-workshops'>Events & Workshops</Link>
+                            </li>
+                            {/* <li className={pathname === "/blog" ? "active" : ""}>
+                              <Link href='/blog'>Blog</Link>
+                            </li> */}
+                          </ul>
+                        </li>
+
+                        {/* Get Involved */}
+                        <li
+                          className={`navbar__item navbar__item--has-children nav-fade ${[
+                            "/become-volunteer",
+                            "/partner-with-us"
+                          ].includes(pathname) ? "active" : ""}`}
+                        >
+                          <Link href='#' aria-label='Get Involved' className='navbar__dropdown-label dropdown-label-alter'>Get Involved</Link>
+                          <ul className='navbar__sub-menu'>
+                            <li className={pathname === "/become-volunteer" ? "active" : ""}>
+                              <Link href='/become-volunteer'>Become Volunteer</Link>
+                            </li>
+                            <li className={pathname === "/partner-with-us" ? "active" : ""}>
+                              <Link href='/partner-with-us'>Partner with Us</Link>
+                            </li>
+                          </ul>
+                        </li>
+
+                        {/* Donate */}
+                        <li
+                          className={`navbar__item navbar__item--has-children nav-fade ${[
+                            "/zakat-sadqah",
+                            "/one-time",
+                            "/sponsor-a-child"
+                          ].includes(pathname) ? "active" : ""}`}
+                        >
+                          <Link href='/donate-us' aria-label='Donate' className='navbar__dropdown-label dropdown-label-alter'>Donate</Link>
+                          <ul className='navbar__sub-menu'>
+                            <li className={pathname === "/zakat-sadqah" ? "active" : ""}>
                               <Link href='/zakat-sadqah'>Zakat / Sadaqah</Link>
                             </li>
-                            <li
-                              className={
-                                ["/blog-grid"].includes(pathname)
-                                  ? "active"
-                                  : ""
-                              }
-                            >
+                            <li className={pathname === "/one-time" ? "active" : ""}>
                               <Link href='/one-time'>One-Time / Monthly Giving</Link>
                             </li>
-                            <li
-                              className={
-                                ["/blog-details"].includes(pathname)
-                                  ? "active"
-                                  : ""
-                              }
-                            >
+                            <li className={pathname === "/sponsor-a-child" ? "active" : ""}>
                               <Link href='/sponsor-a-child'>Sponsor a Child / Project</Link>
                             </li>
                           </ul>
                         </li>
-                        
+
+                        {/* Contact Us */}
                         <li
-                          className={`navbar__item nav-fade ${
-                            ["/contact-us"].includes(pathname) ? "active" : ""
-                          } `}
+                          className={`navbar__item nav-fade ${pathname === "/contact-us" ? "active" : ""}`}
                         >
                           <Link href='/contact-us'>Contact Us</Link>
                         </li>
-                        
+
+                        {/* Unused/Commented Menus */}
+                        {/*
+                        <li>...</li>
+                        */}
                       </ul>
                     </div>
                     <div className='contact-btn'>
@@ -592,12 +332,12 @@ const HeaderOne = () => {
               <i className='fa-brands fa-facebook-f' />
             </Link>
             <Link
-              href='https://vimeo.com/'
-              target='_blank'
-              aria-label='share us on vimeo'
-              title='vimeo'
+              href='https://www.instagram.com/'
+             target='_blank'
+             aria-label='share us on instagram'
+              title='instagram'
             >
-              <i className='fa-brands fa-vimeo-v' />
+               <i className='fa-brands fa-instagram' />
             </Link>
             <Link
               href='https://x.com/'

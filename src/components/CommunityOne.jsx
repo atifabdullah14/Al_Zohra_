@@ -163,7 +163,7 @@ const CommunityOne = () => {
         </div>
         <div className='community-bg'>
           <img
-            src='/assets/images/community/community-bg.png'
+            src='/assets/images/community/community-bg.jpg'
             alt='Image_inner'
           />
         </div>

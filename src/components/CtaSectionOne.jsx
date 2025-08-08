@@ -20,9 +20,9 @@ const CtaSectionOne = () => {
                     <i className='icon-spread-love' />
                   </div>
                   <div className='content'>
-                    <span>We give child a gift of a education</span>
+                    <span>Support a specific person, project, or child through sponsorship.</span>
                     <h3 className='title-animation_inner'>
-                      Become a volunteer?
+                      Become a Sponsor
                     </h3>
                   </div>
                   <div className='cta-s'>
@@ -34,14 +34,85 @@ const CtaSectionOne = () => {
                     >
                       Contact Now
                     </Link>
-                  </div>
+                  </div>  
                 </div>
+              
                 <div className='cta-img'>
                   <img src='assets/images/cta/one.jpeg' alt='Image_inner' />
                 </div>
               </div>
             </div>
             <div className='col-12 col-xxl-4'>
+              <div className='cta-section__first cta-section__single'>
+                <div
+                  className='cta-section__group'
+                  data-aos='fade-up'
+                  data-aos-duration={1000}
+                >
+                  <div className='thumb'>
+                    <i className='icon-spread-love' />
+                  </div>
+                  <div className='content'>
+                    <span>We give child a gift of a education</span>
+                    <h3 className='title-animation_inner'>
+                    Support Our Mission
+                    </h3>
+                  </div>
+                  <div className='cta-s'>
+                    <Link
+                      href='/become-volunteer'
+                      aria-label='become a volunteer'
+                      title='become a volunteer'
+                      className='btn--tertiary'
+                    >
+                      Contact Now
+                    </Link>
+                  </div>  
+                </div>
+                <div className='cta-img'>
+                  <img src='assets/images/cta/two.jpeg' alt='Image_inner' />
+                </div>
+              </div>
+            </div>
+            <div className='col-12 col-xxl-4'>
+              <div className='cta-section__first cta-section__single'>
+                <div
+                  className='cta-section__group'
+                  data-aos='fade-up'
+                  data-aos-duration={1000}
+                >
+                  <div className='thumb'>
+                    <i className='icon-spread-love' />
+                  </div>
+                  <div className='content'>
+                    <span>Contribute a one-time gift to support our overall work.</span>
+                    <h3 className='title-animation_inner'>
+                    Make donation to us?
+                    </h3>
+                  </div>
+                  <div className='cta-s'>
+                    <Link
+                       href='/donate-us'
+                       aria-label='make a donation'
+                       title='make a donation'
+                       className='btn--primary'
+                    >
+                      Donate Now
+                    </Link>
+                  </div>  
+                </div>
+                <div className='cta-img' style={{ height: '650px', overflow: 'hidden' }}>
+                  <img
+                    src='assets/images/cta/three.jpg'
+                    alt='Image_inner'
+                    className='img-fluid w-100 h-100'
+                    style={{ objectFit: 'cover' }}
+                  />
+                </div>
+              </div>
+            </div>
+            
+            {/* <div className='col-12 col-xxl-4'>
               <div className='cta-section__center cta-section__single'>
                 <div className='video-btn-wrapper'>
                   <button
@@ -60,8 +131,8 @@ const CtaSectionOne = () => {
                   />
                 </div>
               </div>
-            </div>
-            <div className='col-12 col-xxl-4'>
+            </div> */}
+            {/* <div className='col-12 col-xxl-4'>
               <div className='cta-section__last cta-section__single'>
                 <div
                   className='cta-section__group'
@@ -73,7 +144,7 @@ const CtaSectionOne = () => {
                     <i className='icon-spread-love' />
                   </div>
                   <div className='content'>
-                    <span>We give child a gift of a education</span>
+                    <span>	Contribute a one-time gift to support our overall work.</span>
                     <h3 className='title-animation_inner'>
                       Make donation to us?
                     </h3>
@@ -93,7 +164,7 @@ const CtaSectionOne = () => {
                   <img src='assets/images/cta/three.jpg' alt='Image_inner' />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 

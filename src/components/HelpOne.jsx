@@ -10,12 +10,12 @@ const HelpOne = () => {
       <section className='help'>
         <div className='container'>
           <div className='row align-items-center gutter-40'>
-            <div className='col-12 col-lg-5 col-xxl-6 d-none d-lg-block'>
+            <div className='col-10 col-lg-5 col-xxl-5 d-none d-lg-block'>
               <div className='help__thumb'>
                 <div className='help__thumb-inner'>
                   <div className='thumb-top thumb'>
                     <img
-                      src='/assets/images/help/thumb-top.png'
+                      src='/assets/images/help/thumb-lg.jpg'
                       alt='Image_inner'
                     />
                   </div>
@@ -25,7 +25,7 @@ const HelpOne = () => {
                     data-aos-duration={1000}
                   >
                     <img
-                      src='/assets/images/help/thumb-lg.jpeg'
+                      src='/assets/images/help/thumb.jpg'
                       alt='Image_inner'
                     />
                     <div className='video-btn-wrapper'>
@@ -39,7 +39,7 @@ const HelpOne = () => {
                   </div>
                   <div className='thumb thumb-bottom'>
                     <img
-                      src='/assets/images/help/thumb-bottom.png'
+                      src='/assets/images/help/thumb-bottom1.jpg'
                       alt='Image_inner'
                     />
                   </div>

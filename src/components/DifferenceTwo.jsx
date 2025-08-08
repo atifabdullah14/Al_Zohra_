@@ -18,12 +18,12 @@ const DifferenceTwo = () => {
                     data-aos-duration={1000}
                   >
                     <img
-                      src='assets/images/difference/thumb-sm.png'
+                      src='assets/images/difference/differ2.jpg'
                       alt='Image_inner'
                     />
                     <div className='grid-line'>
                       <img
-                        src='assets/images/help/grid.png'
+                        src='assets/images/difference/differ2.jpg'
                         alt='Image_inner'
                         className='base-img'
                       />
@@ -44,7 +44,7 @@ const DifferenceTwo = () => {
                     data-aos-delay={300}
                   >
                     <img
-                      src='assets/images/difference/thumb-lg.png'
+                      src='assets/images/difference/differ1.jpg'
                       alt='Image_inner'
                     />
                   </div>

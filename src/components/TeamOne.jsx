@@ -17,115 +17,15 @@ const TeamOne = () => {
                   Start donating poor people
                 </span>
                 <h2 className='title-animation_inner'>
-                  Meet Our Volunteer
-                  <span>Team</span> members
+                  Meet Our Team
+                  <span>Board</span> members
                 </h2>
               </div>
             </div>
           </div>
-          <div className='row gutter-40'>
-            <div className='col-12 col-sm-6 col-xl-3'>
-              <div
-                className='team__single-wrapper'
-                data-aos='fade-up'
-                data-aos-duration={1000}
-              >
-                <div className='team__single van-tilt'>
-                  <div className='team__single-thumb'>
-                    <Link href='/team-details'>
-                      <img src='assets/images/team/one.png' alt='Image_inner' />
-                    </Link>
-                    <div className='team__icons'>
-                      <div className='team__single-content__icon'>
-                        <i className='fa-solid fa-plus' />
-                      </div>
-                      <div className='team__single__thumb-social'>
-                        <ul>
-                          <li>
-                            <Link href='/'>
-                              <i className='fa-brands fa-facebook-f' />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href='/'>
-                              <i className='fa-brands fa-twitter' />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href='/'>
-                              <i className='fa-brands fa-instagram' />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href='/'>
-                              <i className='fa-brands fa-behance' />
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='team__single-content'>
-                    <h6>
-                      <Link href='/team-details'>Aleena Ashraf</Link>
-                    </h6>
-                    <p>Volunteer</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='col-12 col-sm-6 col-xl-3'>
-              <div
-                className='team__single-wrapper'
-                data-aos='fade-up'
-                data-aos-duration={1000}
-                data-aos-delay={300}
-              >
-                <div className='team__single van-tilt'>
-                  <div className='team__single-thumb'>
-                    <Link href='/team-details'>
-                      <img src='assets/images/team/two.png' alt='Image_inner' />
-                    </Link>
-                    <div className='team__icons'>
-                      <div className='team__single-content__icon'>
-                        <i className='fa-solid fa-plus' />
-                      </div>
-                      <div className='team__single__thumb-social'>
-                        <ul>
-                          <li>
-                            <Link href='/'>
-                              <i className='fa-brands fa-facebook-f' />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href='/'>
-                              <i className='fa-brands fa-twitter' />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href='/'>
-                              <i className='fa-brands fa-instagram' />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href='/'>
-                              <i className='fa-brands fa-behance' />
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='team__single-content'>
-                    <h6>
-                      <Link href='/team-details'>Uzma Hussain</Link>
-                    </h6>
-                    <p>Volunteer</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='col-12 col-sm-6 col-xl-3'>
+          <div className='row gutter-40'> 
+
+          <div className='col-12 col-sm-6 col-xl-3'>
               <div
                 className='team__single-wrapper'
                 data-aos='fade-up'
@@ -136,45 +36,16 @@ const TeamOne = () => {
                   <div className='team__single-thumb'>
                     <Link href='/team-details'>
                       <img
-                        src='assets/images/team/three.png'
+                        src='assets/images/team/seven.jpg '
                         alt='Image_inner'
                       />
                     </Link>
-                    <div className='team__icons'>
-                      <div className='team__single-content__icon'>
-                        <i className='fa-solid fa-plus' />
-                      </div>
-                      <div className='team__single__thumb-social'>
-                        <ul>
-                          <li>
-                            <Link href='/'>
-                              <i className='fa-brands fa-facebook-f' />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href='/'>
-                              <i className='fa-brands fa-twitter' />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href='/'>
-                              <i className='fa-brands fa-instagram' />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href='/'>
-                              <i className='fa-brands fa-behance' />
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
                   </div>
                   <div className='team__single-content'>
                     <h6>
-                      <Link href='/team-details'>Sara Kainat</Link>
+                      <Link href='/team-details'>Zohra Begum</Link>
                     </h6>
-                    <p>Volunteer</p>
+                    <p> Founder(Al-Zohra Welfare ) </p>
                   </div>
                 </div>
               </div>
@@ -193,46 +64,120 @@ const TeamOne = () => {
                         src='assets/images/team/four.png'
                         alt='Image_inner'
                       />
-                    </Link>
-                    <div className='team__icons'>
-                      <div className='team__single-content__icon'>
-                        <i className='fa-solid fa-plus' />
-                      </div>
-                      <div className='team__single__thumb-social'>
-                        <ul>
-                          <li>
-                            <Link href='/'>
-                              <i className='fa-brands fa-facebook-f' />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href='/'>
-                              <i className='fa-brands fa-twitter' />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href='/'>
-                              <i className='fa-brands fa-instagram' />
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href='/'>
-                              <i className='fa-brands fa-behance' />
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+                    </Link>                   
                   </div>
                   <div className='team__single-content'>
                     <h6>
-                      <Link href='/team-details'>Aima Akram</Link>
+                      <Link href='/team-details'>Nighat Zahra Shah</Link>
                     </h6>
-                    <p>Volunteer</p>
+                    <p> (General Secretary) Honorary</p>
                   </div>
                 </div>
               </div>
             </div>
+            <div className='col-12 col-sm-6 col-xl-3'>
+              <div
+                className='team__single-wrapper'
+                data-aos='fade-up'
+                data-aos-duration={1000}
+                data-aos-delay={600}
+              >
+                <div className='team__single van-tilt'>
+                  <div className='team__single-thumb'>
+                    <Link href='/team-details'>
+                      <img
+                        src='assets/images/team/three.png'
+                        alt='Image_inner'
+                      />
+                    </Link>            
+                  </div>
+                  <div className='team__single-content'>
+                    <h6>
+                      <Link href='/team-details'>DR. Sara Gardezi</Link>
+                    </h6>
+                    <p> (TRASURER) Honorary </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='col-12 col-sm-6 col-xl-3'>
+              <div
+                className='team__single-wrapper'
+                data-aos='fade-up'
+                data-aos-duration={1000}
+              >
+                <div className='team__single van-tilt'>
+                  <div className='team__single-thumb'>
+                    <Link href='/team-details'>
+                      <img src='assets/images/team/one.jpg' alt='Image_inner' />
+                    </Link>                    
+                  </div>
+                  <div className='team__single-content'>
+                    <h6>
+                      <Link href='/team-details'>Syed Ahtesham Ali </Link>
+                    </h6>
+                    <p>President (Honorary)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-sm-6 col-xl-3"></div>
+            <div className='col-12 col-sm-6 col-xl-3'>
+              <div
+                className='team__single-wrapper'
+                data-aos='fade-up'
+                data-aos-duration={1000}
+                data-aos-delay={600}
+              >
+                <div className='team__single van-tilt'>
+                  <div className='team__single-thumb'>
+                    <Link href='/team-details'>
+                      <img
+                        src='assets/images/team/five.png'
+                        alt='Image_inner'
+                      />
+                    </Link>              
+                  </div>
+                  <div className='team__single-content'>
+                    <h6>
+                      <Link href='/team-details'>Nadeem Bhurgri</Link>
+                    </h6>
+                    <p>  (Vice President )  Honorary </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className='col-12 col-sm-6 col-xl-3'>
+              <div
+                className='team__single-wrapper'
+                data-aos='fade-up'
+                data-aos-duration={1000}
+                data-aos-delay={300}
+              >
+                <div className='team__single van-tilt'>
+                  <div className='team__single-thumb'>
+                    <Link href='/team-details'>
+                      <img src='assets/images/team/two.png' alt='Image_inner' />
+                    </Link>                    
+                  </div>
+                  <div className='team__single-content'>
+                    <h6>
+                      <Link href='/team-details'>Imran Ahsen Shah</Link>
+                    </h6>
+                    <p>(Joint Secretary) Honorary </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          
+           
+            
+            
+            
+          
           </div>
           <div className='row'>
             <div className='col-12'>

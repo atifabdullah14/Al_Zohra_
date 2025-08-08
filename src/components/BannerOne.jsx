@@ -27,7 +27,7 @@ const BannerOne = () => {
                   className='banner-two__slider-bg'
                   style={{
                     backgroundImage:
-                      "url(/assets/images/banner/banner-two-bg.jpeg)",
+                      "url(/assets/images/banner/banner-1.jpg)",
                   }}
                 ></div>
                 <div className='container'>
@@ -75,7 +75,7 @@ const BannerOne = () => {
                   className='banner-two__slider-bg'
                   style={{
                     backgroundImage:
-                      "url(/assets/images/banner/banner-one-bg.jpeg)",
+                      "url(/assets/images/banner/banner-2.jpg)",
                   }}
                 ></div>
                 <div className='container'>
@@ -123,7 +123,7 @@ const BannerOne = () => {
                   className='banner-two__slider-bg'
                   style={{
                     backgroundImage:
-                      "url(/assets/images/banner/banner-two-bg.png)",
+                      "url(/assets/images/banner/banner-3.jpg)",
                   }}
                 ></div>
                 <div className='container'>
@@ -171,7 +171,7 @@ const BannerOne = () => {
                   className='banner-two__slider-bg'
                   style={{
                     backgroundImage:
-                      "url(/assets/images/banner/banner-one-bg.png)",
+                      "url(/assets/images/banner/banner-1.jpg)",
                   }}
                 ></div>
                 <div className='container'>
