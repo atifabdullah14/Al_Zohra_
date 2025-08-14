@@ -113,12 +113,14 @@ const DifferenceTwo = () => {
                             >
                               <ul>
                                 <li>
-                                  <i className='fa-solid fa-check' /> We help
-                                  companies develop powerful corporate social
+                                  <i className='fa-solid fa-check' />Acquire & 
+                                  apply knowledge and marketable skills, with the fear of 
+                                  Almighty Allah to Transform Citizens into assets of Society.
                                 </li>
                                 <li>
-                                  <i className='fa-solid fa-check' /> Helped
-                                  fund 3,265 Project powerful corporate poor
+                                  <i className='fa-solid fa-check' /> To provide comfort
+                                   and full fill the needs of our previous generations
+                                    and destitute of our society.
                                 </li>
                                 <li>
                                   <i className='fa-solid fa-check' /> Dedicated
@@ -134,16 +136,25 @@ const DifferenceTwo = () => {
                             >
                               <ul>
                                 <li>
-                                  <i className='fa-solid fa-check' /> We help
-                                  companies develop powerful corporate social
+                                  <i className='fa-solid fa-check' />To provide very
+                                     high quality
+                                     education at
+                                     nominal cost. 
+
                                 </li>
                                 <li>
-                                  <i className='fa-solid fa-check' /> Helped
-                                  fund 3,265 Project powerful corporate poor
+                                  <i className='fa-solid fa-check' /> To increase
+                                     women
+                                     participation in
+                                     the development
+                                     of the nation.
                                 </li>
                                 <li>
-                                  <i className='fa-solid fa-check' /> Dedicated
-                                  Tech Services
+                                  <i className='fa-solid fa-check' /> To improve the
+                                     quality of lives of
+                                     the current and
+                                     the coming
+                                     generations.
                                 </li>
                               </ul>
                             </div>
@@ -262,7 +273,7 @@ const DifferenceTwo = () => {
                           <i className='icon-fund' />
                         </div>
                         <div className='content'>
-                          <h6>Total Fundraised</h6>
+                          <h6>Milestone <span>Achieved</span>: </h6>
                           <p>$1,540,456</p>
                         </div>
                       </div>

@@ -27,7 +27,7 @@ const BannerOne = () => {
                   className='banner-two__slider-bg'
                   style={{
                     backgroundImage:
-                      "url(/assets/images/banner/banner-1.jpg)",
+                      "url(/assets/images/banner/banner-1x.jpg)",
                   }}
                 ></div>
                 <div className='container'>
@@ -75,7 +75,7 @@ const BannerOne = () => {
                   className='banner-two__slider-bg'
                   style={{
                     backgroundImage:
-                      "url(/assets/images/banner/banner-2.jpg)",
+                      "url(/assets/images/banner/banner-3   1.jpg)",
                   }}
                 ></div>
                 <div className='container'>
@@ -87,9 +87,9 @@ const BannerOne = () => {
                           Start donating poor people
                         </span>
                         <h1>
-                          Giving help <br />
-                          To Those <span className='bottom-line'>peoples</span>
-                          Who Need It.
+                          Giving Help  <br />
+                          To Those <span className='bottom-line'></span>
+                          Who Need it.
                         </h1>
                         <div className='banner__content-cta cta'>
                           <Link
@@ -123,7 +123,7 @@ const BannerOne = () => {
                   className='banner-two__slider-bg'
                   style={{
                     backgroundImage:
-                      "url(/assets/images/banner/banner-3.jpg)",
+                      "url(/assets/images/banner/banner-31.jpg)",
                   }}
                 ></div>
                 <div className='container'>

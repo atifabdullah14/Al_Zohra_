@@ -55,56 +55,6 @@ const TeamOne = () => {
                 className='team__single-wrapper'
                 data-aos='fade-up'
                 data-aos-duration={1000}
-                data-aos-delay={900}
-              >
-                <div className='team__single van-tilt'>
-                  <div className='team__single-thumb'>
-                    <Link href='/team-details'>
-                      <img
-                        src='assets/images/team/four.png'
-                        alt='Image_inner'
-                      />
-                    </Link>                   
-                  </div>
-                  <div className='team__single-content'>
-                    <h6>
-                      <Link href='/team-details'>Nighat Zahra Shah</Link>
-                    </h6>
-                    <p> (General Secretary) Honorary</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='col-12 col-sm-6 col-xl-3'>
-              <div
-                className='team__single-wrapper'
-                data-aos='fade-up'
-                data-aos-duration={1000}
-                data-aos-delay={600}
-              >
-                <div className='team__single van-tilt'>
-                  <div className='team__single-thumb'>
-                    <Link href='/team-details'>
-                      <img
-                        src='assets/images/team/three.png'
-                        alt='Image_inner'
-                      />
-                    </Link>            
-                  </div>
-                  <div className='team__single-content'>
-                    <h6>
-                      <Link href='/team-details'>DR. Sara Gardezi</Link>
-                    </h6>
-                    <p> (TRASURER) Honorary </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='col-12 col-sm-6 col-xl-3'>
-              <div
-                className='team__single-wrapper'
-                data-aos='fade-up'
-                data-aos-duration={1000}
               >
                 <div className='team__single van-tilt'>
                   <div className='team__single-thumb'>
@@ -122,7 +72,6 @@ const TeamOne = () => {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-sm-6 col-xl-3"></div>
             <div className='col-12 col-sm-6 col-xl-3'>
               <div
                 className='team__single-wrapper'
@@ -149,6 +98,60 @@ const TeamOne = () => {
               </div>
             </div>
             
+           
+
+            <div className='col-12 col-sm-6 col-xl-3'>
+              <div
+                className='team__single-wrapper'
+                data-aos='fade-up'
+                data-aos-duration={1000}
+                data-aos-delay={900}
+              >
+                <div className='team__single van-tilt'>
+                  <div className='team__single-thumb'>
+                    <Link href='/team-details'>
+                      <img
+                        src='assets/images/team/four.png'
+                        alt='Image_inner'
+                      />
+                    </Link>                   
+                  </div>
+                  <div className='team__single-content'>
+                    <h6>
+                      <Link href='/team-details'>Nighat Zahra Shah</Link>
+                    </h6>
+                    <p> (General Secretary) Honorary</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-12 col-sm-6 col-xl-3"></div>
+            <div className='col-12 col-sm-6 col-xl-3'>
+              <div
+                className='team__single-wrapper'
+                data-aos='fade-up'
+                data-aos-duration={1000}
+                data-aos-delay={600}
+              >
+                <div className='team__single van-tilt'>
+                  <div className='team__single-thumb'>
+                    <Link href='/team-details'>
+                      <img
+                        src='assets/images/team/three.png'
+                        alt='Image_inner'
+                      />
+                    </Link>            
+                  </div>
+                  <div className='team__single-content'>
+                    <h6>
+                      <Link href='/team-details'>DR. Sara Gardezi</Link>
+                    </h6>
+                    <p> (TRASURER) Honorary </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
             <div className='col-12 col-sm-6 col-xl-3'>
               <div
                 className='team__single-wrapper'

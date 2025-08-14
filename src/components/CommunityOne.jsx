@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 const CommunityOne = () => {
-  let [amount, setAmount] = useState(50);
+  let [amount, setAmount] = useState(500);
   return (
     <>
       <section className='community'>
@@ -48,7 +48,8 @@ const CommunityOne = () => {
                       <h5>Your Donation:</h5>
                       <div className='input-group-icon'>
                         <div className='thumb'>
-                          <i className='fa-solid fa-dollar-sign' />
+                        <span className="text-white">Rs</span>
+                          {/* <i className='fa-solid fa-money-bill' /> */}
                         </div>
                         <input
                           type='text'
@@ -61,35 +62,35 @@ const CommunityOne = () => {
                       <div className='made-amount'>
                         <span
                           className={`donation-amount ${
-                            amount === 20 && "active"
+                            amount === 500 && "active"
                           }`}
-                          onClick={() => setAmount(20)}
+                          onClick={() => setAmount(500)}
                         >
-                          20
+                          500
                         </span>
                         <span
                           className={`donation-amount ${
-                            amount === 50 && "active"
+                            amount === 1000 && "active"
                           }`}
-                          onClick={() => setAmount(50)}
+                          onClick={() => setAmount(1000)}
                         >
-                          50
+                          1000
                         </span>
                         <span
                           className={`donation-amount ${
-                            amount === 100 && "active"
+                            amount === 2000 && "active"
                           }`}
-                          onClick={() => setAmount(100)}
+                          onClick={() => setAmount(2000)}
                         >
-                          100
+                          2000
                         </span>
                         <span
                           className={`donation-amount ${
-                            amount === 200 && "active"
+                            amount === 5000 && "active"
                           }`}
-                          onClick={() => setAmount(200)}
+                          onClick={() => setAmount(5000)}
                         >
-                          200
+                          5000
                         </span>
                         <span
                           className={`donation-amount custom-amount ${

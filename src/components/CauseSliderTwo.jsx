@@ -101,7 +101,7 @@ const CauseSliderTwo = () => {
             <Slider {...contentSettings} className='cause-two__content-slider'>
               {texts.map((text, index) => (
                 <div key={index} className='cause-content'>
-                  <h4>Old People & Child Trouble</h4>
+                  <h4></h4>
                   <p>{text}</p>
                 </div>
               ))}

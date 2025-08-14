@@ -129,10 +129,10 @@ const DifferenceOne = () => {
                           </div>
                           <div className='difference__single-content'>
                             <h5>
-                              <Link href='/alzohra-secondary-school'>AlZOHRA SECONDARY SCHOOL (Regd)</Link>
+                              <Link href='/alzohra-secondary-school'>Secondary School </Link>
                             </h5>
                             <p>
-                            Al Zohra currently teaches more than 250 students from Pre-Nursery to Matric. It provides a high standard of education ...
+                            Al Zohra currently teaches more than 250 students from Pre-Nursery to Matric. <br /> It provides a high standard of education ...
                             </p>
                           </div>
                         </div>
@@ -196,10 +196,10 @@ const DifferenceOne = () => {
                           </div>
                           <div className='difference__single-content'>
                             <h5>
-                              <Link href='/cause-details'>AlZOHRA SECONDARY SCHOOL (Regd)</Link>
+                              <Link href='/cause-details'>Secondary School </Link>
                             </h5>
                             <p>
-                            Al Zohra currently teaches more than 250 students from Pre-Nursery to Matric. It provides a high standard of education ...
+                            Al Zohra currently teaches more than 250 students from Pre-Nursery to Matric. <br /> It provides a high standard of education ...
                             </p>
                           </div>
                         </div>

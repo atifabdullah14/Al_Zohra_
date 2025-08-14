@@ -39,41 +39,68 @@ const AlZohraSecondarySchoolPage = () => {
               <div className="col-md-7">
                 <h1 className="fw-bold text-success mb-3">Al Zohra Secondary School</h1>
                 <p className="lead mb-4">
-                  Al Zohra Secondary School is committed to delivering high-quality, affordable, value-based education to students from all backgrounds. We nurture academic excellence, character, and personal growth in a safe, inclusive environment.
-                </p>
+                Al-Zohra Secondary School caters to students from Nursery to Matric, offering a high standard of education comparable to the country’s elite English medium institutions. Our teachers are experts in their subjects, and their dedication is reflected in our outstanding results in the 2024 batch, Matric students achieved 60/60 marks in Computer Science, with the majority securing A grades in other board examination subjects as well.
+                <br />We offer the following facilities and features:
+
+  </p>
                 <ul className="list-unstyled mb-4">
-                  <li><i className="fa fa-check-circle text-success me-2"></i>Academic Excellence</li>
-                  <li><i className="fa fa-check-circle text-success me-2"></i>Modern Facilities</li>
-                  <li><i className="fa fa-check-circle text-success me-2"></i>Scholarships & Support</li>
+                  <li><i className="fa fa-check-circle text-success me-2"></i>High Standard Curriculum: Incorporates Microsoft Office computer courses and Rosetta Stone English Language software into the syllabus, ensuring students are proficient in both technology and communication.
+                  </li>
+                  <li><i className="fa fa-check-circle text-success me-2"></i>State-of-the-Art Facilities: Equipped with modern science laboratories, 24/7 internet access, and advanced technology integration in classrooms.
+                  </li>
+                  <li><i className="fa fa-check-circle text-success me-2"></i>Video-Based Learning: Subject-wise and chapter-wise educational videos are shared daily via WhatsApp, along with moral and educational content to reinforce learning.
+                  </li>
+                  <li><i className="fa fa-check-circle text-success me-2"></i>Affordable Education: We maintain nominal fee structures, with over 35% of students receiving full scholarships.
+                  </li>
+                  <li><i className="fa fa-check-circle text-success me-2"></i>Digital Literacy Focus: Specialized training prepares students to excel in the digital era.
+                  </li>
                 </ul>
-                <a href="/contact-us" className="btn btn-success btn-lg shadow">Apply or Support</a>
+                <a href="https://www.facebook.com/AlzohraSchool" className="btn btn-success btn-lg shadow">Follow Us 
+                </a>
               </div>
               <div className="col-md-5 text-center">
-                <img src="/assets/images/event/overview.png" alt="Secondary School" className="img-fluid rounded shadow" style={{maxHeight: 320}} />
+                <img src="/assets/images/event/overview.jpg" alt="Secondary School" className="img-fluid rounded shadow" style={{maxHeight: 320}} />
               </div>
             </div>
           </div>
         </section>
         {/* How It Started / How It's Going */}
-        <section className="py-5 border-bottom">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-md-6 mb-4 mb-md-0">
-                <img src="/assets/images/community/mask.png" alt="Our Journey" className="img-fluid rounded shadow" />
-              </div>
-              <div className="col-md-6">
-                <h2 className="fw-bold text-success mb-3">How It Started</h2>
-                <p>
-                  Founded in 2011 as an initiative of Al Zohra Welfare Association, the school began with a vision to provide quality education to all, regardless of background. Starting from humble beginnings, we have grown into a thriving institution.
-                </p>
-                <h2 className="fw-bold text-success mb-3 mt-4">How It's Going</h2>
-                <p>
-                  Today, Al Zohra Secondary School offers education from Pre-Nursery to Grade 10, with a focus on digital literacy, modern teaching, and holistic development. Our students excel in academics and character, supported by dedicated staff and modern facilities.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+{/* How It Started / How It's Going */}
+<section className="py-5 border-bottom">
+  <div className="container">
+    <div className="row">
+      {/* Left Side: How It Started */}
+      <div className="col-md-6">
+        <h2 className="fw-bold text-success mb-3">How It Started</h2>
+        <p>
+          Founded in 2011 as an initiative of Al Zohra Welfare Association, the school began with a vision to provide quality education to all, regardless of background. Starting from humble beginnings, we have grown into a thriving institution.
+        </p>
+      </div>
+
+      {/* Right Side: How It's Going */}
+      <div className="col-md-6">
+        <h2 className="fw-bold text-success mb-3">How It's Going</h2>
+        <p>
+          Today, Al Zohra Secondary School offers education from Pre-Nursery to Grade 10, with a focus on digital literacy, modern teaching, and holistic development. Our students excel in academics and character, supported by dedicated staff and modern facilities.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* Full-width Video Section */}
+<section className="py-5">
+  <div className="container-fluid px-0">
+    <div className="ratio ratio-16x9">
+      <iframe 
+        src="/assets/images/event/school.mp4" 
+        title="School Journey Video" 
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
+</section>
+
         {/* Fee Structure Section */}
         <section className="py-5 bg-white border-bottom">
           <div className="container">
@@ -201,7 +228,7 @@ const AlZohraSecondarySchoolPage = () => {
           <div className="container">
             <h2 className="fw-bold text-success mb-3">Empower a Child's Future</h2>
             <p className="lead mb-4">Support our mission to provide quality, affordable education to all. Join us as a donor, volunteer, or parent.</p>
-            <a href="/contact-us" className="btn btn-success btn-lg shadow">Get Involved</a>
+            <a href=" https://wa.me/message/H4XCFQ5TGB5QN1 " className="btn btn-success btn-lg shadow">Contact Us </a>
           </div>
         </section>
         <FooterOne />

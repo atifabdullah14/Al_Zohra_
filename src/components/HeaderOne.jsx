@@ -107,6 +107,12 @@ const HeaderOne = () => {
                   <div className='navbar__menu-wrapper'>
                     <div className='navbar__menu d-none d-xl-block'>
                       <ul className='navbar__list'>
+                        {/* Our Founder */}
+                        <li
+                          className={`navbar__item nav-fade ${pathname === "/contact-us" ? "active" : ""}`}
+                        >
+                          <Link href='/our-founder'>Our Founder</Link>
+                        </li>
                         {/* Home */}
                         <li
                           className={`navbar__item nav-fade ${pathname === "/" ? "active" : ""}`}
@@ -163,7 +169,7 @@ const HeaderOne = () => {
                         </li>
 
                         {/* Get Involved */}
-                        <li
+                        {/* <li
                           className={`navbar__item navbar__item--has-children nav-fade ${[
                             "/become-volunteer",
                             "/partner-with-us"
@@ -178,27 +184,22 @@ const HeaderOne = () => {
                               <Link href='/partner-with-us'>Partner with Us</Link>
                             </li>
                           </ul>
-                        </li>
+                        </li> */}
 
                         {/* Donate */}
                         <li
                           className={`navbar__item navbar__item--has-children nav-fade ${[
                             "/zakat-sadqah",
-                            "/one-time",
-                            "/sponsor-a-child"
+                            
+                            
                           ].includes(pathname) ? "active" : ""}`}
                         >
                           <Link href='/donate-us' aria-label='Donate' className='navbar__dropdown-label dropdown-label-alter'>Donate</Link>
                           <ul className='navbar__sub-menu'>
                             <li className={pathname === "/zakat-sadqah" ? "active" : ""}>
-                              <Link href='/zakat-sadqah'>Zakat / Sadaqah</Link>
+                              <Link href='/zakat-sadqah'>Zakat - Sadaqah</Link>
                             </li>
-                            <li className={pathname === "/one-time" ? "active" : ""}>
-                              <Link href='/one-time'>One-Time / Monthly Giving</Link>
-                            </li>
-                            <li className={pathname === "/sponsor-a-child" ? "active" : ""}>
-                              <Link href='/sponsor-a-child'>Sponsor a Child / Project</Link>
-                            </li>
+
                           </ul>
                         </li>
 
