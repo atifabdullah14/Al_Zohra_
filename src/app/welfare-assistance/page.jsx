@@ -6,6 +6,7 @@ import TopBarOne from "@/components/TopBarOne";
 import AOSWrap from "@/helper/AOSWrap";
 import CustomCursor from "@/helper/CustomCursor";
 import React from "react";
+import Image from "next/image";
 
 // const stats = [
 //   { label: "Years Serving Karachi", value: "34+" },
@@ -97,97 +98,88 @@ const WelfareAssistancePage = () => {
         {/* Welfare Programs Section */}
         <section className="py-5 bg-white border-bottom">
           <div className="container">
-            <h2 className="fw-bold text-danger text-center mb-5">Our Welfare Programs</h2>
-            <div className="row g-5">
+            <div className="row g-4">
               {/* Ration Distribution */}
               <div className="col-md-4">
-                <div className="card h-100 border-0 shadow-sm">
-                  <div className="card-body">
-                    <h4 className="fw-bold text-danger mb-3"><i className="fa fa-shopping-basket me-2"></i>Monthly Ration Disbursement</h4>
-                    <p>We provide monthly ration packs (valued at Rs. 5,500-6,500) to 200+ Zakat-eligible families in 32 low-income areas of Karachi. Packs include flour, rice, ghee, milk, sugar, tea, lentils, chickpeas, and more. Seasonal essentials and Eid/ Ramadan packs are also distributed.</p>
-                    <ul>
-                      <li><b>Areas:</b> Baldia, Korangi, Orangi, Surjani, Malir, Landhi, Kemari, and more</li>
-                      <li><b>Selection:</b> Widowed grandmothers, elderly women, single mothers, families with chronic illness/disability, and exceptional cases</li>
-                      <li><b>Verification:</b> Interviews, home visits, board approval</li>
-                    </ul>
-                  </div>
+                <div className="card border-0 shadow-sm overflow-hidden h-100">
+                  <Image 
+                    src="/assets/images/banner/banner1.jpg" 
+                    alt="Ration Distribution" 
+                    width={400}
+                    height={300}
+                    className="card-img-top"
+                    style={{ objectFit: 'fill', height: '500px' }}
+                  />
                 </div>
               </div>
+              
               {/* Wedding Welfare */}
               <div className="col-md-4">
-                <div className="card h-100 border-0 shadow-sm">
-                  <div className="card-body">
-                    <h4 className="fw-bold text-danger mb-3"><i className="fa fa-ring me-2"></i>Wedding Welfare</h4>
-                    <p>Wedding assistance is available for cardholders and Zakat-eligible applicants. After thorough verification, we provide essential wedding packs (crockery, clothes, cash, and supplies) to help brides start their new lives with dignity.</p>
-                    <ul>
-                      <li><b>Areas:</b> Same as ration program</li>
-                      <li><b>Selection:</b> Cardholder dependents, Zakat-verified applicants, non-Muslim and staff support</li>
-                      <li><b>Items:</b> Crockery, bridal/groom clothes, watches, jewelry, Quran, prayer mat, cash</li>
-                    </ul>
-                  </div>
+                <div className="card border-0 shadow-sm overflow-hidden h-100">
+                  <Image 
+                    src="/assets/images/banner/banner2.jpg" 
+                    alt="Wedding Assistance" 
+                    width={400}
+                    height={300}
+                    className="card-img-top"
+                    style={{ objectFit: 'fill', height: '500px' }}
+                  />
                 </div>
               </div>
+              
               {/* Cash Disbursement */}
               <div className="col-md-4">
-                <div className="card h-100 border-0 shadow-sm">
-                  <div className="card-body">
-                    <h4 className="fw-bold text-danger mb-3"><i className="fa fa-hand-holding-usd me-2"></i>Cash Disbursement</h4>
-                    <p>We provide cash support to elderly, homebound women, higher education candidates, and in emergencies (medicine, burial, etc). All requests are verified and approved by the board.</p>
-                    <ul>
-                      <li><b>Areas:</b> Karachi-wide, especially for those unable to collect rations</li>
-                      <li><b>Selection:</b> Elderly, disabled, students, urgent needs</li>
-                      <li><b>Items:</b> Cash, medicine, education fees, burial support</li>
-                    </ul>
-                  </div>
+                <div className="card border-0 shadow-sm overflow-hidden h-100">
+                  <Image 
+                    src="/assets/images/banner/banner3.jpg" 
+                    alt="Cash Assistance" 
+                    width={400}
+                    height={300}
+                    className="card-img-top"
+                    style={{ objectFit: 'fill', height: '500px' }}
+                  />
                 </div>
               </div>
+              
+              {/* Informal Education */}
               <div className="col-md-4">
-                <div className="card h-100 border-0 shadow-sm">
-                  <div className="card-body">
-                    <h4 className="fw-bold text-danger mb-3"><i className="fa fa-shopping-basket me-2"></i>Informal Education (Quran/Tuition)</h4>
-                    <p>Through its informal education program at Shah Campus II, Al-Zohra empowers street children by preparing them for admission into government schools. Here's how it works:
-
-                      Over 100 children participate in the program.
-
-                      Quran lessons are held in the morning, from 8:00 to 10:00 AM, followed by tuition in English, Urdu, and Mathematics from 10:00 AM to 12:00 PM.
-
-                      Each year, approximately 45 students successfully transition into government schools.</p>
-                    {/* <ul>
-                      <li><b>Areas:</b> Baldia, Korangi, Orangi, Surjani, Malir, Landhi, Kemari, and more</li>
-                      <li><b>Selection:</b> Widowed grandmothers, elderly women, single mothers, families with chronic illness/disability, and exceptional cases</li>
-                      <li><b>Verification:</b> Interviews, home visits, board approval</li>
-                    </ul> */}
-                  </div>
+                <div className="card border-0 shadow-sm overflow-hidden h-100">
+                  <Image 
+                    src="/assets/images/banner/banner4.jpg" 
+                    alt="Informal Education" 
+                    width={400}
+                    height={300}
+                    className="card-img-top"
+                    style={{ objectFit: 'fill', height: '500px' }}
+                  />
                 </div>
               </div>
+              
+              {/* Iftar Distribution */}
               <div className="col-md-4">
-                <div className="card h-100 border-0 shadow-sm">
-                  <div className="card-body">
-                    <h4 className="fw-bold text-danger mb-3"><i className="fa fa-shopping-basket me-2"></i>Iftar Distribution Ramadan Program</h4>
-                    <p>During the holy month of Ramadan, Al-Zohra organizes an Iftar Distribution Program that directly benefits needy and underprivileged women. Each day, more than 100 ready-to-eat meal boxes featuring items like chicken biryani, qorma, and pulao are distributed. These freshly prepared meals bring comfort and dignity to vulnerable women who may otherwise struggle to prepare Iftar on their own.</p>
-                    {/* <ul>
-                      <li><b>Areas:</b> Baldia, Korangi, Orangi, Surjani, Malir, Landhi, Kemari, and more</li>
-                      <li><b>Selection:</b> Widowed grandmothers, elderly women, single mothers, families with chronic illness/disability, and exceptional cases</li>
-                      <li><b>Verification:</b> Interviews, home visits, board approval</li>
-                    </ul> */}
-                  </div>
+                <div className="card border-0 shadow-sm overflow-hidden h-100">
+                  <Image 
+                    src="/assets/images/banner/banner5.jpg" 
+                    alt="Iftar Distribution" 
+                    width={400}
+                    height={300}
+                    className="card-img-top"
+                    style={{ objectFit: 'fill', height: '500px' }}
+                  />
                 </div>
               </div>
+              
+              {/* Scholarship Program */}
               <div className="col-md-4">
-                <div className="card h-100 border-0 shadow-sm">
-                  <div className="card-body">
-                    <h4 className="fw-bold text-danger mb-3"><i className="fa fa-shopping-basket me-2"></i>Scholarship For Higher Studies</h4>
-                    <p>At Al-Zohra, we provide scholarships for higher studies to both our teachers and students.
-                      Teachers receive support to complete their academic qualifications and improve their teaching skills.
-                      Students who have passed Matric from our school and wish to continue their education are also eligible.
-                      Priority is given to those with strong academic performance, especially A-grade achievers, and to those facing financial difficulties.
-                      Through these scholarships, we ensure that financial challenges do not stop our teachers and students from achieving success.</p>
-                    {/* <ul>
-                      <li><b>Areas:</b> Baldia, Korangi, Orangi, Surjani, Malir, Landhi, Kemari, and more</li>
-                      <li><b>Selection:</b> Widowed grandmothers, elderly women, single mothers, families with chronic illness/disability, and exceptional cases</li>
-                      <li><b>Verification:</b> Interviews, home visits, board approval</li>
-                    </ul> */}
-                  </div>
+                <div className="card border-0 shadow-sm overflow-hidden h-100">
+                  <Image 
+                    src="/assets/images/banner/banner6.jpg" 
+                    alt="Scholarship Program" 
+                    width={400}
+                    height={300}
+                    className="card-img-top"
+                    style={{ objectFit: 'fill', height: '500px' }}
+                  />
                 </div>
               </div>
             </div>

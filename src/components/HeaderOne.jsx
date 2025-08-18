@@ -147,7 +147,7 @@ const HeaderOne = () => {
                           className={`navbar__item navbar__item--has-children nav-fade ${[
                             "/annual-reports",
                             "/media-and-news",
-                            "/events-workshops",
+                            // "/events-workshops",
                             // "/blog"
                           ].includes(pathname) ? "active" : ""}`}
                         >
@@ -159,9 +159,9 @@ const HeaderOne = () => {
                             <li className={pathname === "/media-and-news" ? "active" : ""}>
                               <Link href='/media-and-news'>Media & News</Link>
                             </li>
-                            <li className={pathname === "/events-workshops" ? "active" : ""}>
+                            {/* <li className={pathname === "/events-workshops" ? "active" : ""}>
                               <Link href='/events-workshops'>Events & Workshops</Link>
-                            </li>
+                            </li> */}
                             {/* <li className={pathname === "/blog" ? "active" : ""}>
                               <Link href='/blog'>Blog</Link>
                             </li> */}

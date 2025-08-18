@@ -7,7 +7,7 @@ import Preloader from "@/components/Preloader";
 import TopBarOne from "@/components/TopBarOne";
 import AOSWrap from "@/helper/AOSWrap";
 import CustomCursor from "@/helper/CustomCursor";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Slider from "react-slick";
 
 const stats = [
@@ -79,16 +79,16 @@ const courses = [
 
 const videoTestimonials = [
   {
-    name: "Erum",
-    videoUrl: "/assets/images/event/vtc1.mp4",
+    name: "Student Testimonial 1",
+    videoUrl: "/assets/videos/video-1.mp4",
   },
   {
-    name: "Anum Zamir",
-    videoUrl: "https://www.youtube.com/embed/VIDEO_ID_2",
+    name: "Student Testimonial 2", 
+    videoUrl: "/assets/videos/video-2.mp4",
   },
   {
-    name: "Nazia Ayub & Rubina Parvez",
-    videoUrl: "https://www.youtube.com/embed/VIDEO_ID_3",
+    name: "Student Testimonial 3",
+    videoUrl: "/assets/videos/video-3.mp4",
   },
 ];
 
@@ -120,7 +120,16 @@ const moreTestimonials = [
 ];
 
 const VocationalTrainingPage = () => {
-  const timelineSliderRef = useRef(null);
+  const [currentVideo, setCurrentVideo] = useState(0);
+  const videoRef = useRef(null);
+
+  const nextVideo = () => {
+    setCurrentVideo((prev) => (prev + 1) % videoTestimonials.length);
+  };
+
+  const prevVideo = () => {
+    setCurrentVideo((prev) => (prev - 1 + videoTestimonials.length) % videoTestimonials.length);
+  };
 
   return (
     <AOSWrap>
@@ -129,7 +138,7 @@ const VocationalTrainingPage = () => {
         <CustomCursor />
         <TopBarOne />
         <HeaderOne />
-        <BreadcrumbOne title="Vocational Training Program" />
+        {/* <BreadcrumbOne title="Vocational Training Program" /> */}
         {/* Hero Section */}
         <section className="py-5 bg-white border-bottom">
           <div className="container">
@@ -302,56 +311,79 @@ const VocationalTrainingPage = () => {
         </section>
         {/* Expanded Testimonials Section */}
         <section className="py-5 bg-white border-bottom">
-  <div className="container text-center">
-    <h2 className="fw-bold mb-5" style={{ color: '#db567c' }}>Success Stories</h2>
+          <div className="container text-center">
+            <h2 className="fw-bold mb-5" style={{ color: '#db567c' }}>Success Stories</h2>
 
-    <div className="d-flex justify-content-center align-items-center position-relative">
-      {/* Left Arrow */}
-      <button
-        className="btn btn-outline-success me-3"
-        style={{ borderColor: '#db567c', color: '#db567c' }}
-        // onClick={() => setCurrent((current - 1 + videoTestimonials.length) % videoTestimonials.length)}
-      >
-        &#8592;
-      </button>
+            <div className="d-flex justify-content-center align-items-center position-relative">
+              {/* Left Arrow */}
+              <button
+                className="btn btn-outline-success me-3"
+                style={{ borderColor: '#db567c', color: '#db567c' }}
+                onClick={prevVideo}
+              >
+                &#8592;
+              </button>
 
-      {/* Mobile-sized Video */}
-      <div
-        style={{
-          width: '250px',
-          height: '480px',
-          borderRadius: '20px',
-          overflow: 'hidden',
-          boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
-        }}
-      >
-        <iframe
-          width="100%"
-          height="100%"
-          // src={videoTestimonials[current].videoUrl}
-          // title={videoTestimonials[current].name}
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </div>
+              {/* Mobile-sized Video */}
+              <div
+                style={{
+                  width: '250px',
+                  height: '480px',
+                  borderRadius: '20px',
+                  overflow: 'hidden',
+                  boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
+                }}
+              >
+                <video
+                  ref={videoRef}
+                  width="100%"
+                  height="100%"
+                  controls
+                  autoPlay={false}
+                  muted
+                  style={{ objectFit: 'cover' }}
+                >
+                  <source src={videoTestimonials[currentVideo].videoUrl} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
 
-      {/* Right Arrow */}
-      <button
-        className="btn btn-outline-success ms-3"
-        style={{ borderColor: '#db567c', color: '#db567c' }}
-        // onClick={() => setCurrent((current + 1) % videoTestimonials.length)}
-      >
-        &#8594;
-      </button>
-    </div>
+              {/* Right Arrow */}
+              <button
+                className="btn btn-outline-success ms-3"
+                style={{ borderColor: '#db567c', color: '#db567c' }}
+                onClick={nextVideo}
+              >
+                &#8594;
+              </button>
+            </div>
 
-    {/* Name */}
-    <div className="mt-4 fw-bold" style={{ color: '#db567c' }}>
-      {/* — {videoTestimonials[current].name} */}
-    </div>
-  </div>
-</section>
+            {/* Video Navigation Dots */}
+            <div className="mt-4 d-flex justify-content-center">
+              {videoTestimonials.map((_, index) => (
+                <button
+                  key={index}
+                  className={`btn btn-sm mx-1 ${index === currentVideo ? 'btn-success' : 'btn-outline-success'}`}
+                  style={{
+                    backgroundColor: index === currentVideo ? '#db567c' : 'transparent',
+                    borderColor: '#db567c',
+                    color: index === currentVideo ? 'white' : '#db567c',
+                    width: '12px',
+                    height: '12px',
+                    borderRadius: '50%',
+                    padding: '0'
+                  }}
+                  onClick={() => setCurrentVideo(index)}
+                />
+              ))}
+            </div>
+
+            {/* Name */}
+            <div className="mt-4 fw-bold" style={{ color: '#db567c' }}>
+              — {videoTestimonials[currentVideo].name}
+            </div>
+          </div>
+        </section>
 
         {/* Call to Action Section */}
         <section className="py-5 text-center bg-white">
