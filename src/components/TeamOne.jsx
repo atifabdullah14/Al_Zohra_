@@ -137,7 +137,7 @@ const TeamOne = () => {
                   <div className='team__single-thumb'>
                     <Link href='/team-details'>
                       <img
-                        src='assets/images/team/three.png'
+                        src='assets/images/team/three.jpg'
                         alt='Image_inner'
                       />
                     </Link>            
