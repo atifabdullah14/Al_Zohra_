@@ -27,7 +27,7 @@ const BannerOne = () => {
                   className='banner-two__slider-bg'
                   style={{
                     backgroundImage:
-                      "url(/assets/images/banner/banner-1x.jpg)",
+                      "url(/assets/images/banner/banner23.jpg)",
                   }}
                 ></div>
                 <div className='container'>
@@ -75,7 +75,7 @@ const BannerOne = () => {
                   className='banner-two__slider-bg'
                   style={{
                     backgroundImage:
-                      "url(/assets/images/banner/banner-3   1.jpg)",
+                      "url(/assets/images/banner/banner-31.jpg)",
                   }}
                 ></div>
                 <div className='container'>

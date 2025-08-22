@@ -6,6 +6,7 @@ import TopBarOne from "@/components/TopBarOne";
 import AOSWrap from "@/helper/AOSWrap";
 import CustomCursor from "@/helper/CustomCursor";
 import React from "react";
+import VideoSection from "@/components/VideoSection";
 
 const feeRows = [
   ["Nursery", "2375", "1250", "7125", "2000", "1200"],
@@ -21,6 +22,25 @@ const feeRows = [
   ["8", "2900", "1850", "8700", "3000", "1200"],
   ["9", "3010", "1900", "9030", "3000", "1200"],
   ["10", "3010", "2000", "9030", "3000", "1200"],
+];
+
+const feeStructure = [
+  {
+    title: "Sewing & Stitching",
+    image: "/assets/images/programs/fee1.jpg"
+  },
+  {
+    title: "Computer Training",
+    image: "/assets/images/programs/fee2.jpg"
+  },
+  {
+    title: "English Language",
+    image: "/assets/images/programs/fee3.jpg"
+  },
+  {
+    title: "Beautician Course",
+    image: "/assets/images/programs/fee4.jpg"
+  }
 ];
 
 const AlZohraSecondarySchoolPage = () => {
@@ -87,23 +107,43 @@ const AlZohraSecondarySchoolPage = () => {
     </div>
   </div>
 </section>
-
-{/* Full-width Video Section */}
-<section className="py-5">
-  <div className="container-fluid px-0">
-    <div className="ratio ratio-16x9">
-      <iframe 
-        src="/assets/images/event/school.mp4" 
-        title="School Journey Video" 
-        allowFullScreen
-      ></iframe>
-    </div>
-  </div>
+<section className="pt-5 bg-white border-bottom">
+<VideoSection
+  src="/assets/images/event/school.mp4"
+  poster="/assets/images/event/overview.jpg"
+  title="School journey video showcasing Al Zohra Secondary School"
+  sectionClass="p-5"
+  containerClass="container-fluid px-0"
+  ratio="" 
+  backgroundClass="bg-white"
+  minHeightClass=""
+  objectFit="contain"
+  paddingPercent={40}
+  controls
+/>
 </section>
-
         {/* Fee Structure Section */}
         <section className="py-5 bg-white border-bottom">
-          <div className="container">
+        <div className="container">
+    <h2 className="fw-bold text-center mb-5" style={{ color: '#db567c' }}>Fee Structure (2024)</h2>
+    <div className="row g-4">
+      {feeStructure.map((fee, idx) => (
+        <div className="col-md-6" key={idx}>
+          {/* Card same size rakha hai, content replace karke image lagayi */}
+          <div className="card h-400 border-0 shadow-sm">
+            {/* Yahan image laga di — course.image hum add karenge array me */}
+            <img 
+              src={fee.image} 
+              alt={fee.title} 
+              className="img-fluid rounded-top" 
+              style={{ height: "600px", objectFit: "fill", }} 
+            />
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+          {/* <div className="container">
             <h2 className="fw-bold text-success text-center mb-5">Fee Structure (2024)</h2>
             <div className="table-responsive">
               <table className="table table-bordered align-middle bg-white">
@@ -127,8 +167,9 @@ const AlZohraSecondarySchoolPage = () => {
               </table>
             </div>
             <p className="text-center text-secondary mt-2">No other charges. Fees are kept affordable for all families.</p>
-          </div>
+          </div> */}
         </section>
+        
         {/* Admission & Promotion Criteria */}
         <section className="py-5 border-bottom">
           <div className="container">

@@ -7,7 +7,7 @@ import Preloader from "@/components/Preloader";
 import TopBarOne from "@/components/TopBarOne";
 import AOSWrap from "@/helper/AOSWrap";
 import CustomCursor from "@/helper/CustomCursor";
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Slider from "react-slick";
 
 const stats = [
@@ -79,16 +79,20 @@ const courses = [
 
 const videoTestimonials = [
   {
-    name: "Student Testimonial 1",
+    name: "Sewing Course Graduate",
     videoUrl: "/assets/videos/video-1.mp4",
   },
   {
-    name: "Student Testimonial 2", 
-    videoUrl: "/assets/videos/video-2.mp4",
+    name: "Computer Training Success", 
+    videoUrl: "/assets/videos/testimonial-2.mp4",
   },
   {
-    name: "Student Testimonial 3",
-    videoUrl: "/assets/videos/video-3.mp4",
+    name: "Beautician Course Graduate",
+    videoUrl: "/assets/videos/testimonial3.mp4",
+  },
+  {
+    name: "English Language Success",
+    videoUrl: "/assets/videos/testimonial4.mp4",
   },
 ];
 
@@ -121,14 +125,46 @@ const moreTestimonials = [
 
 const VocationalTrainingPage = () => {
   const [currentVideo, setCurrentVideo] = useState(0);
+  const [isVideoLoading, setIsVideoLoading] = useState(false);
   const videoRef = useRef(null);
 
   const nextVideo = () => {
+    if (videoRef.current) {
+      videoRef.current.pause();
+    }
     setCurrentVideo((prev) => (prev + 1) % videoTestimonials.length);
   };
 
   const prevVideo = () => {
+    if (videoRef.current) {
+      videoRef.current.pause();
+    }
     setCurrentVideo((prev) => (prev - 1 + videoTestimonials.length) % videoTestimonials.length);
+  };
+
+  const handleVideoChange = (index) => {
+    if (videoRef.current) {
+      videoRef.current.pause();
+    }
+    setCurrentVideo(index);
+  };
+
+  // Force video reload when currentVideo changes
+  useEffect(() => {
+    setIsVideoLoading(true);
+    if (videoRef.current) {
+      videoRef.current.load();
+    }
+    console.log('Current video changed to:', currentVideo, 'URL:', videoTestimonials[currentVideo].videoUrl);
+  }, [currentVideo]);
+
+  const handleVideoLoad = () => {
+    setIsVideoLoading(false);
+  };
+
+  const handleVideoError = () => {
+    setIsVideoLoading(false);
+    console.error('Error loading video:', videoTestimonials[currentVideo].videoUrl);
   };
 
   return (
@@ -225,8 +261,8 @@ const VocationalTrainingPage = () => {
           <div className="container">
             <h2 className="fw-bold text-center mb-5" style={{ color: '#db567c' }}>Our Journey</h2>
             <section className="py-5">
-  <div className="container-fluid px-0">
-    <div className="ratio ratio-16x9">
+          <div className="container-fluid px-0">
+          <div className="ratio ratio-16x9">
       <iframe 
         src="/assets/images/event/vtc.mp4" 
         title="School Journey Video" 
@@ -318,8 +354,24 @@ const VocationalTrainingPage = () => {
               {/* Left Arrow */}
               <button
                 className="btn btn-outline-success me-3"
-                style={{ borderColor: '#db567c', color: '#db567c' }}
+                style={{ 
+                  borderColor: '#db567c', 
+                  color: '#db567c',
+                  transition: 'all 0.3s ease',
+                  minWidth: '50px',
+                  height: '50px',
+                  borderRadius: '50%'
+                }}
                 onClick={prevVideo}
+                onMouseOver={(e) => {
+                  e.target.style.backgroundColor = '#db567c';
+                  e.target.style.color = 'white';
+                }}
+                onMouseOut={(e) => {
+                  e.target.style.backgroundColor = 'transparent';
+                  e.target.style.color = '#db567c';
+                }}
+                aria-label="Previous testimonial"
               >
                 &#8592;
               </button>
@@ -334,25 +386,60 @@ const VocationalTrainingPage = () => {
                   boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
                 }}
               >
-                <video
-                  ref={videoRef}
-                  width="100%"
-                  height="100%"
-                  controls
-                  autoPlay={false}
-                  muted
-                  style={{ objectFit: 'cover' }}
-                >
-                  <source src={videoTestimonials[currentVideo].videoUrl} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                                 <div style={{ position: 'relative' }}>
+                   {isVideoLoading && (
+                     <div style={{
+                       position: 'absolute',
+                       top: '50%',
+                       left: '50%',
+                       transform: 'translate(-50%, -50%)',
+                       zIndex: 10,
+                       color: '#db567c',
+                       fontSize: '14px'
+                     }}>
+                       Loading video...
+                     </div>
+                   )}
+                   <video
+                     key={currentVideo}
+                     ref={videoRef}
+                     width="100%"
+                     height="100%"
+                     controls
+                     autoPlay={false}
+                     muted
+                                           style={{ objectFit: 'cover' }}
+                     onLoadStart={() => setIsVideoLoading(true)}
+                     onCanPlay={() => handleVideoLoad()}
+                     onError={handleVideoError}
+                   >
+                     <source src={videoTestimonials[currentVideo].videoUrl} type="video/mp4" />
+                     Your browser does not support the video tag.
+                   </video>
+                 </div>
               </div>
 
               {/* Right Arrow */}
               <button
                 className="btn btn-outline-success ms-3"
-                style={{ borderColor: '#db567c', color: '#db567c' }}
+                style={{ 
+                  borderColor: '#db567c', 
+                  color: '#db567c',
+                  transition: 'all 0.3s ease',
+                  minWidth: '50px',
+                  height: '50px',
+                  borderRadius: '50%'
+                }}
                 onClick={nextVideo}
+                onMouseOver={(e) => {
+                  e.target.style.backgroundColor = '#db567c';
+                  e.target.style.color = 'white';
+                }}
+                onMouseOut={(e) => {
+                  e.target.style.backgroundColor = 'transparent';
+                  e.target.style.color = '#db567c';
+                }}
+                aria-label="Next testimonial"
               >
                 &#8594;
               </button>
@@ -373,15 +460,23 @@ const VocationalTrainingPage = () => {
                     borderRadius: '50%',
                     padding: '0'
                   }}
-                  onClick={() => setCurrentVideo(index)}
+                  onClick={() => handleVideoChange(index)}
                 />
               ))}
             </div>
 
-            {/* Name */}
-            <div className="mt-4 fw-bold" style={{ color: '#db567c' }}>
-              — {videoTestimonials[currentVideo].name}
-            </div>
+                         {/* Name and Video Counter */}
+             <div className="mt-4">
+               <div className="fw-bold" style={{ color: '#db567c' }}>
+                 — {videoTestimonials[currentVideo].name}
+               </div>
+               <div className="text-muted small mt-1">
+                 {currentVideo + 1} of {videoTestimonials.length} testimonials
+               </div>
+               <div className="text-info small mt-1">
+                 Current: {videoTestimonials[currentVideo].videoUrl}
+               </div>
+             </div>
           </div>
         </section>
 

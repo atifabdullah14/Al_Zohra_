@@ -132,8 +132,7 @@ const DifferenceOne = () => {
                               <Link href='/alzohra-secondary-school'>Secondary School </Link>
                             </h5>
                             <p>
-                            Al Zohra currently teaches more than 250 students from Pre-Nursery to Matric. <br /> It provides a high standard of education ...
-                            </p>
+                            Al-Zohra Secondary School, registered as an English-medium institution from Nursery to Matric, combines elite-standard academics with digital literacy and modern teaching resources. With nominal fees, it ensures that high-quality, future-focused education is within every child’s reach. </p>
                           </div>
                         </div>
                       </div>
