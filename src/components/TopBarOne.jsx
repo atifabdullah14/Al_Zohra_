@@ -93,13 +93,21 @@ const TopBarOne = () => {
                       >
                         <i className="fa-brands fa-facebook-f"></i>
                       </a>
-                      <a
+                      {/* <a
                         href="https://vimeo.com/"
                         target="_blank"
                         rel="noreferrer"
-                        title="in      "
+                        title="vimeo"
                       >
                         <i className="fa-brands fa-vimeo-v"></i>
+                      </a> */}
+                      <a
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                        title="instagram"
+                      >
+                        <i className="fa-brands fa-instagram"></i>
                       </a>
                       <a
                         href="https://x.com/"

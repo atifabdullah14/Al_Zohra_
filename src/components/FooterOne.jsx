@@ -69,12 +69,12 @@ const FooterOne = () => {
                       <i className='fa-brands fa-facebook-f' />
                     </Link>
                     <Link
-                      href='https://vimeo.com'
-                      target='_blank'
-                      aria-label='share us on vimeo'
-                      title='vimeo'
+                       href="https://www.instagram.com/"
+                       target="_blank"
+                       rel="noreferrer"
+                       title="instagram"
                     >
-                      <i className='fa-brands fa-vimeo-v' />
+                        <i className="fa-brands fa-instagram"></i>
                     </Link>
                     <Link
                       href='https://x.com'

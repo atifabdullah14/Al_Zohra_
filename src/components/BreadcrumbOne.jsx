@@ -5,7 +5,7 @@ const BreadcrumbOne = ({ title, bgImage }) => {
   const getBreadcrumbImage = (pageTitle) => {
     const imageMap = {
       // Main Program Pages
-      "Vocational Training Program": "assets/images/banner/banner1.jpg", // Vocational Training page
+      "Vocational Training Program": "assets/images/banner/banner-bg2.jpg", // Vocational Training page
       "Welfare Assistance": "assets/images/banner/banner2.jpg", // Welfare Assistance page  
       "Al Zohra Secondary School": "assets/images/banner/banner3.jpg", // Secondary School page
       

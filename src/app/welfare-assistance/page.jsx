@@ -1,4 +1,4 @@
-import BreadcrumbWelfare from "@/components/BreadcrumbWelfare";
+import BreadcrumbOne from "@/components/BreadcrumbOne";
 import FooterOne from "@/components/FooterOne";
 import HeaderOne from "@/components/HeaderOne";
 import Preloader from "@/components/Preloader";
@@ -30,7 +30,7 @@ const WelfareAssistancePage = () => {
         <CustomCursor />
         <TopBarOne />
         <HeaderOne />
-        <BreadcrumbWelfare title="Welfare Assistance" />
+        <BreadcrumbOne title="Welfare Assistance" />
         {/* Hero/Intro Section */}
         <section className="py-5 bg-white border-bottom">
           <div className="container">
