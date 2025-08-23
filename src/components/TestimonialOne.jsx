@@ -44,38 +44,38 @@ const TestimonialOne = () => {
     {
       id: 1,
       video: "/assets/videos/testimonial-2.mp4",
-      author: "Michel Smith",
-      company: "Cloth Store Inc.",
+      author: "",
+      company: "",
     },
     {
       id: 2,
       video: "/assets/videos/testimonial3.mp4",
-      author: "Ruby Klara",
-      company: "Cloth Store Inc.",
+      author: "",
+      company: "",
     },
     {
       id: 3,
       video: "/assets/videos/testimonial4.mp4",
-      author: "Bishu Kiev",
-      company: "Cloth Store Inc.",
+      author: "",
+      company: "",
     },
     {
       id: 4,
       video: "/assets/videos/video-1.mp4",
-      author: "Sarah Johnson",
-      company: "Community Leader",
+      author: "",
+      company: "",
     },
     {
       id: 5,
       video: "/assets/videos/video-2.mp4",
-      author: "David Wilson",
-      company: "Volunteer Coordinator",
+      author: "",
+      company: "",
     },
     {
       id: 6,
       video: "/assets/videos/video-3.mp4",
-      author: "Emily Brown",
-      company: "Donor Relations",
+      author: "",
+      company: "",
     }
   ];
 
