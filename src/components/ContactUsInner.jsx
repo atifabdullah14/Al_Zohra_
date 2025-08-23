@@ -74,7 +74,7 @@ const ContactUsInner = () => {
                     <h6>Social</h6>
                     <div className='social'>
                       <a
-                        href='https://www.facebook.com/'
+                        href='https://www.facebook.com/AlzohraWelfare'
                         target='_blank'
                         aria-label='share us on facebook'
                         title='facebook'
@@ -83,13 +83,12 @@ const ContactUsInner = () => {
                         <i className='fa-brands fa-facebook-f' />
                       </a>
                       <a
-                        href='https://vimeo.com/'
-                        target='_blank'
-                        aria-label='share us on vimeo'
-                        title='vimeo'
-                        rel='noreferrer'
+                        href="https://www.instagram.com/alzohra.welfare/?hl=en"
+                        target="_blank"
+                        rel="noreferrer"
+                        title="instagram"
                       >
-                        <i className='fa-brands fa-vimeo-v' />
+                      <i className="fa-brands fa-instagram"></i>
                       </a>
                       <a
                         href='https://x.com/'
