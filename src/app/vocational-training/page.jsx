@@ -126,6 +126,7 @@ const moreTestimonials = [
 const VocationalTrainingPage = () => {
   const [currentVideo, setCurrentVideo] = useState(0);
   const [isVideoLoading, setIsVideoLoading] = useState(false);
+  const [isVideoPopupOpen, setIsVideoPopupOpen] = useState(false);
   const videoRef = useRef(null);
 
   const nextVideo = () => {
@@ -147,6 +148,14 @@ const VocationalTrainingPage = () => {
       videoRef.current.pause();
     }
     setCurrentVideo(index);
+  };
+
+  const handleVideoClick = () => {
+    setIsVideoPopupOpen(true);
+  };
+
+  const handleClosePopup = () => {
+    setIsVideoPopupOpen(false);
   };
 
   // Force video reload when currentVideo changes
@@ -200,20 +209,21 @@ const VocationalTrainingPage = () => {
           </div>
         </section>
         {/* Stats Section - fixed layout and color */}
-        <section className="py-5 border-bottom stats-section-alzohra" style={{ backgroundColor: 'rgba(219, 86, 124, 0.1)' }}>
+        <section className="py-5 bg-danger bg-opacity-10 border-bottom">
           <div className="container">
-            <div className="row justify-content-center g-4">
+            <div className="row text-center">
               {stats.map((stat, idx) => (
-                <div className="col-6 col-md-3" key={idx}>
-                  <div className="bg-white rounded shadow p-5 h-100 text-center d-flex flex-column align-items-center justify-content-center stats-card-alzohra">
-                    <div className="stat-number-alzohra mb-4" style={{ color: '#db567c' }}>{stat.value}</div>
-                    <div className="stat-label-alzohra">{stat.label}</div>
+                <div className="col-6 col-md-3 mb-4" key={idx}>
+                  <div className="bg-white rounded shadow p-5 h-100">
+                    <div className="display-5 fw-bold text-danger mb-5">{stat.value}</div>
+                    <div className="fw-semibold text-secondary">{stat.label}</div>
                   </div>
                 </div>
               ))}
             </div>
           </div>
         </section>
+       
         {/* Courses Section with hover effect */}
         {/* <section className="py-5 border-bottom">
           <div className="container">
@@ -346,7 +356,14 @@ const VocationalTrainingPage = () => {
           </div>
         </section>
         {/* Expanded Testimonials Section */}
-        <section className="py-5 bg-white border-bottom">
+        <section 
+          className="py-5 bg-white border-bottom"
+          style={{
+            filter: isVideoPopupOpen ? 'blur(5px)' : 'none',
+            transition: 'filter 0.3s ease',
+            pointerEvents: isVideoPopupOpen ? 'none' : 'auto',
+          }}
+        >
           <div className="container text-center">
             <h2 className="fw-bold mb-5" style={{ color: '#db567c' }}>Success Stories</h2>
 
@@ -384,39 +401,83 @@ const VocationalTrainingPage = () => {
                   borderRadius: '20px',
                   overflow: 'hidden',
                   boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
+                  cursor: 'pointer',
+                  transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                }}
+                onClick={handleVideoClick}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'scale(1.02)';
+                  e.currentTarget.style.boxShadow = '0 8px 30px rgba(0,0,0,0.2)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'scale(1)';
+                  e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
                 }}
               >
-                                 <div style={{ position: 'relative' }}>
-                   {isVideoLoading && (
-                     <div style={{
-                       position: 'absolute',
-                       top: '50%',
-                       left: '50%',
-                       transform: 'translate(-50%, -50%)',
-                       zIndex: 10,
-                       color: '#db567c',
-                       fontSize: '14px'
-                     }}>
-                       Loading video...
-                     </div>
-                   )}
-                   <video
-                     key={currentVideo}
-                     ref={videoRef}
-                     width="100%"
-                     height="100%"
-                     controls
-                     autoPlay={false}
-                     muted
-                                           style={{ objectFit: 'cover' }}
-                     onLoadStart={() => setIsVideoLoading(true)}
-                     onCanPlay={() => handleVideoLoad()}
-                     onError={handleVideoError}
-                   >
-                     <source src={videoTestimonials[currentVideo].videoUrl} type="video/mp4" />
-                     Your browser does not support the video tag.
-                   </video>
-                 </div>
+                <div style={{ position: 'relative' }}>
+                  {isVideoLoading && (
+                    <div style={{
+                      position: 'absolute',
+                      top: '50%',
+                      left: '50%',
+                      transform: 'translate(-50%, -50%)',
+                      zIndex: 10,
+                      color: '#db567c',
+                      fontSize: '14px'
+                    }}>
+                      Loading video...
+                    </div>
+                  )}
+                  <video
+                    key={currentVideo}
+                    ref={videoRef}
+                    width="100%"
+                    height="100%"
+                    controls
+                    autoPlay={false}
+                    muted
+                    style={{ objectFit: 'cover' }}
+                    onLoadStart={() => setIsVideoLoading(true)}
+                    onCanPlay={() => handleVideoLoad()}
+                    onError={handleVideoError}
+                  >
+                    <source src={videoTestimonials[currentVideo].videoUrl} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  {/* Play overlay */}
+                  <div
+                    style={{
+                      position: 'absolute',
+                      top: '50%',
+                      left: '50%',
+                      transform: 'translate(-50%, -50%)',
+                      background: 'rgba(0,0,0,0.7)',
+                      borderRadius: '50%',
+                      width: '60px',
+                      height: '60px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      transition: 'all 0.3s ease',
+                      opacity: 0,
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.opacity = '1';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.opacity = '0';
+                    }}
+                  >
+                    <i 
+                      className='fa-solid fa-play'
+                      style={{
+                        color: 'white',
+                        fontSize: '20px',
+                        marginLeft: '3px',
+                      }}
+                    />
+                  </div>
+                </div>
               </div>
 
               {/* Right Arrow */}
@@ -464,19 +525,6 @@ const VocationalTrainingPage = () => {
                 />
               ))}
             </div>
-
-                         {/* Name and Video Counter */}
-             <div className="mt-4">
-               <div className="fw-bold" style={{ color: '#db567c' }}>
-                 — {videoTestimonials[currentVideo].name}
-               </div>
-               <div className="text-muted small mt-1">
-                 {currentVideo + 1} of {videoTestimonials.length} testimonials
-               </div>
-               <div className="text-info small mt-1">
-                 Current: {videoTestimonials[currentVideo].videoUrl}
-               </div>
-             </div>
           </div>
         </section>
 
@@ -488,6 +536,80 @@ const VocationalTrainingPage = () => {
             <a href="https://wa.me/message/H4XCFQ5TGB5QN1" className="btn btn-success btn-lg shadow" style={{ backgroundColor: '#db567c', borderColor: '#db567c' }}>Contact Us</a>
           </div>
         </section>
+
+        {/* Video Popup Modal */}
+        {isVideoPopupOpen && (
+          <div
+            style={{
+              position: 'fixed',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              backgroundColor: 'rgba(0,0,0,0.9)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              zIndex: 9999,
+              padding: '20px',
+            }}
+            onClick={handleClosePopup}
+          >
+            <div
+              style={{
+                position: 'relative',
+                maxWidth: '90vw',
+                maxHeight: '90vh',
+                width: '600px',
+                height: '800px',
+              }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={handleClosePopup}
+                style={{
+                  position: 'absolute',
+                  top: '-50px',
+                  right: '0',
+                  background: 'none',
+                  border: 'none',
+                  color: 'white',
+                  fontSize: '30px',
+                  cursor: 'pointer',
+                  zIndex: 10000,
+                }}
+              >
+                <i className='fa-solid fa-times' />
+              </button>
+              <video
+                controls
+                autoPlay
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain',
+                  borderRadius: '15px',
+                }}
+              >
+                <source src={videoTestimonials[currentVideo].videoUrl} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div
+                style={{
+                  position: 'absolute',
+                  bottom: '-40px',
+                  left: '0',
+                  right: '0',
+                  textAlign: 'center',
+                  color: 'white',
+                }}
+              >
+                <h4 style={{ margin: '0', fontSize: '18px' }}>{videoTestimonials[currentVideo].name}</h4>
+              </div>
+            </div>
+          </div>
+        )}
+
         <FooterOne />
       </section>
     </AOSWrap>

@@ -1,18 +1,20 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Slider from "react-slick";
 
 const TestimonialOne = () => {
   const sliderRef = useRef(null);
+  const [activeVideo, setActiveVideo] = useState(null);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   const settings = {
     infinite: true,
     speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    autoplay: !isVideoPlaying,
+    autoplaySpeed: 5000,
     pauseOnHover: true,
     arrows: false,
 
@@ -38,12 +40,78 @@ const TestimonialOne = () => {
     ],
   };
 
+  const testimonialVideos = [
+    {
+      id: 1,
+      video: "/assets/videos/testimonial-2.mp4",
+      author: "Michel Smith",
+      company: "Cloth Store Inc.",
+    },
+    {
+      id: 2,
+      video: "/assets/videos/testimonial3.mp4",
+      author: "Ruby Klara",
+      company: "Cloth Store Inc.",
+    },
+    {
+      id: 3,
+      video: "/assets/videos/testimonial4.mp4",
+      author: "Bishu Kiev",
+      company: "Cloth Store Inc.",
+    },
+    {
+      id: 4,
+      video: "/assets/videos/video-1.mp4",
+      author: "Sarah Johnson",
+      company: "Community Leader",
+    },
+    {
+      id: 5,
+      video: "/assets/videos/video-2.mp4",
+      author: "David Wilson",
+      company: "Volunteer Coordinator",
+    },
+    {
+      id: 6,
+      video: "/assets/videos/video-3.mp4",
+      author: "Emily Brown",
+      company: "Donor Relations",
+    }
+  ];
+
+  const handleVideoClick = (video) => {
+    setActiveVideo(video);
+    setIsVideoPlaying(true);
+    if (sliderRef.current) {
+      sliderRef.current.slickPause();
+    }
+  };
+
+  const handleCloseVideo = () => {
+    setActiveVideo(null);
+    setIsVideoPlaying(false);
+    if (sliderRef.current) {
+      sliderRef.current.slickPlay();
+    }
+  };
+
+  const handleVideoEnded = () => {
+    setActiveVideo(null);
+    setIsVideoPlaying(false);
+    if (sliderRef.current) {
+      sliderRef.current.slickPlay();
+    }
+  };
+
   return (
     <>
       <section
         className='testimonial'
         style={{
           backgroundImage: "url(/assets/images/bg-one.png)",
+          filter: isVideoPlaying ? 'blur(5px)' : 'none',
+          transition: 'filter 0.3s ease',
+          pointerEvents: isVideoPlaying ? 'none' : 'auto',
         }}
       >
         <div className='container'>
@@ -59,8 +127,8 @@ const TestimonialOne = () => {
                   Start donating poor people
                 </span>
                 <h2 className='title-animation_inner'>
-                  Our valueable <span>customer</span>
-                  Awesome Feedback
+                  Our valuable <span>customer</span>
+                  Video Testimonials
                 </h2>
               </div>
             </div>
@@ -76,252 +144,90 @@ const TestimonialOne = () => {
                     ref={sliderRef}
                     className='swiper-wrapper'
                   >
-                    <div className='swiper-slide'>
-                      <div className='testimonial__slider-single'>
-                        <div className='review'>
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                        </div>
-                        <div className='content'>
-                          <blockquote>
-                            <q>
-                              Charity is the voluntary act of giving help,
-                              typically in the form of money, time, or
-                              resources, to those in need. Charitable
-                              organizations aim to solve social, environmental,
-                              and economic challenges by addressing issues like
-                              poverty
-                            </q>
-                          </blockquote>
-                        </div>
-                        <div className='author-info'>
-                          <div className='author-thumb'>
-                            <img
-                              src='assets/images/author.png'
-                              alt='Image_inner'
-                            />
+                    {testimonialVideos.map((testimonial) => (
+                      <div key={testimonial.id} className='swiper-slide'>
+                        <div className='testimonial__slider-single'>
+                          <div 
+                            className='video-testimonial'
+                            onClick={() => handleVideoClick(testimonial)}
+                            style={{
+                              cursor: 'pointer',
+                              position: 'relative',
+                              borderRadius: '15px',
+                              overflow: 'hidden',
+                              boxShadow: '0 8px 25px rgba(0,0,0,0.15)',
+                              transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                            }}
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.transform = 'scale(1.02)';
+                              e.currentTarget.style.boxShadow = '0 12px 35px rgba(0,0,0,0.2)';
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.transform = 'scale(1)';
+                              e.currentTarget.style.boxShadow = '0 8px 25px rgba(0,0,0,0.15)';
+                            }}
+                          >
+                            <video
+                              className='testimonial-video'
+                              style={{
+                                width: '100%',
+                                height: '280px',
+                                objectFit: 'cover',
+                                display: 'block',
+                              }}
+                              muted
+                              preload="metadata"
+                            >
+                              <source src={testimonial.video} type="video/mp4" />
+                              Your browser does not support the video tag.
+                            </video>
+                            <div
+                              style={{
+                                position: 'absolute',
+                                top: '50%',
+                                left: '50%',
+                                transform: 'translate(-50%, -50%)',
+                                background: 'rgba(0,0,0,0.7)',
+                                borderRadius: '50%',
+                                width: '80px',
+                                height: '80px',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                transition: 'all 0.3s ease',
+                              }}
+                            >
+                              <i 
+                                className='fa-solid fa-play'
+                                style={{
+                                  color: 'white',
+                                  fontSize: '24px',
+                                  marginLeft: '5px',
+                                }}
+                              />
+                            </div>
+                            <div
+                              style={{
+                                position: 'absolute',
+                                bottom: '0',
+                                left: '0',
+                                right: '0',
+                                background: 'linear-gradient(transparent, rgba(0,0,0,0.8))',
+                                padding: '20px',
+                                color: 'white',
+                              }}
+                            >
+                              <h6 style={{ margin: '0', fontSize: '16px', fontWeight: '600' }}>
+                                {testimonial.author}
+                              </h6>
+                              <p style={{ margin: '5px 0 0 0', fontSize: '14px', opacity: '0.9' }}>
+                                {testimonial.company}
+                              </p>
+                            </div>
                           </div>
-                          <div className='author-content'>
-                            <h6>Michel Smith</h6>
-                            <p>Cloth Store Inc.</p>
-                          </div>
-                        </div>
-                        <div className='quote'>
-                          <img
-                            src='assets/images/quote.png'
-                            alt='Image_inner'
-                          />
                         </div>
                       </div>
-                    </div>
-                    <div className='swiper-slide'>
-                      <div className='testimonial__slider-single'>
-                        <div className='review'>
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                        </div>
-                        <div className='content'>
-                          <blockquote>
-                            <q>
-                              Charity is the voluntary act of giving help,
-                              typically in the form of money, time, or
-                              resources, to those in need. Charitable
-                              organizations aim to solve social, environmental,
-                              and economic challenges by addressing issues like
-                              poverty
-                            </q>
-                          </blockquote>
-                        </div>
-                        <div className='author-info'>
-                          <div className='author-thumb'>
-                            <img
-                              src='assets/images/author.png'
-                              alt='Image_inner'
-                            />
-                          </div>
-                          <div className='author-content'>
-                            <h6>Ruby Klara</h6>
-                            <p>Cloth Store Inc.</p>
-                          </div>
-                        </div>
-                        <div className='quote'>
-                          <img
-                            src='assets/images/quote.png'
-                            alt='Image_inner'
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div className='swiper-slide'>
-                      <div className='testimonial__slider-single'>
-                        <div className='review'>
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                        </div>
-                        <div className='content'>
-                          <blockquote>
-                            <q>
-                              Charity is the voluntary act of giving help,
-                              typically in the form of money, time, or
-                              resources, to those in need. Charitable
-                              organizations aim to solve social, environmental,
-                              and economic challenges by addressing issues like
-                              poverty
-                            </q>
-                          </blockquote>
-                        </div>
-                        <div className='author-info'>
-                          <div className='author-thumb'>
-                            <img
-                              src='assets/images/author.png'
-                              alt='Image_inner'
-                            />
-                          </div>
-                          <div className='author-content'>
-                            <h6>Bishu Kiev</h6>
-                            <p>Cloth Store Inc.</p>
-                          </div>
-                        </div>
-                        <div className='quote'>
-                          <img
-                            src='assets/images/quote.png'
-                            alt='Image_inner'
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div className='swiper-slide'>
-                      <div className='testimonial__slider-single'>
-                        <div className='review'>
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                        </div>
-                        <div className='content'>
-                          <blockquote>
-                            <q>
-                              Charity is the voluntary act of giving help,
-                              typically in the form of money, time, or
-                              resources, to those in need. Charitable
-                              organizations aim to solve social, environmental,
-                              and economic challenges by addressing issues like
-                              poverty
-                            </q>
-                          </blockquote>
-                        </div>
-                        <div className='author-info'>
-                          <div className='author-thumb'>
-                            <img
-                              src='assets/images/author.png'
-                              alt='Image_inner'
-                            />
-                          </div>
-                          <div className='author-content'>
-                            <h6>Michel Smith</h6>
-                            <p>Cloth Store Inc.</p>
-                          </div>
-                        </div>
-                        <div className='quote'>
-                          <img
-                            src='assets/images/quote.png'
-                            alt='Image_inner'
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div className='swiper-slide'>
-                      <div className='testimonial__slider-single'>
-                        <div className='review'>
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                        </div>
-                        <div className='content'>
-                          <blockquote>
-                            <q>
-                              Charity is the voluntary act of giving help,
-                              typically in the form of money, time, or
-                              resources, to those in need. Charitable
-                              organizations aim to solve social, environmental,
-                              and economic challenges by addressing issues like
-                              poverty
-                            </q>
-                          </blockquote>
-                        </div>
-                        <div className='author-info'>
-                          <div className='author-thumb'>
-                            <img
-                              src='assets/images/author.png'
-                              alt='Image_inner'
-                            />
-                          </div>
-                          <div className='author-content'>
-                            <h6>Ruby Klara</h6>
-                            <p>Cloth Store Inc.</p>
-                          </div>
-                        </div>
-                        <div className='quote'>
-                          <img
-                            src='assets/images/quote.png'
-                            alt='Image_inner'
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div className='swiper-slide'>
-                      <div className='testimonial__slider-single'>
-                        <div className='review'>
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                          <i className='icon-star' />
-                        </div>
-                        <div className='content'>
-                          <blockquote>
-                            <q>
-                              Charity is the voluntary act of giving help,
-                              typically in the form of money, time, or
-                              resources, to those in need. Charitable
-                              organizations aim to solve social, environmental,
-                              and economic challenges by addressing issues like
-                              poverty
-                            </q>
-                          </blockquote>
-                        </div>
-                        <div className='author-info'>
-                          <div className='author-thumb'>
-                            <img
-                              src='assets/images/author.png'
-                              alt='Image_inner'
-                            />
-                          </div>
-                          <div className='author-content'>
-                            <h6>Bishu Kiev</h6>
-                            <p>Cloth Store Inc.</p>
-                          </div>
-                        </div>
-                        <div className='quote'>
-                          <img
-                            src='assets/images/quote.png'
-                            alt='Image_inner'
-                          />
-                        </div>
-                      </div>
-                    </div>
+                    ))}
                   </Slider>
                 </div>
               </div>
@@ -361,6 +267,81 @@ const TestimonialOne = () => {
           />
         </div>
       </section>
+
+      {/* Video Popup Modal */}
+      {activeVideo && (
+        <div
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: 'rgba(0,0,0,0.9)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 9999,
+            padding: '20px',
+          }}
+          onClick={handleCloseVideo}
+        >
+          <div
+            style={{
+              position: 'relative',
+              maxWidth: '90vw',
+              maxHeight: '90vh',
+              width: '800px',
+              height: '600px',
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={handleCloseVideo}
+              style={{
+                position: 'absolute',
+                top: '-50px',
+                right: '0',
+                background: 'none',
+                border: 'none',
+                color: 'white',
+                fontSize: '30px',
+                cursor: 'pointer',
+                zIndex: 10000,
+              }}
+            >
+              <i className='fa-solid fa-times' />
+            </button>
+            <video
+              controls
+              autoPlay
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'contain',
+                borderRadius: '10px',
+              }}
+              onEnded={handleVideoEnded}
+            >
+              <source src={activeVideo.video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div
+              style={{
+                position: 'absolute',
+                bottom: '-40px',
+                left: '0',
+                right: '0',
+                textAlign: 'center',
+                color: 'white',
+              }}
+            >
+              <h4 style={{ margin: '0', fontSize: '20px' }}>{activeVideo.author}</h4>
+              <p style={{ margin: '5px 0 0 0', opacity: '0.8' }}>{activeVideo.company}</p>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };

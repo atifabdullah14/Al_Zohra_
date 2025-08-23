@@ -13,6 +13,7 @@ import PartnerOne from "@/components/PartnerOne";
 import Preloader from "@/components/Preloader";
 import TeamOne from "@/components/TeamOne";
 import TestimonialOne from "@/components/TestimonialOne";
+import TestimonialTwo from "@/components/TestimonialTwo";
 import TopBarOne from "@/components/TopBarOne";
 import AOSWrap from "@/helper/AOSWrap";
 import CustomCursor from "@/helper/CustomCursor";
@@ -64,6 +65,7 @@ const page = () => {
 
         {/* TestimonialOne */}
         <TestimonialOne />
+        
 
         {/* CauseSliderTwo */}
         <CauseSliderTwo />

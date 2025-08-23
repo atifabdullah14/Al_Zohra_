@@ -15,9 +15,7 @@ const ContactUsInner = () => {
                 </span>
                 <h2 className='title-animation_inner'>Contact Us</h2>
                 <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  inventore
+                We’re here to help and answer any questions you might have. Feel free to reach out to us via phone or visit us at our location.
                 </p>
               </div>
               <div className='contact-main__inner cta'>
@@ -29,11 +27,11 @@ const ContactUsInner = () => {
                     <h6>Location</h6>
                     <p>
                       <a
-                        href='https://maps.app.goo.gl/Gr9pTNqz5FRNrjQw8'
+                        href='https://www.google.com/maps/place/Al+Zohra+Welfare+Association/@24.8324188,67.0447765,17z/data=!3m1!4b1!4m6!3m5!1s0x3eb33c352507bd75:0x6b7775ef526e450c!8m2!3d24.832414!4d67.0473514!16s%2Fg%2F11g9mzcxz6?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D'
                         target='_blank'
                         rel='noreferrer'
                       >
-                        55 Main street, 2nd block, Melbourne, Australia
+                        No: 211 75600, 1 Jami Commercial Street 11, Delhi Colony, Karachi, 75500
                       </a>
                     </p>
                   </div>
@@ -45,10 +43,10 @@ const ContactUsInner = () => {
                   <div className='content'>
                     <h6>Phone</h6>
                     <p>
-                      <a href='tel:2305-587-3407'>+1 (368) 567 89 54 </a>
+                      <a href='tel:(021) 35156241'> Phone : (021) 35156241 </a>
                     </p>
                     <p>
-                      <a href='tel:2305-587-3407'>+236 (456) 896 22</a>
+                      <a href='tel:+92 320 1431143'>Whatsapp : +92 320 1431143</a>
                     </p>
                   </div>
                 </div>
@@ -59,11 +57,11 @@ const ContactUsInner = () => {
                   <div className='content'>
                     <h6>Email</h6>
                     <p>
-                      <a href='mailto:support@example.com'>example@email.com</a>
+                      <a href='mailto:support@example.com'>al_zohra_association@yahoo.com</a>
                     </p>
                     <p>
                       <a href='mailto:support@example.com'>
-                        charifund@email.com
+                      al_zohra_association@yahoo.com
                       </a>
                     </p>
                   </div>
@@ -116,7 +114,7 @@ const ContactUsInner = () => {
                 </div>
               </div>
               <div className='contact-main__thumb cta'>
-                <img src='assets/images/contact-thumb.png' alt='Image_inner' />
+                <img src='assets/images/banner/banner-12.jpg' alt='Image_inner' />
               </div>
             </div>
           </div>

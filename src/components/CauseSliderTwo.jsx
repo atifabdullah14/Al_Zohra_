@@ -98,14 +98,14 @@ const CauseSliderTwo = () => {
             </Slider>
 
             {/* Content Slider */}
-            <Slider {...contentSettings} className='cause-two__content-slider'>
+            {/* <Slider {...contentSettings} className='cause-two__content-slider'>
               {texts.map((text, index) => (
                 <div key={index} className='cause-content'>
                   <h4></h4>
                   <p>{text}</p>
                 </div>
               ))}
-            </Slider>
+            </Slider> */}
           </div>
         </div>
       </section>
