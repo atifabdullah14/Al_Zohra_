@@ -118,7 +118,7 @@ const TopBarOne = () => {
                         <i className="fa-brands fa-twitter"></i>
                       </a>
                       <a
-                        href="https://www.linkedin.com/"
+                        href="https://www.linkedin.com/company/al-zohra-welfare-association"
                         target="_blank"
                         rel="noreferrer"
                         title="linkedin"

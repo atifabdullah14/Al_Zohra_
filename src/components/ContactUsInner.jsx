@@ -100,7 +100,7 @@ const ContactUsInner = () => {
                         <i className='fa-brands fa-twitter' />
                       </a>
                       <a
-                        href='https://www.linkedin.com/'
+                        href='https://www.linkedin.com/company/al-zohra-welfare-association'
                         target='_blank'
                         aria-label='share us on linkedin'
                         title='linkedin'
