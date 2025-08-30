@@ -10,6 +10,8 @@ import FooterOne from "@/components/FooterOne";
 import HeaderOne from "@/components/HeaderOne";
 import HelpOne from "@/components/HelpOne";
 import PartnerOne from "@/components/PartnerOne";
+import ImageMarquee from "@/components/ImageMarquee";
+import ImageMarqueeTwo from "@/components/ImageMarqueeTwo";
 import Preloader from "@/components/Preloader";
 import TeamOne from "@/components/TeamOne";
 import TestimonialOne from "@/components/TestimonialOne";
@@ -45,11 +47,18 @@ const page = () => {
         {/* PartnerOne */}
         {/* <PartnerOne /> */}
 
+      
+
         {/* DifferenceOne */}
-        <DifferenceOne />
+        {/* <DifferenceOne /> */}
 
         {/* HelpOne */}
         <HelpOne />
+          {/* ImageMarquee */}
+          <ImageMarquee />
+
+{/* ImageMarqueeTwo */}
+<ImageMarqueeTwo />
 
         {/* CauseOne */}
         <CauseOne />

@@ -130,14 +130,15 @@ const HeaderOne = () => {
                         >
                           <Link href='#' aria-label='Programs' className='navbar__dropdown-label dropdown-label-alter'>Programs</Link>
                           <ul className='navbar__sub-menu'>
-                            <li className={pathname === "/vocational-training" ? "active" : ""}>
-                              <Link href='/vocational-training'>Vocational Training</Link>
-                            </li>
+                           
                             <li className={pathname === "/welfare-assistance" ? "active" : ""}>
                               <Link href='/welfare-assistance'>Welfare Assistance</Link>
                             </li>
                             <li className={pathname === "/alzohra-secondary-school" ? "active" : ""}>
                               <Link href='/alzohra-secondary-school'>Alzohra <span>Secondary</span>  <span>School</span> </Link>
+                            </li>
+                            <li className={pathname === "/vocational-training" ? "active" : ""}>
+                              <Link href='/vocational-training'>Vocational Training</Link>
                             </li>
                           </ul>
                         </li>
@@ -156,9 +157,9 @@ const HeaderOne = () => {
                             <li className={pathname === "/annual-reports" ? "active" : ""}>
                               <Link href='/annual-reports'>Annual Reports</Link>
                             </li>
-                            <li className={pathname === "/media-and-news" ? "active" : ""}>
+                            {/* <li className={pathname === "/media-and-news" ? "active" : ""}>
                               <Link href='/media-and-news'>Media & News</Link>
-                            </li>
+                            </li> */}
                             {/* <li className={pathname === "/events-workshops" ? "active" : ""}>
                               <Link href='/events-workshops'>Events & Workshops</Link>
                             </li> */}
@@ -194,11 +195,11 @@ const HeaderOne = () => {
                             
                           ].includes(pathname) ? "active" : ""}`}
                         >
-                          <Link href='/donate-us' aria-label='Donate' className='navbar__dropdown-label dropdown-label-alter'>Donate</Link>
-                          <ul className='navbar__sub-menu'>
-                            <li className={pathname === "/zakat-sadqah" ? "active" : ""}>
+                          <Link href='/donate-us' aria-label='Donate'>Donate</Link>
+                          <ul className='navbar__sddub-menu'>
+                            {/* <li className={pathname === "/zakat-sadqah" ? "active" : ""}>
                               <Link href='/zakat-sadqah'>Zakat - Sadaqah</Link>
-                            </li>
+                            </li> */}
 
                           </ul>
                         </li>

@@ -51,7 +51,7 @@ const AlZohraSecondarySchoolPage = () => {
         <CustomCursor />
         <TopBarOne />
         <HeaderOne />
-        <BreadcrumbOne title="Al Zohra Secondary School" />
+        <BreadcrumbOne title="Secondary School" />
         {/* Hero/Intro Section */}
         <section className="py-5 bg-white border-bottom">
           <div className="container">

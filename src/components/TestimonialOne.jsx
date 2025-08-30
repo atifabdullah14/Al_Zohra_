@@ -43,37 +43,37 @@ const TestimonialOne = () => {
   const testimonialVideos = [
     {
       id: 1,
-      video: "/assets/videos/testimonial-2.mp4",
+      video: "/assets/videos/home-1.mp4",
       author: "",
       company: "",
     },
     {
       id: 2,
-      video: "/assets/videos/testimonial3.mp4",
+      video: "/assets/videos/home-2.mp4",
       author: "",
       company: "",
     },
     {
       id: 3,
-      video: "/assets/videos/testimonial4.mp4",
+      video: "/assets/videos/home-3.mp4",
       author: "",
       company: "",
     },
     {
       id: 4,
-      video: "/assets/videos/video-1.mp4",
+      video: "/assets/videos/home-4.mp4",
       author: "",
       company: "",
     },
     {
       id: 5,
-      video: "/assets/videos/video-2.mp4",
+      video: "/assets/videos/home-1.mp4",
       author: "",
       company: "",
     },
     {
       id: 6,
-      video: "/assets/videos/video-3.mp4",
+      video: "/assets/videos/home-2.mp4",
       author: "",
       company: "",
     }

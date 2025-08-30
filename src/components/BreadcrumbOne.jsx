@@ -5,19 +5,19 @@ const BreadcrumbOne = ({ title, bgImage }) => {
   const getBreadcrumbImage = (pageTitle) => {
     const imageMap = {
       // Main Program Pages
-      "Vocational Training Program": "assets/images/banner/banner-bg2.jpg", // Vocational Training page
-      "Welfare Assistance": "assets/images/banner/banner2.jpg", // Welfare Assistance page  
-      "Al Zohra Secondary School": "assets/images/banner/banner3.jpg", // Secondary School page
+      "Vocational Training Program": "assets/images/banner/s.jpg", // Vocational Training page
+      "Welfare Assistance": "assets/images/banner/nighat.jpg", // Welfare Assistance page  
+      "AlZohra Secondary School":"assets/images/banner/nighat.jpg", // Secondary School page
       
       // About & Story Pages
       "About Us": "assets/images/banner/banner4.jpg", // About Us page
       "Our Story": "assets/images/banner/banner5.jpg", // Our Story page
       "Our Founder": "assets/images/banner/banner6.jpg", // Our Founder page
       
-      // Team & People Pages
-      "Our Team": "assets/images/banner/banner-1.jpg", // Our Team page
-      "Team Details": "assets/images/banner/banner-2.jpg", // Team Details page
-      "Become A Volunteer": "assets/images/banner/banner-3.jpg", // Become Volunteer page
+      // // Team & People Pages
+      // "Our Team": "assets/images/banner/banner-1.jpg", // Our Team page
+      // "Team Details": "assets/images/banner/banner-2.jpg", // Team Details page
+      // "Become A Volunteer": "assets/images/banner/nighat.jpg", // Become Volunteer page
       
       // Causes & Programs Pages
       "Our Causes": "assets/images/banner/banner-12.jpg", // Our Causes page
@@ -25,33 +25,33 @@ const BreadcrumbOne = ({ title, bgImage }) => {
       
       // Donation & Support Pages
       "Donate Us": "assets/images/banner/banner-bg1.jpg", // Donate Us page
-      "One-Time Donation": "assets/images/banner/banner-bg2.jpg", // One-Time Donation page
-      "Zakat & Sadqah": "assets/images/banner/banner-bgs.jpg", // Zakat & Sadqah page
-      "Sponsor a Child": "assets/images/banner/banner-one-bg.png", // Sponsor a Child page
-      "Partner With Us": "assets/images/banner/banner-two-bg.jpeg", // Partner With Us page
+      // "One-Time Donation": "assets/images/banner/banner-bg2.jpg", // One-Time Donation page
+      // "Zakat & Sadqah": "assets/images/banner/banner-bgs.jpg", // Zakat & Sadqah page
+      // "Sponsor a Child": "assets/images/banner/banner-one-bg.png", // Sponsor a Child page
+      // "Partner With Us": "assets/images/banner/banner-two-bg.jpeg", // Partner With Us page
       
-      // Events & Activities Pages
-      "Our Events": "assets/images/banner/banner-two-bg.png", // Our Events page
-      "Events & Workshops": "assets/images/banner/banner-three-bg.png", // Events & Workshops page
-      "Event Details": "assets/images/banner/banner-four-thumb.png", // Event Details page
+      // // Events & Activities Pages
+      // "Our Events": "assets/images/banner/banner-two-bg.png", // Our Events page
+      // "Events & Workshops": "assets/images/banner/banner-three-bg.png", // Events & Workshops page
+      // "Event Details": "assets/images/banner/banner-four-thumb.png", // Event Details page
       
-      // News & Media Pages
-      "Latest News": "assets/images/banner/banner-31.jpg", // Latest News page
-      "Blog Details": "assets/images/banner/banner-bg.png", // Blog Details page
-      "Media & News": "assets/images/banner/banner-one-shape.png", // Media & News page
+      // // News & Media Pages
+      // "Latest News": "assets/images/banner/banner-31.jpg", // Latest News page
+      // "Blog Details": "assets/images/banner/banner-bg.png", // Blog Details page
+      // "Media & News": "assets/images/banner/banner-one-shape.png", // Media & News page
       
-      // Legal & Information Pages
-      "Legal & Certifications": "assets/images/banner/banner-two-shape.png", // Legal & Certifications page
-      "Annual Reports": "assets/images/banner/banner-bg2.jpg", // Annual Reports page
-      "Terms and Conditions": "assets/images/banner/banner-bg.jpg", // Terms and Conditions page
-      "Frequently Asked Questions": "assets/images/banner/banner-bg1.jpg", // FAQ page
+      // // Legal & Information Pages
+      // "Legal & Certifications": "assets/images/banner/banner-two-shape.png", // Legal & Certifications page
+      // "Annual Reports": "assets/images/banner/banner-bg2.jpg", // Annual Reports page
+      // "Terms and Conditions": "assets/images/banner/banner-bg.jpg", // Terms and Conditions page
+      // "Frequently Asked Questions": "assets/images/banner/banner-bg1.jpg", // FAQ page
       
       // Contact & Shop Pages
       "Contact Us": "assets/images/banner/banner-bg2.jpg", // Contact Us page
-      "Our Shop": "assets/images/banner/banner-bg.jpg", // Our Shop page
-      "Product Details": "assets/images/banner/banner-bg1.jpg", // Product Details page
-      "View Cart": "assets/images/banner/banner-bg2.jpg", // View Cart page
-      "Checkout": "assets/images/banner/banner-bg.jpg", // Checkout page
+      // "Our Shop": "assets/images/banner/banner-bg.jpg", // Our Shop page
+      // "Product Details": "assets/images/banner/banner-bg1.jpg", // Product Details page
+      // "View Cart": "assets/images/banner/banner-bg2.jpg", // View Cart page
+      // "Checkout": "assets/images/banner/banner-bg.jpg", // Checkout page
     };
     
     return imageMap[pageTitle] || "assets/images/banner/banner-bg2.jpg"; // Default fallback image

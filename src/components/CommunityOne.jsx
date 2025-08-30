@@ -20,7 +20,7 @@ const CommunityOne = () => {
                   Start donating poor people
                 </span>
                 <h2 className='title-animation_inner'>
-                  Join The <span>Community</span> To Give Education For Children
+                  Join Us in providing<span>Eduction</span>  For Children
                 </h2>
               </div>
             </div>
@@ -164,7 +164,7 @@ const CommunityOne = () => {
         </div>
         <div className='community-bg'>
           <img
-            src='/assets/images/community/community-bg.jpg'
+            src='/assets/images/community/comsmunity-bg.jpg'
             alt='Image_inner'
           />
         </div>

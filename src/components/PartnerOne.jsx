@@ -4,9 +4,9 @@ import Slider from "react-slick";
 const PartnerOne = () => {
   const settings = {
     infinite: true,
-    speed: 1000,
+    speed: 100,
     slidesToScroll: 1,
-    slidesToShow: 5,
+    slidesToShow: 4,
     autoplay: true,
     autoplaySpeed: 2000,
     pauseOnHover: true,
@@ -50,7 +50,7 @@ const PartnerOne = () => {
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
                     <img
-                      src='/assets/images/sponsor/one.png'
+                      src='/assets/images/sponsor/1.png'
                       alt='Image_inner'
                     />
                   </div>
@@ -58,7 +58,7 @@ const PartnerOne = () => {
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
                     <img
-                      src='/assets/images/sponsor/two.png'
+                      src='/assets/images/sponsor/3.png'
                       alt='Image_inner'
                     />
                   </div>
@@ -66,7 +66,7 @@ const PartnerOne = () => {
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
                     <img
-                      src='/assets/images/sponsor/three.png'
+                      src='/assets/images/sponsor/2.png'
                       alt='Image_inner'
                     />
                   </div>
@@ -74,7 +74,7 @@ const PartnerOne = () => {
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
                     <img
-                      src='/assets/images/sponsor/four.png'
+                      src='/assets/images/sponsor/33.png'
                       alt='Image_inner'
                     />
                   </div>
@@ -82,7 +82,7 @@ const PartnerOne = () => {
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
                     <img
-                      src='/assets/images/sponsor/five.png'
+                      src='/assets/images/sponsor/3.png'
                       alt='Image_inner'
                     />
                   </div>
@@ -90,7 +90,7 @@ const PartnerOne = () => {
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
                     <img
-                      src='/assets/images/sponsor/one.png'
+                      src='/assets/images/sponsor/4.png'
                       alt='Image_inner'
                     />
                   </div>
@@ -98,7 +98,7 @@ const PartnerOne = () => {
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
                     <img
-                      src='/assets/images/sponsor/two.png'
+                      src='/assets/images/sponsor/1.png'
                       alt='Image_inner'
                     />
                   </div>
@@ -106,7 +106,7 @@ const PartnerOne = () => {
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
                     <img
-                      src='/assets/images/sponsor/three.png'
+                      src='/assets/images/sponsor/2.png'
                       alt='Image_inner'
                     />
                   </div>
@@ -114,7 +114,7 @@ const PartnerOne = () => {
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
                     <img
-                      src='/assets/images/sponsor/four.png'
+                      src='/assets/images/sponsor/3.png'
                       alt='Image_inner'
                     />
                   </div>
@@ -122,7 +122,7 @@ const PartnerOne = () => {
                 <div className='swiper-slide'>
                   <div className='partner__slider-single'>
                     <img
-                      src='/assets/images/sponsor/five.png'
+                      src='/assets/images/sponsor/4.png'
                       alt='Image_inner'
                     />
                   </div>

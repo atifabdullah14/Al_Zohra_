@@ -122,24 +122,27 @@ const CauseOne = () => {
                         <div className='content'>
                           <h6>
                             <Link href='/cause-details'>
-                              Empower Women with Skills
+                            A pack of ration (Zakat / Non-Zakat)
+
                             </Link>
                           </h6>
                           <p>
-                            Help women gain practical skills through stitching, embroidery, and IT training to achieve financial independence.
+                          Provide a family with food security and ease their monthly burden.
+
+
                           </p>
                         </div>
                         <div className='cause__slider-cta'>
                           <div className='cause__progress progress-bar-single'>
                             {/* ProgressBar */}
-                            <ProgressBar percent={85} />
+                            {/* <ProgressBar percent={85} /> */}
                             {/* ProgressBar */}
                             <div className='cause-progress__goal'>
                               <p>
-                                Raised: <span className='raised'>8500Rs</span>
+                                {/* Amount: <span className='raised'>8500Rs</span> */}
                               </p>
                               <p>
-                                Goal: <span className='goal'>1,0000Rs</span>
+                                Amount: <span className='goal'>5500-7000 </span>
                               </p>
                             </div>
                           </div>
@@ -163,7 +166,7 @@ const CauseOne = () => {
                         <div className='thumb'>
                           <Link href='/cause-details'>
                             <img
-                              src='/assets/images/cause/two.jpg'
+                              src='/assets/images/cause/two.jpeg'
                               alt='Image_inner'
                             />
                           </Link>
@@ -174,128 +177,25 @@ const CauseOne = () => {
                         <div className='content'>
                           <h6>
                             <Link href='/cause-details'>
-                            Support Youth for Jobs
-                            </Link>
-                          </h6>
-                          <p>
-                          Provide technical training to unemployed youth to build their careers and secure stable livelihoods.
-                          </p>
-                        </div>
-                        <div className='cause__slider-cta'>
-                          <div className='cause__progress progress-bar-single'>
-                            {/* ProgressBar */}
-                            <ProgressBar percent={90} />
-                            {/* ProgressBar */}
-                            <div className='cause-progress__goal'>
-                              <p>
-                                Raised: <span className='raised'>8500Rs</span>
-                              </p>
-                              <p>
-                                Goal: <span className='goal'>1,0000Rs</span>
-                              </p>
-                            </div>
-                          </div>
-                          <div className='cause__cta'>
-                            <Link
-                              href='/donate-us'
-                              aria-label='donate now'
-                              title='donate now'
-                              className='btn--secondary'
-                            >
-                              Donate Now
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='swiper-slide'>
-                    <div className='cause__slider-inner'>
-                      <div className='cause__slider-single'>
-                        <div className='thumb'>
-                          <Link href='/cause-details'>
-                            <img
-                              src='/assets/images/cause/three.jpg'
-                              alt='Image_inner'
-                            />
-                          </Link>
-                          <div className='tag'>
-                            <Link href='/our-causes'>Education</Link>
-                          </div>
-                        </div>
-                        <div className='content'>
-                          <h6>
-                            <Link href='/cause-details'>Educate a Child Today</Link>
-                          </h6>
-                          <p>
-                          Support a child’s schooling by covering books, uniforms, fees, and a safe learning environment.
+                            Sponsor a student (monthly or yearly basis)
 
-
-                          </p>
-                        </div>
-                        <div className='cause__slider-cta'>
-                          <div className='cause__progress progress-bar-single'>
-                            {/* ProgressBar */}
-                            <ProgressBar percent={75} />
-                            {/* ProgressBar */}
-                            <div className='cause-progress__goal'>
-                              <p>
-                                Raised: <span className='raised'>8500Rs</span>
-                              </p>
-                              <p>
-                                Goal: <span className='goal'>1,0000Rs</span>
-                              </p>
-                            </div>
-                          </div>
-                          <div className='cause__cta'>
-                            <Link
-                              href='/donate-us'
-                              aria-label='donate now'
-                              title='donate now'
-                              className='btn--secondary'
-                            >
-                              Donate Now
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='swiper-slide'>
-                    <div className='cause__slider-inner'>
-                      <div className='cause__slider-single'>
-                        <div className='thumb'>
-                          <Link href='/cause-details'>
-                            <img
-                              src='/assets/images/cause/four.jpeg'
-                              alt='Image_inner'
-                            />
-                          </Link>
-                          <div className='tag'>
-                            <Link href='/our-causes'>Education</Link>
-                          </div>
-                        </div>
-                        <div className='content'>
-                          <h6>
-                            <Link href='/cause-details'>
-                            Build Bright Futures
                             </Link>
                           </h6>
                           <p>
-                          Help us construct and maintain schools to provide accessible education in underserved areas
+                          Give a child the gift of education and a brighter future.
                           </p>
                         </div>
                         <div className='cause__slider-cta'>
                           <div className='cause__progress progress-bar-single'>
                             {/* ProgressBar */}
-                            <ProgressBar percent={65} />
+                            {/* <ProgressBar percent={90} /> */}
                             {/* ProgressBar */}
                             <div className='cause-progress__goal'>
                               <p>
-                                Raised: <span className='raised'> 8500Rs</span>
+                                {/* Raised: <span className='raised'>8500Rs</span> */}
                               </p>
                               <p>
-                                Goal: <span className='goal'>1,0000Rs</span>
+                                Amount: <span className='goal'>2000/24000</span>
                               </p>
                             </div>
                           </div>
@@ -324,132 +224,31 @@ const CauseOne = () => {
                             />
                           </Link>
                           <div className='tag'>
-                            <Link href='/our-causes'>Welfare</Link>
+                            <Link href='/our-causes'>Education</Link>
                           </div>
                         </div>
                         <div className='content'>
                           <h6>
-                            <Link href='/cause-details'>
-                            Feed a Family
+                            <Link href='/cause-details'>Sponsor a vocational course
                             </Link>
                           </h6>
                           <p>
-                          Donate monthly food packs to needy families and fight hunger within our community.
+                          Help women and youth gain skills to earn with dignity.
+
+
                           </p>
                         </div>
                         <div className='cause__slider-cta'>
                           <div className='cause__progress progress-bar-single'>
                             {/* ProgressBar */}
-                            <ProgressBar percent={85} />
+                            {/* <ProgressBar percent={75} /> */}
                             {/* ProgressBar */}
                             <div className='cause-progress__goal'>
                               <p>
-                                Raised: <span className='raised'>8500Rs</span>
+                                {/* Raised: <span className='raised'>8500Rs</span> */}
                               </p>
                               <p>
-                                Goal: <span className='goal'>1,0000Rs</span>
-                              </p>
-                            </div>
-                          </div>
-                          <div className='cause__cta'>
-                            <Link
-                              href='/donate-us'
-                              aria-label='donate now'
-                              title='donate now'
-                              className='btn--secondary'
-                            >
-                              Donate Now
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='swiper-slide'>
-                    <div className='cause__slider-inner'>
-                      <div className='cause__slider-single'>
-                        <div className='thumb'>
-                          <Link href='/cause-details'>
-                            <img
-                              src='/assets/images/cause/six.jpg'
-                              alt='Image_inner'
-                            />
-                          </Link>
-                          <div className='tag'>
-                            <Link href='/our-causes'> Ration Distribution</Link>
-                          </div>
-                        </div>
-                        <div className='content'>
-                          <h6>
-                            <Link href='/cause-details'>
-                            Food & Ration Support
-                            </Link>
-                          </h6>
-                          <p>
-                          Provide essential food items to families struggling to make ends meet.
-                          </p>
-                        </div>
-                        <div className='cause__slider-cta'>
-                          <div className='cause__progress progress-bar-single'>
-                            {/* ProgressBar */}
-                            <ProgressBar percent={90} />
-                            {/* ProgressBar */}
-                            <div className='cause-progress__goal'>
-                              <p>
-                                Raised: <span className='raised'>8500Rs</span>
-                              </p>
-                              <p>
-                                Goal: <span className='goal'>1,0000Rs</span>
-                              </p>
-                            </div>
-                          </div>
-                          <div className='cause__cta'>
-                            <Link
-                              href='/donate-us'
-                              aria-label='donate now'
-                              title='donate now'
-                              className='btn--secondary'
-                            >
-                              Donate Now
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='swiper-slide'>
-                    <div className='cause__slider-inner'>
-                      <div className='cause__slider-single'>
-                        <div className='thumb'>
-                          <Link href='/cause-details'>
-                            <img
-                              src='/assets/images/cause/seven.jpg'
-                              alt='Image_inner'
-                            />
-                          </Link>
-                          <div className='tag'>
-                            <Link href='/our-causes'> Sponsor a Student</Link>
-                          </div>
-                        </div>
-                        <div className='content'>
-                          <h6>
-                            <Link href='/cause-details'>Equipping Students with School Essentials</Link>
-                          </h6>
-                          <p>
-                          We distribute school kits including bags, notebooks, and stationery to help kids succeed in school.
-                          </p>
-                        </div>
-                        <div className='cause__slider-cta'>
-                          <div className='cause__progress progress-bar-single'>
-                            {/* ProgressBar */}
-                            <ProgressBar percent={75} />
-                            {/* ProgressBar */}
-                            <div className='cause-progress__goal'>
-                              <p>
-                                Raised: <span className='raised'>8500Rs</span>
-                              </p>
-                              <p>
-                                Goal: <span className='goal'>1,0000Rs</span>
+                                Amount: <span className='goal'>3500-4500</span>
                               </p>
                             </div>
                           </div>
@@ -478,30 +277,238 @@ const CauseOne = () => {
                             />
                           </Link>
                           <div className='tag'>
+                            <Link href='/our-causes'>Education</Link>
+                          </div>
+                        </div>
+                        <div className='content'>
+                          <h6>
+                            <Link href='/cause-details'>
+                            Sponsor a wedding for a needy girl
+
+                            </Link>
+                          </h6>
+                          <p>
+                          Make a girl’s special day possible and support her new journey.                          </p>
+                        </div>
+                        <div className='cause__slider-cta'>
+                          <div className='cause__progress progress-bar-single'>
+                            {/* ProgressBar */}
+                            {/* <ProgressBar percent={65} /> */}
+                            {/* ProgressBar */}
+                            <div className='cause-progress__goal'>
+                              <p>
+                                {/* Raised: <span className='raised'> 8500Rs</span> */}
+                              </p>
+                              <p>
+                                Goal: <span className='goal'>25000</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div className='cause__cta'>
+                            <Link
+                              href='/donate-us'
+                              aria-label='donate now'
+                              title='donate now'
+                              className='btn--secondary'
+                            >
+                              Donate Now
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='swiper-slide'>
+                    <div className='cause__slider-inner'>
+                      <div className='cause__slider-single'>
+                        <div className='thumb'>
+                          <Link href='/cause-details'>
+                            <img
+                              src='/assets/images/cause/gym.jpg'
+                              alt='Image_inner'
+                            />
+                          </Link>
+                          <div className='tag'>
+                            <Link href='/our-causes'>Welfare</Link>
+                          </div>
+                        </div>
+                        <div className='content'>
+                          <h6>
+                            <Link href='/cause-details'>
+                            gym , sewing machines, beautician kits, etc.  
+
+                            </Link>
+                          </h6>
+                          <p>
+                          Give the gift of livelihood through practical tools.
+                          </p>
+                        </div>
+                        <div className='cause__slider-cta'>
+                          <div className='cause__progress progress-bar-single'>
+                            {/* ProgressBar */}
+                            {/* <ProgressBar percent={85} /> */}
+                            {/* ProgressBar */}
+                            <div className='cause-progress__goal'>
+                              <p>
+                                {/* Raised: <span className='raised'>8500Rs</span> */}
+                              </p>
+                              <p>
+                                Amount: <span className='goal'>11000-150000</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div className='cause__cta'>
+                            <Link
+                              href='/donate-us'
+                              aria-label='donate now'
+                              title='donate now'
+                              className='btn--secondary'
+                            >
+                              Donate Now
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='swiper-slide'>
+                    <div className='cause__slider-inner'>
+                      <div className='cause__slider-single'>
+                        <div className='thumb'>
+                          <Link href='/cause-details'>
+                            <img
+                              src='/assets/images/cause/four.jpg'
+                              alt='Image_inner'
+                            />
+                          </Link>
+                          <div className='tag'>
+                            <Link href='/our-causes'> Ration Distribution</Link>
+                          </div>
+                        </div>
+                        <div className='content'>
+                          <h6>
+                            <Link href='/cause-details'>
+                            Sponsor an instructor/Teacher
+
+                            </Link>
+                          </h6>
+                          <p>
+                          “Equip students with tools they need to learn and excel.
+                          </p>
+                        </div>
+                        <div className='cause__slider-cta'>
+                          <div className='cause__progress progress-bar-single'>
+                            {/* ProgressBar */}
+                            {/* <ProgressBar percent={90} /> */}
+                            {/* ProgressBar */}
+                            <div className='cause-progress__goal'>
+                              <p>
+                                {/* Raised: <span className='raised'>8500Rs</span> */}
+                              </p>
+                              <p>
+                                Amount: <span className='goal'>1000-35000</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div className='cause__cta'>
+                            <Link
+                              href='/donate-us'
+                              aria-label='donate now'
+                              title='donate now'
+                              className='btn--secondary'
+                            >
+                              Donate Now
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='swiper-slide'>
+                    <div className='cause__slider-inner'>
+                      <div className='cause__slider-single'>
+                        <div className='thumb'>
+                          <Link href='/cause-details'>
+                            <img
+                              src='/assets/images/cause/bakra.webp'
+                              alt='Image_inner'
+                            />
+                          </Link>
+                          <div className='tag'>
+                            <Link href='/our-causes'> Sadqa</Link>
+                          </div>
+                        </div>
+                        <div className='content'>
+                          <h6>
+                            <Link href='/cause-details'>Sadqa/Non-Zakat items , Bakra, Biryani, Chicken, etc.</Link>
+                          </h6>
+                          <p>
+                          Share your blessings by feeding the underprivileged.
+                          </p>
+                        </div>
+                        <div className='cause__slider-cta'>
+                          <div className='cause__progress progress-bar-single'>
+                            {/* ProgressBar */}
+                            {/* <ProgressBar percent={75} /> */}
+                            {/* ProgressBar */}
+                            <div className='cause-progress__goal'>
+                              <p>
+                                {/* Raised: <span className='raised'>8500Rs</span> */}
+                              </p>
+                              <p>
+                                Amount: <span className='goal'>500-20000</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div className='cause__cta'>
+                            <Link
+                              href='/donate-us'
+                              aria-label='donate now'
+                              title='donate now'
+                              className='btn--secondary'
+                            >
+                              Donate Now
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='swiper-slide'>
+                    <div className='cause__slider-inner'>
+                      <div className='cause__slider-single'>
+                        <div className='thumb'>
+                          <Link href='/cause-details'>
+                            <img
+                              src='/assets/images/cause/cause-bg.jpeg'
+                              alt='Image_inner'
+                            />
+                          </Link>
+                          <div className='tag'>
                             <Link href='/our-causes'>  Eid Welfare</Link>
                           </div>
                         </div>
                         <div className='content'>
                           <h6>
                             <Link href='/cause-details'>
-                            Spreading Joy with Eid Gift Packs
+                            Sponsor stationary or essential items
                             </Link>
                           </h6>
                           <p>
-                          We spread smiles by gifting clothes, shoes, and essentials to children during Eid
+                          (Computer,science lab equipment )equip students with tools they need to learn and execl.
                           </p>
                         </div>
                         <div className='cause__slider-cta'>
                           <div className='cause__progress progress-bar-single'>
                             {/* ProgressBar */}
-                            <ProgressBar percent={65} />
+                            {/* <ProgressBar percent={65} /> */}
                             {/* ProgressBar */}
                             <div className='cause-progress__goal'>
                               <p>
-                                Raised: <span className='raised'>8500Rs</span>
+                                {/* Raised: <span className='raised'>8500Rs</span> */}
                               </p>
                               <p>
-                                Goal: <span className='goal'>1,0000Rs</span>
+                                Goal: <span className='goal'>5000-25000</span>
                               </p>
                             </div>
                           </div>

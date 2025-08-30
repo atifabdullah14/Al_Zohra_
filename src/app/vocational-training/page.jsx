@@ -183,7 +183,7 @@ const VocationalTrainingPage = () => {
         <CustomCursor />
         <TopBarOne />
         <HeaderOne />
-        <BreadcrumbOne title=" VTC" />
+        <BreadcrumbOne title=" VTC  " />
         {/* Hero Section */}
         <section className="py-5 bg-white border-bottom">
           <div className="container">
