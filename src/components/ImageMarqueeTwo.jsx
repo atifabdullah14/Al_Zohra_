@@ -51,7 +51,7 @@ const ImageMarqueeTwo = () => {
                 <div className='swiper-slide'>
                   <div className='image-marquee-two__slider-single'>
                     <img
-                      src='/assets/images/marquee/2.jpg'
+                      src='/assets/images/marquee/13.jpg'
                       alt='Gallery Image 1'
                       className='img-fluid'
                     />
@@ -60,7 +60,7 @@ const ImageMarqueeTwo = () => {
                 <div className='swiper-slide'>
                   <div className='image-marquee-two__slider-single'>
                     <img
-                      src='/assets/images/marquee/8.jpg'
+                      src='/assets/images/marquee/14.jpg'
                       alt='Gallery Image 2'
                       className='img-fluid'
                     />
@@ -69,7 +69,7 @@ const ImageMarqueeTwo = () => {
                 <div className='swiper-slide'>
                   <div className='image-marquee-two__slider-single'>
                     <img
-                      src='/assets/images/marquee/7.jpg'
+                      src='/assets/images/marquee/15.jpg'
                       alt='Gallery Image 3'
                       className='img-fluid'
                     />
@@ -78,7 +78,7 @@ const ImageMarqueeTwo = () => {
                 <div className='swiper-slide'>
                   <div className='image-marquee-two__slider-single'>
                     <img
-                      src='/assets/images/marquee/6.jpg'
+                      src='/assets/images/marquee/16.jpg'
                       alt='Gallery Image 4'
                       className='img-fluid'
                     />
@@ -87,7 +87,7 @@ const ImageMarqueeTwo = () => {
                 <div className='swiper-slide'>
                   <div className='image-marquee-two__slider-single'>
                     <img
-                      src='/assets/images/marquee/5.jpg'
+                      src='/assets/images/marquee/1.jpg'
                       alt='Gallery Image 5'
                       className='img-fluid'
                     />
@@ -96,7 +96,7 @@ const ImageMarqueeTwo = () => {
                 <div className='swiper-slide'>
                   <div className='image-marquee-two__slider-single'>
                     <img
-                      src='/assets/images/marquee/4.jpg'
+                      src='/assets/images/marquee/2.jpg'
                       alt='Gallery Image 6'
                       className='img-fluid'
                     />
@@ -114,7 +114,7 @@ const ImageMarqueeTwo = () => {
                 <div className='swiper-slide'>
                   <div className='image-marquee-two__slider-single'>
                     <img
-                      src='/assets/images/marquee/2.jpg'
+                      src='/assets/images/marquee/4.jpg'
                       alt='Gallery Image 8'
                       className='img-fluid'
                     />
@@ -124,7 +124,7 @@ const ImageMarqueeTwo = () => {
                 <div className='swiper-slide'>
                   <div className='image-marquee-two__slider-single'>
                     <img
-                      src='/assets/images/marquee/1.jpg'
+                      src='/assets/images/marquee/5.jpg'
                       alt='Gallery Image 1'
                       className='img-fluid'
                     />
@@ -133,7 +133,7 @@ const ImageMarqueeTwo = () => {
                 <div className='swiper-slide'>
                   <div className='image-marquee-two__slider-single'>
                     <img
-                      src='/assets/images/marquee/8.jpg'
+                      src='/assets/images/marquee/6.jpg'
                       alt='Gallery Image 2'
                       className='img-fluid'
                     />
@@ -142,7 +142,7 @@ const ImageMarqueeTwo = () => {
                 <div className='swiper-slide'>
                   <div className='image-marquee-two__slider-single'>
                     <img
-                      src='/assets/images/marquee/4.jpg'
+                      src='/assets/images/marquee/7.jpg'
                       alt='Gallery Image 3'
                       className='img-fluid'
                     />
@@ -151,7 +151,7 @@ const ImageMarqueeTwo = () => {
                 <div className='swiper-slide'>
                   <div className='image-marquee-two__slider-single'>
                     <img
-                      src='/assets/images/marquee/6.jpg'
+                      src='/assets/images/marquee/8.jpg'
                       alt='Gallery Image 4'
                       className='img-fluid'
                     />

@@ -115,11 +115,11 @@ const CauseOne = () => {
                               alt='Image_inner'
                             />
                           </Link>
-                          <div className='tag'>
+                          {/* <div className='tag'>
                             <Link href='/our-causes'>Vocational</Link>
-                          </div>
+                          </div> */}
                         </div>
-                        <div className='content'>
+                        <div className='content' style={{height:180}}>
                           <h6>
                             <Link href='/cause-details'>
                             A pack of ration (Zakat / Non-Zakat)
@@ -170,11 +170,11 @@ const CauseOne = () => {
                               alt='Image_inner'
                             />
                           </Link>
-                          <div className='tag'>
+                          {/* <div className='tag'>
                             <Link href='/our-causes'>Vocational</Link>
-                          </div>
+                          </div> */}
                         </div>
-                        <div className='content'>
+                        <div className='content' style={{height:180}}>
                           <h6>
                             <Link href='/cause-details'>
                             Sponsor a student (monthly or yearly basis)
@@ -223,11 +223,11 @@ const CauseOne = () => {
                               alt='Image_inner'
                             />
                           </Link>
-                          <div className='tag'>
+                          {/* <div className='tag'>
                             <Link href='/our-causes'>Education</Link>
-                          </div>
+                          </div> */}
                         </div>
-                        <div className='content'>
+                        <div className='content' style={{height:180}}>
                           <h6>
                             <Link href='/cause-details'>Sponsor a vocational course
                             </Link>
@@ -276,11 +276,11 @@ const CauseOne = () => {
                               alt='Image_inner'
                             />
                           </Link>
-                          <div className='tag'>
+                          {/* <div className='tag'>
                             <Link href='/our-causes'>Education</Link>
-                          </div>
+                          </div> */}
                         </div>
-                        <div className='content'>
+                        <div className='content' style={{height:180}}>
                           <h6>
                             <Link href='/cause-details'>
                             Sponsor a wedding for a needy girl
@@ -328,11 +328,11 @@ const CauseOne = () => {
                               alt='Image_inner'
                             />
                           </Link>
-                          <div className='tag'>
+                          {/* <div className='tag'>
                             <Link href='/our-causes'>Welfare</Link>
-                          </div>
+                          </div> */}
                         </div>
-                        <div className='content'>
+                        <div className='content' style={{height:180}}>
                           <h6>
                             <Link href='/cause-details'>
                             gym , sewing machines, beautician kits, etc.  
@@ -381,11 +381,11 @@ const CauseOne = () => {
                               alt='Image_inner'
                             />
                           </Link>
-                          <div className='tag'>
+                          {/* <div className='tag'>
                             <Link href='/our-causes'> Ration Distribution</Link>
-                          </div>
+                          </div> */}
                         </div>
-                        <div className='content'>
+                        <div className='content' style={{height:180}}>
                           <h6>
                             <Link href='/cause-details'>
                             Sponsor an instructor/Teacher
@@ -434,11 +434,11 @@ const CauseOne = () => {
                               alt='Image_inner'
                             />
                           </Link>
-                          <div className='tag'>
+                          {/* <div className='tag'>
                             <Link href='/our-causes'> Sadqa</Link>
-                          </div>
+                          </div> */}
                         </div>
-                        <div className='content'>
+                        <div className='content' style={{height:180}}>
                           <h6>
                             <Link href='/cause-details'>Sadqa/Non-Zakat items , Bakra, Biryani, Chicken, etc.</Link>
                           </h6>
@@ -484,11 +484,11 @@ const CauseOne = () => {
                               alt='Image_inner'
                             />
                           </Link>
-                          <div className='tag'>
+                          {/* <div className='tag'>
                             <Link href='/our-causes'>  Eid Welfare</Link>
-                          </div>
+                          </div> */}
                         </div>
-                        <div className='content'>
+                        <div className='content' style={{height:180}}>
                           <h6>
                             <Link href='/cause-details'>
                             Sponsor stationary or essential items

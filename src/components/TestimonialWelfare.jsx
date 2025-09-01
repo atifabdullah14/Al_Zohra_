@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 import Slider from "react-slick";
 
-const TestimonialOne = () => {
+const TestimonialWelfare = () => {
   const sliderRef = useRef(null);
   const [activeVideo, setActiveVideo] = useState(null);
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -43,37 +43,37 @@ const TestimonialOne = () => {
   const testimonialVideos = [
     {
       id: 1,
-      video: "/assets/videos/home-1.mp4",
+      video: "/assets/videos/welfare-3.mp4",
       author: "",
       company: "",
     },
     {
       id: 2,
-      video: "/assets/videos/home-2.mp4",
+      video: "/assets/videos/welfare-2.mp4",
       author: "",
       company: "",
     },
     {
       id: 3,
-      video: "/assets/videos/home-3.mp4",
+      video: "/assets/videos/welfare-1.mp4",
       author: "",
       company: "",
     },
     {
       id: 4,
-      video: "/assets/videos/home-4.mp4",
+      video: "/assets/videos/welfare-3.mp4",
       author: "",
       company: "",
     },
     {
       id: 5,
-      video: "/assets/videos/home-1.mp4",
+      video: "/assets/videos/welfare-2.mp4",
       author: "",
       company: "",
     },
     {
       id: 6,
-      video: "/assets/videos/home-2.mp4",
+      video: "/assets/videos/welfare-1.mp4",
       author: "",
       company: "",
     }
@@ -112,6 +112,7 @@ const TestimonialOne = () => {
           filter: isVideoPlaying ? 'blur(5px)' : 'none',
           transition: 'filter 0.3s ease',
           pointerEvents: isVideoPlaying ? 'none' : 'auto',
+          paddingTop: 20,
         }}
       >
         <div className='container'>
@@ -122,12 +123,16 @@ const TestimonialOne = () => {
                 data-aos='fade-up'
                 data-aos-duration={1000}
               >
-                <span className='sub-title'>
+                {/* <span className='sub-title'>
                   <i className='icon-donation' />
                   Start donating poor people
-                </span>
-                <h2 className='title-animation_inner'>
-                  Our Success <span>Stories</span>
+                </span> */}
+                <h2 className='title-animation_inner'
+                style={{
+                  color:'#DC3545'
+                }}
+                >
+                  Our Success <span style={{color:'#DC3545'}}>Stories</span>
                   
                 </h2>
               </div>
@@ -240,8 +245,9 @@ const TestimonialOne = () => {
               aria-label='prev slide'
               title='prev slide'
               className='prev-testimonial slider-btn'
+              style={{background: '#DC3545'}}
             >
-              <i className='fa-solid fa-arrow-left' />
+              <i className='fa-solid fa-arrow-left' style={{color: '#fff'}} />
             </button>
             <button
               onClick={() => sliderRef.current.slickNext()}
@@ -249,12 +255,13 @@ const TestimonialOne = () => {
               aria-label='next slide'
               title='next slide'
               className='next-testimonial slider-btn slider-btn-next'
+              style={{background: '#DC3545'}}
             >
-              <i className='fa-solid fa-arrow-right' />
+              <i className='fa-solid fa-arrow-right' style={{color: '#fff'}}/>
             </button>
           </div>
         </div>
-        <div
+        {/* <div
           className='shape'
           data-aos='fade-right'
           data-aos-duration={1000}
@@ -265,7 +272,7 @@ const TestimonialOne = () => {
             alt='Image_inner'
             className='base-img'
           />
-        </div>
+        </div> */}
       </section>
 
       {/* Video Popup Modal */}
@@ -346,6 +353,6 @@ const TestimonialOne = () => {
   );
 };
 
-export default TestimonialOne;
+export default TestimonialWelfare;
 
 

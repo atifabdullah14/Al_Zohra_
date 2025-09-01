@@ -135,9 +135,9 @@ const BannerOne = () => {
                           Start donating poor people
                         </span>
                         <h1>
-                          Giving help <br />
-                          To Those <span className='bottom-line'>peoples</span>
-                          Who Need It.
+                          Assisting <br />
+                          Those <span className='bottom-line'><br /></span>
+                          Who Strugle.
                         </h1>
                         <div className='banner__content-cta cta'>
                           <Link
@@ -183,9 +183,9 @@ const BannerOne = () => {
                           Start donating poor people
                         </span>
                         <h1>
-                          Giving help <br />
-                          To Those <span className='bottom-line'>peoples</span>
-                          Who Need It.
+                          Assisting <br />
+                          Those <span className='bottom-line'><br /></span>
+                          Who Strugle.
                         </h1>
                         <div className='banner__content-cta cta'>
                           <Link

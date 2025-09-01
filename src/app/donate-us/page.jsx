@@ -6,6 +6,9 @@ import Preloader from "@/components/Preloader";
 import TopBarOne from "@/components/TopBarOne";
 import AOSWrap from "@/helper/AOSWrap";
 import CustomCursor from "@/helper/CustomCursor";
+import Testimonialdonate from "@/components/Testimonialdonate";
+
+
 
 export const metadata = {
   title: "Al Zohra Welfare Association",
@@ -33,6 +36,9 @@ const page = () => {
 
         {/* DonateInner */}
         <DonateInner />
+
+          {/* TestimonialDonation */}
+          <Testimonialdonate />
 
         {/* FooterOne */}
         <FooterOne />

@@ -11,16 +11,16 @@ const TeamDetailsInner = () => {
               data-aos='zoom-in'
               data-aos-duration={1000}
             >
-              <img src='assets/images/team/sevend.png' alt='Image_inner' />
+              <img src='assets/images/team/zohra.jpg' alt='Image_inner' />
             </div>
           </div>
-          <div className='col-12 col-lg-6 col-xl-5'>
+          <div className='col-12 col-lg-6 col-xl-5' >
             <div
               className='team-details__thumb'
               data-aos='zoom-in'
               data-aos-duration={1000}
             >
-              <img src='assets/images/team/sevend.png' alt='Image_inner' />
+              <img src='assets/images/team/sdd.jpg' alt='Image_inner' />
             </div>
           </div>
           <div className='col-12 col-lg-6 col-xl-7'>

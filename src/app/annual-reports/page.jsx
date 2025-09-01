@@ -8,25 +8,26 @@ import AOSWrap from "@/helper/AOSWrap";
 import CustomCursor from "@/helper/CustomCursor";
 import React from "react";
 
+
 const reports = [
   {
     year: 2023,
     summary: "A year of resilience and impact—expanding education, welfare, and vocational programs for Karachi's most vulnerable.",
-    file: "/assets/reports/AlZohra-Annual-Report-2023.pdf"
+    file: "/assets/reports/Activity Report June 2023 - July 2024.pdf"
   },
   {
     year: 2022,
     summary: "Strengthening our community outreach and launching new women empowerment initiatives.",
-    file: "/assets/reports/AlZohra-Annual-Report-2022.pdf"
+    file: "/assets/reports/Activity Report June 2023 - July 2024.pdf"
   },
   {
     year: 2021,
     summary: "Adapting to challenges, supporting families through the pandemic, and digital transformation in education.",
-    file: "/assets/reports/AlZohra-Annual-Report-2021.pdf"
+    file: "/assets/reports/ACTIVITY REPORT JUNE 2021 - JUNE 22.pdf"
   },
 ];
 
-const placeholder = "/assets/images/gallery1.png";
+const placeholder = "/assets/images/fc-four.png";
 
 const AnnualReportsPage = () => {
   return (
@@ -38,7 +39,7 @@ const AnnualReportsPage = () => {
         <HeaderOne />
         <BreadcrumbOne title="Annual Reports" />
         {/* Hero/Intro Section - visually distinct */}
-        <section className="py-5" style={{background: "#388e3c", color: "#fff"}}>
+        {/* <section className="py-5" style={{background: "#388e3c", color: "#fff"}}>
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-8">
@@ -48,11 +49,11 @@ const AnnualReportsPage = () => {
                 </p>
               </div>
               <div className="col-md-4 text-center">
-                <img src="/assets/images/donation/thumb-bg.png" alt="Annual Reports" className="img-fluid rounded shadow" style={{maxHeight: 220, background: "#fff"}} />
+                <img src="/assets/images/quote.png" alt="Annual Reports" className="img-fluid rounded shadow" style={{maxHeight: 220, background: "#fff"}} />
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* Reports Grid/List Section */}
         <section className="py-5 bg-white border-bottom">
           <div className="container">
@@ -79,26 +80,7 @@ const AnnualReportsPage = () => {
             </div>
           </div>
         </section>
-        {/* Gallery Section */}
-        <section className="py-5 bg-light border-bottom">
-          <div className="container">
-            <h2 className="fw-bold text-success text-center mb-5">Gallery</h2>
-            <div className="row g-4 justify-content-center">
-              {Array.from({length: 15}).map((_, idx) => {
-                const img = ["one.png","two.png","three.png","four.png","five.png","six.png"][idx % 6];
-                return (
-                  <div className="col-6 col-md-4 col-lg-3" key={idx}>
-                    <div className="annual-report-card card h-100 border-0 shadow-sm overflow-hidden p-0">
-                      <div className="report-img-wrapper position-relative">
-                        <img src={`/assets/images/gallery/${img}`} alt={`Gallery ${idx+1}`} className="img-fluid w-100" style={{height: 220, objectFit: 'cover'}} />
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
+       
         {/* Call to Action Section - visually distinct */}
         <section className="py-5 text-center" style={{background: "#388e3c"}}>
           <div className="container">
@@ -107,6 +89,7 @@ const AnnualReportsPage = () => {
             <a href="/contact-us" className="btn btn-light btn-lg shadow text-success fw-bold">Contact Us</a>
           </div>
         </section>
+        
         <FooterOne />
       </section>
     </AOSWrap>

@@ -7,6 +7,7 @@ import AOSWrap from "@/helper/AOSWrap";
 import CustomCursor from "@/helper/CustomCursor";
 import React from "react";
 import Image from "next/image";
+import TestimonialWelfare from "@/components/TestimonialWelfare";
 
 // const stats = [
 //   { label: "Years Serving Karachi", value: "34+" },
@@ -15,8 +16,8 @@ import Image from "next/image";
 //   { label: "Cash Disbursements", value: "Countless" },
 // ];
 const stats = [
-  { label: "Years Serving Karachi", value: "34+" },
-  { label: "Monthly Ration Packs", value: "200+" },
+  { label: " Serving Karachi", value: "34+" },
+  { label: " Ration Packs", value: "200+" },
   { label: "Wedding Assistances", value: "300+" },
   { label: "Cash Disbursements", value: "Endless" },
 ];
@@ -64,7 +65,7 @@ const WelfareAssistancePage = () => {
             <div className="row text-center">
               {stats.map((stat, idx) => (
                 <div className="col-6 col-md-3 mb-4" key={idx}>
-                  <div className="bg-white rounded shadow p-5 h-100">
+                  <div className="bg-white rounded shadow p-5 h-10">
                     <div className="display-5 fw-bold text-danger mb-5">{stat.value}</div>
                     <div className="fw-semibold text-secondary">{stat.label}</div>
                   </div>
@@ -185,6 +186,7 @@ const WelfareAssistancePage = () => {
             </div>
           </div>
         </section>
+        <TestimonialWelfare />
         {/* Call to Action Section */}
         <section className="py-5 text-center bg-danger bg-opacity-10">
           <div className="container">
@@ -193,6 +195,8 @@ const WelfareAssistancePage = () => {
             <a href="https://wa.me/message/H4XCFQ5TGB5QN1" className="btn btn-danger btn-lg shadow">Contact Us</a>
           </div>
         </section>
+        
+        
         <FooterOne />
       </section>
     </AOSWrap>

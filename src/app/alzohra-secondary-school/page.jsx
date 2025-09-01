@@ -57,25 +57,25 @@ const AlZohraSecondarySchoolPage = () => {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-7">
-                <h1 className="fw-bold text-success mb-3">Al Zohra Secondary School</h1>
+                <h1 className="fw-bold mb-3" style={{color:'#1800ad'}}>Al Zohra Secondary School</h1>
                 <p className="lead mb-4">
                 Al-Zohra Secondary School caters to students from Nursery to Matric, offering a high standard of education comparable to the country’s elite English medium institutions. Our teachers are experts in their subjects, and their dedication is reflected in our outstanding results in the 2024 batch, Matric students achieved 60/60 marks in Computer Science, with the majority securing A grades in other board examination subjects as well.
                 <br />We offer the following facilities and features:
 
   </p>
                 <ul className="list-unstyled mb-4">
-                  <li><i className="fa fa-check-circle text-success me-2"></i>High Standard Curriculum: Incorporates Microsoft Office computer courses and Rosetta Stone English Language software into the syllabus, ensuring students are proficient in both technology and communication.
+                  <li><i className="fa fa-check-circle text-custom-blue me-2"></i>High Standard Curriculum: Incorporates Microsoft Office computer courses and Rosetta Stone English Language software into the syllabus, ensuring students are proficient in both technology and communication.
                   </li>
-                  <li><i className="fa fa-check-circle text-success me-2"></i>State-of-the-Art Facilities: Equipped with modern science laboratories, 24/7 internet access, and advanced technology integration in classrooms.
+                  <li><i className="fa fa-check-circle text-custom-blue me-2"></i>State-of-the-Art Facilities: Equipped with modern science laboratories, 24/7 internet access, and advanced technology integration in classrooms.
                   </li>
-                  <li><i className="fa fa-check-circle text-success me-2"></i>Video-Based Learning: Subject-wise and chapter-wise educational videos are shared daily via WhatsApp, along with moral and educational content to reinforce learning.
+                  <li><i className="fa fa-check-circle text-custom-blue me-2"></i>Video-Based Learning: Subject-wise and chapter-wise educational videos are shared daily via WhatsApp, along with moral and educational content to reinforce learning.
                   </li>
-                  <li><i className="fa fa-check-circle text-success me-2"></i>Affordable Education: We maintain nominal fee structures, with over 35% of students receiving full scholarships.
+                  <li><i className="fa fa-check-circle text-custom-blue me-2"></i>Affordable Education: We maintain nominal fee structures, with over 35% of students receiving full scholarships.
                   </li>
-                  <li><i className="fa fa-check-circle text-success me-2"></i>Digital Literacy Focus: Specialized training prepares students to excel in the digital era.
+                  <li><i className="fa fa-check-circle text-custom-blue me-2"></i>Digital Literacy Focus: Specialized training prepares students to excel in the digital era.
                   </li>
                 </ul>
-                <a href="https://www.facebook.com/AlzohraSchool" className="btn btn-success btn-lg shadow">Follow Us 
+                <a href="https://www.facebook.com/AlzohraSchool" className="btn btn-success btn-lg shadow btn-custom-blue">Follow Us 
                 </a>
               </div>
               <div className="col-md-5 text-center">
@@ -91,7 +91,7 @@ const AlZohraSecondarySchoolPage = () => {
     <div className="row">
       {/* Left Side: How It Started */}
       <div className="col-md-6">
-        <h2 className="fw-bold text-success mb-3">How It Started</h2>
+        <h2 className="fw-bold text-custom-blue mb-3">How It Started</h2>
         <p>
           Founded in 2011 as an initiative of Al Zohra Welfare Association, the school began with a vision to provide quality education to all, regardless of background. Starting from humble beginnings, we have grown into a thriving institution.
         </p>
@@ -99,7 +99,7 @@ const AlZohraSecondarySchoolPage = () => {
 
       {/* Right Side: How It's Going */}
       <div className="col-md-6">
-        <h2 className="fw-bold text-success mb-3">How It's Going</h2>
+        <h2 className="fw-bold text-custom-blue mb-3">How It's Going</h2>
         <p>
           Today, Al Zohra Secondary School offers education from Pre-Nursery to Grade 10, with a focus on digital literacy, modern teaching, and holistic development. Our students excel in academics and character, supported by dedicated staff and modern facilities.
         </p>
@@ -125,7 +125,7 @@ const AlZohraSecondarySchoolPage = () => {
         {/* Fee Structure Section */}
         <section className="py-5 bg-white border-bottom">
         <div className="container">
-    <h2 className="fw-bold text-center mb-5" style={{ color: '#db567c' }}>Fee Structure (2024)</h2>
+    <h2 className="fw-bold text-center mb-5" style={{ color: '#1800ad' }}>Fee Structure (2024)</h2>
     <div className="row g-4">
       {feeStructure.map((fee, idx) => (
         <div className="col-md-6" key={idx}>
@@ -144,7 +144,7 @@ const AlZohraSecondarySchoolPage = () => {
     </div>
   </div>
           {/* <div className="container">
-            <h2 className="fw-bold text-success text-center mb-5">Fee Structure (2024)</h2>
+            <h2 className="fw-bold text-custom-blue text-center mb-5">Fee Structure (2024)</h2>
             <div className="table-responsive">
               <table className="table table-bordered align-middle bg-white">
                 <thead className="table-success">
@@ -173,10 +173,10 @@ const AlZohraSecondarySchoolPage = () => {
         {/* Admission & Promotion Criteria */}
         <section className="py-5 border-bottom">
           <div className="container">
-            <h2 className="fw-bold text-success text-center mb-5">Admission & Promotion Criteria</h2>
+            <h2 className="fw-bold text-custom-blue text-center mb-5">Admission & Promotion Criteria</h2>
             <div className="row g-4">
               <div className="col-md-6">
-                <h4 className="fw-bold text-success mb-3">Admission</h4>
+                <h4 className="fw-bold text-custom-blue mb-3">Admission</h4>
                 <ul>
                   <li>Entry test in English, Math, Urdu, and General Knowledge</li>
                   <li>Verified transcript for Grades 1-9</li>
@@ -185,7 +185,7 @@ const AlZohraSecondarySchoolPage = () => {
                 </ul>
               </div>
               <div className="col-md-6">
-                <h4 className="fw-bold text-success mb-3">Promotion & Exams</h4>
+                <h4 className="fw-bold text-custom-blue mb-3">Promotion & Exams</h4>
                 <ul>
                   <li>Minimum 40% passing marks in each subject</li>
                   <li>Failure in 2 core subjects means no promotion</li>
@@ -199,12 +199,12 @@ const AlZohraSecondarySchoolPage = () => {
         {/* Facilities Section */}
         <section className="py-5 bg-white border-bottom">
           <div className="container">
-            <h2 className="fw-bold text-success text-center mb-5">Facilities & Learning Environment</h2>
+            <h2 className="fw-bold text-custom-blue text-center mb-5">Facilities & Learning Environment</h2>
             <div className="row g-4">
               <div className="col-md-4">
                 <div className="card h-100 border-0 shadow-sm">
                   <div className="card-body">
-                    <h5 className="fw-bold text-success mb-2"><i className="fa fa-laptop me-2"></i>Digital & Language</h5>
+                    <h5 className="fw-bold text-custom-blue mb-2"><i className="fa fa-laptop me-2"></i>Digital & Language</h5>
                     <ul>
                       <li>Computer labs with internet & IT curriculum</li>
                       <li>Rosetta Stone English language software</li>
@@ -216,7 +216,7 @@ const AlZohraSecondarySchoolPage = () => {
               <div className="col-md-4">
                 <div className="card h-100 border-0 shadow-sm">
                   <div className="card-body">
-                    <h5 className="fw-bold text-success mb-2"><i className="fa fa-flask me-2"></i>Science & Library</h5>
+                    <h5 className="fw-bold text-custom-blue mb-2"><i className="fa fa-flask me-2"></i>Science & Library</h5>
                     <ul>
                       <li>Science lab for hands-on experiments</li>
                       <li>Library with 6300+ books</li>
@@ -228,7 +228,7 @@ const AlZohraSecondarySchoolPage = () => {
               <div className="col-md-4">
                 <div className="card h-100 border-0 shadow-sm">
                   <div className="card-body">
-                    <h5 className="fw-bold text-success mb-2"><i className="fa fa-shield-alt me-2"></i>Safety & Activities</h5>
+                    <h5 className="fw-bold text-custom-blue mb-2"><i className="fa fa-shield-alt me-2"></i>Safety & Activities</h5>
                     <ul>
                       <li>CCTV surveillance & controlled entry</li>
                       <li>Co-curriculars: debates, events, sports</li>
@@ -243,10 +243,10 @@ const AlZohraSecondarySchoolPage = () => {
         {/* Scholarships & Achievements */}
         <section className="py-5 border-bottom">
           <div className="container">
-            <h2 className="fw-bold text-success text-center mb-5">Scholarships & Achievements</h2>
+            <h2 className="fw-bold text-custom-blue text-center mb-5">Scholarships & Achievements</h2>
             <div className="row g-4">
               <div className="col-md-6">
-                <h4 className="fw-bold text-success mb-3">Scholarships</h4>
+                <h4 className="fw-bold text-custom-blue mb-3">Scholarships</h4>
                 <ul>
                   <li>100% free-ship for top students in final exams</li>
                   <li>Need + merit-based scholarships for orphans and deserving students</li>
@@ -254,7 +254,7 @@ const AlZohraSecondarySchoolPage = () => {
                 </ul>
               </div>
               <div className="col-md-6">
-                <h4 className="fw-bold text-success mb-3">Recent Achievements</h4>
+                <h4 className="fw-bold text-custom-blue mb-3">Recent Achievements</h4>
                 <ul>
                   <li>82 full scholarships awarded in 2024–2025</li>
                   <li>100% pass rate in Computer Science (Matric 2024)</li>
@@ -267,9 +267,9 @@ const AlZohraSecondarySchoolPage = () => {
         {/* Call to Action Section */}
         <section className="py-5 text-center bg-success bg-opacity-10">
           <div className="container">
-            <h2 className="fw-bold text-success mb-3">Empower a Child's Future</h2>
+            <h2 className="fw-bold text-custom-blue mb-3">Empower a Child's Future</h2>
             <p className="lead mb-4">Support our mission to provide quality, affordable education to all. Join us as a donor, volunteer, or parent.</p>
-            <a href=" https://wa.me/message/H4XCFQ5TGB5QN1 " className="btn btn-success btn-lg shadow">Contact Us </a>
+            <a href=" https://wa.me/message/H4XCFQ5TGB5QN1 " className="btn btn-success btn-lg shadow btn-custom-blue">Contact Us </a>
           </div>
         </section>
         <FooterOne />

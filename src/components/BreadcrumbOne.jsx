@@ -5,9 +5,9 @@ const BreadcrumbOne = ({ title, bgImage }) => {
   const getBreadcrumbImage = (pageTitle) => {
     const imageMap = {
       // Main Program Pages
-      "Vocational Training Program": "assets/images/banner/s.jpg", // Vocational Training page
-      "Welfare Assistance": "assets/images/banner/nighat.jpg", // Welfare Assistance page  
-      "AlZohra Secondary School":"assets/images/banner/nighat.jpg", // Secondary School page
+      "VTC": "assets/images/banner/s.jpg", // Vocational Training page
+      "Welfare Assistance": "assets/images/banner/banner-2.jpg", // Welfare Assistance page  
+      "Secondary School":"assets/images/banner/secondary.jpg", // Secondary School page
       
       // About & Story Pages
       "About Us": "assets/images/banner/banner4.jpg", // About Us page
@@ -24,7 +24,7 @@ const BreadcrumbOne = ({ title, bgImage }) => {
       "Cause Details": "assets/images/banner/banner-bg.jpg", // Cause Details page
       
       // Donation & Support Pages
-      "Donate Us": "assets/images/banner/banner-bg1.jpg", // Donate Us page
+      "Donate Us": "assets/images/banner/donate-2.jpeg", // Donate Us page
       // "One-Time Donation": "assets/images/banner/banner-bg2.jpg", // One-Time Donation page
       // "Zakat & Sadqah": "assets/images/banner/banner-bgs.jpg", // Zakat & Sadqah page
       // "Sponsor a Child": "assets/images/banner/banner-one-bg.png", // Sponsor a Child page
@@ -42,7 +42,7 @@ const BreadcrumbOne = ({ title, bgImage }) => {
       
       // // Legal & Information Pages
       // "Legal & Certifications": "assets/images/banner/banner-two-shape.png", // Legal & Certifications page
-      // "Annual Reports": "assets/images/banner/banner-bg2.jpg", // Annual Reports page
+      "Annual Reports": "assets/images/banner/annual.png", // Annual Reports page
       // "Terms and Conditions": "assets/images/banner/banner-bg.jpg", // Terms and Conditions page
       // "Frequently Asked Questions": "assets/images/banner/banner-bg1.jpg", // FAQ page
       
@@ -59,17 +59,17 @@ const BreadcrumbOne = ({ title, bgImage }) => {
 
   // Use provided bgImage or get from mapping based on title
   const finalBgImage = bgImage || getBreadcrumbImage(title);
-
+console.log(finalBgImage);
   return (
     <section className='common-banner'>
       <div className='container'>
         <div className='row'>
           <div className='common-banner__content text-center'>
-            <span className='sub-title'>
-              <i className='icon-donation' />
-              Start donating poor people
+            <span className='sub-title'>.
+              {/* <i className='icon-donation' />
+              Start donating poor people */}
             </span>
-            <h2 className='title-animation_inner'>{title}</h2>
+            <h2 className='title-animation_inner' style={{color:"transparent"}}>.</h2>
           </div>
         </div>
       </div>
