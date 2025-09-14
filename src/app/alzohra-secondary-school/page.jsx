@@ -125,7 +125,7 @@ const AlZohraSecondarySchoolPage = () => {
         {/* Fee Structure Section */}
         <section className="py-5 bg-white border-bottom">
         <div className="container">
-    <h2 className="fw-bold text-center mb-5" style={{ color: '#1800ad' }}>Fee Structure (2024)</h2>
+    {/* <h2 className="fw-bold text-center mb-5" style={{ color: '#1800ad' }}>Fee Structure (2024)</h2> */}
     <div className="row g-4">
       {feeStructure.map((fee, idx) => (
         <div className="col-md-6" key={idx}>

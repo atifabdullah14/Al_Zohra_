@@ -127,7 +127,7 @@ const TestimonialOne = () => {
                   Start donating poor people
                 </span>
                 <h2 className='title-animation_inner'>
-                  Our Success <span>Stories</span>
+                  Our  <span>Testimonials</span>
                   
                 </h2>
               </div>

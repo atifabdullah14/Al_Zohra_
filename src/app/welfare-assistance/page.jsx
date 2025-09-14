@@ -86,11 +86,11 @@ const WelfareAssistancePage = () => {
               <div className="col-md-6">
                 <h2 className="fw-bold text-danger mb-3">How It Started</h2>
                 <p>
-                  Founded by Respected Zohra Begum in 1991, Al-Zohra began in a humble two-room quarter in Punjab Colony, Karachi, providing rations, free clinics, and basic literacy to Zakat-eligible women and children.
+                  Founded by Respected Zohra Begum in 1991, Al-Zohra began in a humble two-room quarter in Punjab Colony, Karachi, providing rations, only one  clinic, and basic literacy to Zakat-eligible women and children.
                 </p>
                 <h2 className="fw-bold text-danger mb-3 mt-4">How It's Going</h2>
                 <p>
-                  Now, after 34 years, Al-Zohra operates from a six-storey building and a new campus, running a secondary school, two vocational centers, and distributing monthly rations to over 200 families. Our impact is made possible by the dedication of Mrs. Nighat and her team.
+                  Now, after 34 years, Al-Zohra operates from a six-storey building and a second campus, running a secondary school, two vocational centers, and distributing monthly rations to over 200 families.Our impact is made possible by the donation of generous people and dedicated sincere efforts of our team. 
                 </p>
               </div>
             </div>

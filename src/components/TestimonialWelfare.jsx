@@ -132,7 +132,7 @@ const TestimonialWelfare = () => {
                   color:'#DC3545'
                 }}
                 >
-                  Our Success <span style={{color:'#DC3545'}}>Stories</span>
+                  Our  <span style={{color:'#DC3545'}}>Stories</span>
                   
                 </h2>
               </div>
