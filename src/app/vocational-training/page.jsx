@@ -249,15 +249,15 @@ const VocationalTrainingPage = () => {
     <h2 className="fw-bold text-center mb-5" style={{ color: '#db567c' }}>Programs Offered</h2>
     <div className="row g-4">
       {courses.map((course, idx) => (
-        <div className="col-md-4" key={idx}>
+        <div className="col-md-6" key={idx}>
           {/* Card same size rakha hai, content replace karke image lagayi */}
-          <div className="card h-200 border-0 shadow-sm">
+          <div className="card h-400 border-0 shadow-sm">
             {/* Yahan image laga di — course.image hum add karenge array me */}
             <img 
               src={course.image} 
               alt={course.title} 
               className="img-fluid rounded-top" 
-              style={{ height: "450px", objectFit: "fill", }} 
+              style={{ height: "550px", objectFit: "fill", }} 
             />
           </div>
         </div>

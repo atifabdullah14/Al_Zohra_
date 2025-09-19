@@ -45,7 +45,7 @@ const page = () => {
         <BannerOne />
 
         {/* PartnerOne */}
-        <PartnerOne />
+        {/* <PartnerOne /> */}
 
       
 
