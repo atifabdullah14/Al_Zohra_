@@ -66,7 +66,8 @@ const TeamOne = () => {
                     <h6>
                       <Link href='/team-details'>Syed Ahtesham Ali </Link>
                     </h6>
-                    <p>President (Honorary)
+                    <p>President (Honorary) <br />
+                    Advocate & Landlord
                     </p>
                   </div>
                 </div>
@@ -92,7 +93,9 @@ const TeamOne = () => {
                     <h6>
                       <Link href='/team-details'>Nadeem Bhurgri</Link>
                     </h6>
-                    <p>  (Vice President )  Honorary </p>
+                    <p>  (Vice President )  Honorary <br />
+                    Business Man
+                       </p>
                   </div>
                 </div>
               </div>
@@ -120,7 +123,9 @@ const TeamOne = () => {
                     <h6>
                       <Link href='/team-details'>Nighat Zahra Shah</Link>
                     </h6>
-                    <p> (General Secretary) Honorary</p>
+                    <p> (General Secretary) Honorary
+                      <br /> Housewife
+                    </p>
                   </div>
                 </div>
               </div>
@@ -146,7 +151,8 @@ const TeamOne = () => {
                     <h6>
                       <Link href='/team-details'>DR. Sara Gardezi</Link>
                     </h6>
-                    <p> (TRASURER) Honorary </p>
+                    <p> (TRASURER) Honorary
+                      <br /> MBBS, MPHIL, Doctor  </p>
                   </div>
                 </div>
               </div>
@@ -168,9 +174,10 @@ const TeamOne = () => {
                   </div>
                   <div className='team__single-content'>
                     <h6>
-                      <Link href='/team-details'>Imran Ahsen Shah</Link>
+                      <Link href='/team-details'>Imran Ahsan Shah</Link>
                     </h6>
-                    <p>(Joint Secretary) Honorary </p>
+                    <p>(Joint Secretary) Honorary
+                      <br /> Chief Supply Chain Officer, Gatronova. </p>
                   </div>
                 </div>
               </div>

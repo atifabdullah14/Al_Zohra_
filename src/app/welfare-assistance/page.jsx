@@ -97,7 +97,7 @@ const WelfareAssistancePage = () => {
           </div>
         </section>
         {/* Welfare Programs Section */}
-        <section className="py-5 bg-white border-bottom">
+        <section className="py-2 bg-white border-bottom">
           <div className="container">
             <div className="row g-4">
               {/* Ration Distribution */}

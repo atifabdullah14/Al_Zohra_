@@ -69,7 +69,7 @@ const CauseOne = () => {
                 Start donating poor people
               </span>
               <h2 className='title-animation_inner'>
-                Help &amp; <span>donate to</span> them when they're in need
+                Help &amp; <span>donate </span> them.
               </h2>
             </div>
           </div>

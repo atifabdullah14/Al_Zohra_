@@ -59,7 +59,7 @@ const AlZohraSecondarySchoolPage = () => {
               <div className="col-md-7">
                 <h1 className="fw-bold mb-3" style={{color:'#1800ad'}}>Al Zohra Secondary School</h1>
                 <p className="lead mb-4">
-                Al-Zohra Secondary School caters to students from Nursery to Matric, offering a high standard of education comparable to the country’s elite English medium institutions. Our teachers are experts in their subjects, and their dedication is reflected in our outstanding results in the 2024 batch, Matric students achieved 60/60 marks in Computer Science, with the majority securing A grades in other board examination subjects as well.
+                Al-Zohra Secondary School caters to students from Nursery to Matric, offering a high standard of education comparable to the country’s elite English medium institutions. Our teachers are experts in their subjects, and their dedication is reflected in our outstanding results.Matric students achieved 60/60 in the 2024 batch, Matric students achieved 60/60 marks in Computer Science, with the majority securing A grades in other board examination subjects as well.
                 <br />We offer the following facilities and features:
 
   </p>
@@ -185,10 +185,10 @@ const AlZohraSecondarySchoolPage = () => {
                 </ul>
               </div>
               <div className="col-md-6">
-                <h4 className="fw-bold text-custom-blue mb-3">Promotion & Exams</h4>
+                <h4 className="fw-bold text-custom-blue mb-3">Exams</h4>
                 <ul>
-                  <li>Minimum 40% passing marks in each subject</li>
-                  <li>Failure in 2 core subjects means no promotion</li>
+                  {/* <li>Minimum 40% passing marks in each subject</li>
+                  <li>Failure in 2 core subjects means no promotion</li> */}
                   <li>Two terms per year: Mid & Final</li>
                   <li>Regular monthly assessments, assignments, and projects</li>
                 </ul>

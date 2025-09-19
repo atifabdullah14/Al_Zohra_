@@ -96,7 +96,7 @@ const HelpOne = () => {
                     <div className='content'>
                       <h6>Monthly Welfare <span>Assitance</span> </h6>
                       <p>
-                      We are currently supporting more than 200 underprivileged women across Karachi through Al-Zohra Welfare Cards. After proper verification, these cards are issued to deserving women to help lessen the burden of running their households by providing them with monthly financial assistance.
+                      We are currently supporting more than 200 underprivileged widows and single mothers across Karachi through Al-Zohra Welfare Cards. After proper verification, these cards are issued to deserving women to help lessen the burden of running their households by providing them with monthly financial assistance.
                       </p>
                     </div>
                     
@@ -109,7 +109,7 @@ const HelpOne = () => {
                     <div className='content'>
                       <h6>Al-Zohra Secondary School</h6>
                       <p>
-                      Al-Zohra Secondary School, registered as an English-medium institution from Nursery to Matric, combines elite-standard academics with digital literacy and modern teaching resources. With nominal fees, it ensures that high-quality, future-focused education is within every child’s reach.
+                      Al-Zohra Secondary School, registered as an English-medium institution from Nursery to Matric, combines elite-standard academics with digital literacy and modern teaching resources. With nominal fees and no extra costs, it ensures that high-quality, future-focused education is within every child’s reach.
                       </p>
                     </div>
                   </div>
