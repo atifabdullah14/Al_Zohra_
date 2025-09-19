@@ -113,28 +113,29 @@ const FooterOne = () => {
                 </div>
                 <div className='footer-two__widget-content'>
                   <ul>
-                    <li>
-                      <Link href='/about-us'>
+                  <li>
+                      <Link href='/#'>
                         <i className='fa-solid fa-arrow-right' />
-                        About Us
+                        Home
+                      </Link>
+                    </li>
+                   
+                    <li>
+                      <Link href='/welfare-assistance'>
+                        <i className='fa-solid fa-arrow-right' />
+                        Our Programs  
                       </Link>
                     </li>
                     <li>
-                      <Link href='/blog-list'>
+                      <Link href='/our-founder'>
                         <i className='fa-solid fa-arrow-right' />
-                        Our News
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href='/our-causes'>
-                        <i className='fa-solid fa-arrow-right' />
-                        Our Campaign
+                        Our Founder
                       </Link>
                     </li>
                     <li>
                       <Link href='/faq'>
                         <i className='fa-solid fa-arrow-right' />
-                        FAQ
+                        Annual Reports
                       </Link>
                     </li>
                     <li>
@@ -165,35 +166,36 @@ const FooterOne = () => {
                 <div className='footer-two__widget-content'>
                   <ul>
                     <li>
-                      <Link href='/our-causes'>
+                      <Link href='/welfare-assistance'>
                         <i className='fa-solid fa-arrow-right' />
-                        Our Causes
+                    Weflfare Assitance
                       </Link>
                     </li>
                     <li>
-                      <Link href='/events'>
+                      <Link href='/alzohra-secondary-school'>
                         <i className='fa-solid fa-arrow-right' />
                         Education Support
                       </Link>
                     </li>
                     <li>
-                      <Link href='/our-causes'>
+                      <Link href='/vocational-training'>
                         <i className='fa-solid fa-arrow-right' />
-                        Our Campaign
+                        Vocational Training 
                       </Link>
                     </li>
                     <li>
-                      <Link href='/our-causes'>
+                      <Link href='/donate-us'>
                         <i className='fa-solid fa-arrow-right' />
-                        Food Support
+                       Donate Now
                       </Link>
                     </li>
                     <li>
-                      <Link href='/our-causes'>
+                      <Link href='/contact-us'>
                         <i className='fa-solid fa-arrow-right' />
-                        Health Support
+                        Contact Us
                       </Link>
                     </li>
+                    
                   </ul>
                 </div>
               </div>
@@ -227,7 +229,7 @@ const FooterOne = () => {
                     <li>
                       <Link href='/tel:2305-587-3407'>
                         <i className='fa-solid fa-phone' />
-                        009221 -35156241
+                        +92 320 02054478
                       </Link>
                     </li>
                     <li>
