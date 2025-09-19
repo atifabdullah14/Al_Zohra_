@@ -57,7 +57,7 @@ const FooterOne = () => {
                 <div className='footer-two__widget-content'>
                   <p>
                     Our secure online donation platform allows you to make
-                    contributions quickly and safely. Choose from various.
+                    contributions quickly and safely. Choose from various make online Transfers deposit cheque and cash in our bank account .
                   </p>
                   <div className='social'>
                     <Link

@@ -59,7 +59,7 @@ const DifferenceTwo = () => {
                     Start donating poor people
                   </span>
                   <h2 className='title-animation_inner'>
-                    Donate <span>Support</span> to Make Difference way
+                    Donate and <span>Support</span> to Make a Difference 
                   </h2>
                   <p>
                     Charity is the voluntary act of giving help, typically in
