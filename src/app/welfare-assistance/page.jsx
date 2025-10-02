@@ -19,7 +19,7 @@ const stats = [
   { label: "Areas of Karachi", value: "34+" },
   { label: " Ration Packs", value: "200+" },
   { label: "Wedding Assistances", value: "300+" },
-  { label: "Cash Disbursements", value: "Endless" },
+  // { label: "Cash Disbursements", value: "Endless" },
 ];
 
 
@@ -104,7 +104,7 @@ const WelfareAssistancePage = () => {
           <div className="container">
             <div className="row text-center">
               {stats.map((stat, idx) => (
-                <div className="col-6 col-md-3 mb-4" key={idx}>
+                <div className="col-6 col-md-4 mb-4" key={idx}>
                   <div className="bg-white rounded shadow p-5 h-10">
                     <div className="display-5 fw-bold text-danger mb-5">{stat.value}</div>
                     <div className="fw-semibold text-secondary">{stat.label}</div>
