@@ -281,6 +281,56 @@ const VocationalTrainingPage = () => {
     </div>
   </div>
 </section>
+{/* banner  */}
+{/* <section className="community" style={{ padding: 0, display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+      <div
+        className="community-donation__inner"
+        style={{
+          display: 'inline-block',
+          borderRadius: "12px",
+          overflow: "hidden",
+          boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
+        }}
+      >
+        <img
+          src="/assets/images/donation/5.jpg" // your image path here
+          alt="Donation Card"
+          style={{ maxWidth: "120%", height: "auto", width: "100%" }}
+        />
+      </div>
+    </section> */}
+    <section
+  className="community"
+  style={{
+    padding: 0,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    minHeight: "100vh",
+  }}
+>
+  <div
+    className="community-donation__inner"
+    style={{
+      borderRadius: "12px",
+      overflow: "hidden",
+      boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
+      width: "100%", // Now takes full width of section or image
+      maxWidth: "900px", // Optional: limit how big it can get
+    }}
+  >
+    <img
+      src="/assets/images/donation/5.jpg"
+      alt="Donation Card"
+      style={{
+        display: "block",
+        width: "120%",   // Image fills container
+        height: "auto",  // Maintain aspect ratio
+      }}
+    />
+  </div>
+</section>
+
             {/* <div className="timeline-carousel-wrapper position-relative">
               <button
                 className="timeline-arrow timeline-arrow-left"
@@ -356,177 +406,178 @@ const VocationalTrainingPage = () => {
           </div>
         </section>
         {/* Expanded Testimonials Section */}
-        <section 
-          className="py-5 bg-white border-bottom"
-          style={{
-            filter: isVideoPopupOpen ? 'blur(5px)' : 'none',
-            transition: 'filter 0.3s ease',
-            pointerEvents: isVideoPopupOpen ? 'none' : 'auto',
-          }}
-        >
-          <div className="container text-center">
-            <h2 className="fw-bold mb-5" style={{ color: '#db567c' }}>Success Stories</h2>
+          <section 
+            className="py-5 bg-white border-bottom"
+            style={{
+              filter: isVideoPopupOpen ? 'blur(5px)' : 'none',
+              transition: 'filter 0.3s ease',
+              pointerEvents: isVideoPopupOpen ? 'none' : 'auto',
+            }}
+          >
+            <div className="container text-center">
+              <h2 className="fw-bold mb-5" style={{ color: '#db567c' }}>Success Stories</h2>
 
-            <div className="d-flex justify-content-center align-items-center position-relative">
-              {/* Left Arrow */}
-              <button
-                className="btn btn-outline-success me-3"
-                style={{ 
-                  borderColor: '#db567c', 
-                  color: '#db567c',
-                  transition: 'all 0.3s ease',
-                  minWidth: '50px',
-                  height: '50px',
-                  borderRadius: '50%'
-                }}
-                onClick={prevVideo}
-                onMouseOver={(e) => {
-                  e.target.style.backgroundColor = '#db567c';
-                  e.target.style.color = 'white';
-                }}
-                onMouseOut={(e) => {
-                  e.target.style.backgroundColor = 'transparent';
-                  e.target.style.color = '#db567c';
-                }}
-                aria-label="Previous testimonial"
-              >
-                &#8592;
-              </button>
+              <div className="d-flex justify-content-center align-items-center position-relative">
+                {/* Left Arrow */}
+                <button
+                  className="btn btn-outline-success me-3"
+                  style={{ 
+                    borderColor: '#db567c', 
+                    color: '#db567c',
+                    transition: 'all 0.3s ease',
+                    minWidth: '50px',
+                    height: '50px',
+                    borderRadius: '50%'
+                  }}
+                  onClick={prevVideo}
+                  onMouseOver={(e) => {
+                    e.target.style.backgroundColor = '#db567c';
+                    e.target.style.color = 'white';
+                  }}
+                  onMouseOut={(e) => {
+                    e.target.style.backgroundColor = 'transparent';
+                    e.target.style.color = '#db567c';
+                  }}
+                  aria-label="Previous testimonial"
+                >
+                  &#8592;
+                </button>
 
-              {/* Mobile-sized Video */}
-              <div
-                style={{
-                  width: '250px',
-                  height: '480px',
-                  borderRadius: '20px',
-                  overflow: 'hidden',
-                  boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
-                  cursor: 'pointer',
-                  transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-                }}
-                onClick={handleVideoClick}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'scale(1.02)';
-                  e.currentTarget.style.boxShadow = '0 8px 30px rgba(0,0,0,0.2)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'scale(1)';
-                  e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
-                }}
-              >
-                <div style={{ position: 'relative' }}>
-                  {isVideoLoading && (
-                    <div style={{
-                      position: 'absolute',
-                      top: '50%',
-                      left: '50%',
-                      transform: 'translate(-50%, -50%)',
-                      zIndex: 10,
-                      color: '#db567c',
-                      fontSize: '14px'
-                    }}>
-                      Loading video...
-                    </div>
-                  )}
-                  <video
-                    key={currentVideo}
-                    ref={videoRef}
-                    width="100%"
-                    height="100%"
-                    controls
-                    autoPlay={false}
-                    muted
-                    style={{ objectFit: 'cover' }}
-                    onLoadStart={() => setIsVideoLoading(true)}
-                    onCanPlay={() => handleVideoLoad()}
-                    onError={handleVideoError}
-                  >
-                    <source src={videoTestimonials[currentVideo].videoUrl} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  {/* Play overlay */}
-                  <div
-                    style={{
-                      position: 'absolute',
-                      top: '50%',
-                      left: '50%',
-                      transform: 'translate(-50%, -50%)',
-                      background: 'rgba(0,0,0,0.7)',
-                      borderRadius: '50%',
-                      width: '60px',
-                      height: '60px',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      transition: 'all 0.3s ease',
-                      opacity: 0,
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.opacity = '1';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.opacity = '0';
-                    }}
-                  >
-                    <i 
-                      className='fa-solid fa-play'
+                {/* Mobile-sized Video */}
+                <div
+                  style={{
+                    width: '250px',
+                    height: '480px',
+                    borderRadius: '20px',
+                    overflow: 'hidden',
+                    boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
+                    cursor: 'pointer',
+                    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                  }}
+                  onClick={handleVideoClick}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'scale(1.02)';
+                    e.currentTarget.style.boxShadow = '0 8px 30px rgba(0,0,0,0.2)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'scale(1)';
+                    e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
+                  }}
+                >
+                  <div style={{ position: 'relative' }}>
+                    {isVideoLoading && (
+                      <div style={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        zIndex: 10,
+                        color: '#db567c',
+                        fontSize: '14px'
+                      }}>
+                        Loading video...
+                      </div>
+                    )}
+                    <video
+                      key={currentVideo}
+                      ref={videoRef}
+                      width="100%"
+                      height="100%"
+                      controls
+                      autoPlay={false}
+                      muted
+                      style={{ objectFit: 'cover' }}
+                      onLoadStart={() => setIsVideoLoading(true)}
+                      onCanPlay={() => handleVideoLoad()}
+                      onError={handleVideoError}
+                    >
+                      <source src={videoTestimonials[currentVideo].videoUrl} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    {/* Play overlay */}
+                    <div
                       style={{
-                        color: 'white',
-                        fontSize: '20px',
-                        marginLeft: '3px',
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        background: 'rgba(0,0,0,0.7)',
+                        borderRadius: '50%',
+                        width: '60px',
+                        height: '60px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        transition: 'all 0.3s ease',
+                        opacity: 0,
                       }}
-                    />
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.opacity = '1';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.opacity = '0';
+                      }}
+                    >
+                      <i 
+                        className='fa-solid fa-play'
+                        style={{
+                          color: 'white',
+                          fontSize: '20px',
+                          marginLeft: '3px',
+                        }}
+                      />
+                    </div>
                   </div>
                 </div>
+
+                {/* Right Arrow */}
+                <button
+                  className="btn btn-outline-success ms-3"
+                  style={{ 
+                    borderColor: '#db567c', 
+                    color: '#db567c',
+                    transition: 'all 0.3s ease',
+                    minWidth: '50px',
+                    height: '50px',
+                    borderRadius: '50%'
+                  }}
+                  onClick={nextVideo}
+                  onMouseOver={(e) => {
+                    e.target.style.backgroundColor = '#db567c';
+                    e.target.style.color = 'white';
+                  }}
+                  onMouseOut={(e) => {
+                    e.target.style.backgroundColor = 'transparent';
+                    e.target.style.color = '#db567c';
+                  }}
+                  aria-label="Next testimonial"
+                >
+                  &#8594;
+                </button>
               </div>
 
-              {/* Right Arrow */}
-              <button
-                className="btn btn-outline-success ms-3"
-                style={{ 
-                  borderColor: '#db567c', 
-                  color: '#db567c',
-                  transition: 'all 0.3s ease',
-                  minWidth: '50px',
-                  height: '50px',
-                  borderRadius: '50%'
-                }}
-                onClick={nextVideo}
-                onMouseOver={(e) => {
-                  e.target.style.backgroundColor = '#db567c';
-                  e.target.style.color = 'white';
-                }}
-                onMouseOut={(e) => {
-                  e.target.style.backgroundColor = 'transparent';
-                  e.target.style.color = '#db567c';
-                }}
-                aria-label="Next testimonial"
-              >
-                &#8594;
-              </button>
+              {/* Video Navigation Dots */}
+              <div className="mt-4 d-flex justify-content-center">
+                {videoTestimonials.map((_, index) => (
+                  <button
+                    key={index}
+                    className={`btn btn-sm mx-1 ${index === currentVideo ? 'btn-success' : 'btn-outline-success'}`}
+                    style={{
+                      backgroundColor: index === currentVideo ? '#db567c' : 'transparent',
+                      borderColor: '#db567c',
+                      color: index === currentVideo ? 'white' : '#db567c',
+                      width: '12px',
+                      height: '12px',
+                      borderRadius: '50%',
+                      padding: '0'
+                    }}
+                    onClick={() => handleVideoChange(index)}
+                  />
+                ))}
+              </div>
             </div>
-
-            {/* Video Navigation Dots */}
-            <div className="mt-4 d-flex justify-content-center">
-              {videoTestimonials.map((_, index) => (
-                <button
-                  key={index}
-                  className={`btn btn-sm mx-1 ${index === currentVideo ? 'btn-success' : 'btn-outline-success'}`}
-                  style={{
-                    backgroundColor: index === currentVideo ? '#db567c' : 'transparent',
-                    borderColor: '#db567c',
-                    color: index === currentVideo ? 'white' : '#db567c',
-                    width: '12px',
-                    height: '12px',
-                    borderRadius: '50%',
-                    padding: '0'
-                  }}
-                  onClick={() => handleVideoChange(index)}
-                />
-              ))}
-            </div>
-          </div>
-        </section>
+          </section>
+          
 
         {/* Call to Action Section */}
         <section className="py-5 text-center bg-white">

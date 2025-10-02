@@ -56,12 +56,11 @@ const FooterOne = () => {
                 </div>
                 <div className='footer-two__widget-content'>
                   <p>
-                    Our secure online donation platform allows you to make
-                    contributions quickly and safely. Choose from various make online Transfers deposit cheque and cash in our bank account .
+                  Our secure donation platform allows you to donate through various methods, including bank transfer, cheque deposit, cash deposit at the bank, cheque pickup services, or by donating cash at our premises.
                   </p>
                   <div className='social'>
                     <Link
-                      href='https://www.facebook.com'
+                      href='https://www.facebook.com/AlzohraWelfare'
                       target='_blank'
                       aria-label='share us on facebook'
                       title='facebook'
@@ -69,7 +68,7 @@ const FooterOne = () => {
                       <i className='fa-brands fa-facebook-f' />
                     </Link>
                     <Link
-                       href="https://www.instagram.com/"
+                       href="https://www.instagram.com/alzohra.welfare/"
                        target="_blank"
                        rel="noreferrer"
                        title="instagram"
@@ -77,7 +76,7 @@ const FooterOne = () => {
                         <i className="fa-brands fa-instagram"></i>
                     </Link>
                     <Link
-                      href='https://x.com'
+                      href='https://x.com/alzohrawelfare  '
                       target='_blank'
                       aria-label='share us on twitter'
                       title='twitter'
@@ -85,7 +84,7 @@ const FooterOne = () => {
                       <i className='fa-brands fa-twitter' />
                     </Link>
                     <Link
-                      href='https://www.linkedin.com'
+                      href='https://www.linkedin.com/company/al-zohra-welfare-association/'
                       target='_blank'
                       aria-label='share us on linkedin'
                       title='linkedin'
@@ -133,7 +132,7 @@ const FooterOne = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link href='/faq'>
+                      <Link href='/annual-reports'>
                         <i className='fa-solid fa-arrow-right' />
                         Annual Reports
                       </Link>
@@ -219,17 +218,24 @@ const FooterOne = () => {
                   <ul>
                     <li>
                       <Link
-                        href='/https://maps.app.goo.gl/Gr9pTNqz5FRNrjQw8'
+                        href='https://maps.app.goo.gl/mhugqWMuHLRso39fA'
                         target='_blank'
                       >
                         <i className='fa-solid fa-location-dot' />
-                        Building No. 211/1, Street No. 11, Punjab Colony,Karachi Pakistan.
+                        Plot No.C-55/24/1, Building No 211/1, Street No 11 Punjab Colony Karachi
                       </Link>
                     </li>
                     <li>
-                      <Link href='/tel:2305-587-3407'>
+                      <Link href='/tel:+92 320 02054478'>
                         <i className='fa-solid fa-phone' />
                         +92 320 02054478
+                      </Link>
+                    </li>
+                    <li>
+                      
+                      <Link href='/tel:+92 21 35156241'>
+                        <i className='fa-solid fa-phone' />
+                        +92 21 35156241
                       </Link>
                     </li>
                     <li>
@@ -251,7 +257,7 @@ const FooterOne = () => {
                 <div className='footer-two__copyright-inner text-center text-lg-start'>
                   <p>
                    Al Zohra <span id='copyrightYear' />{" "}
-                    <Link href='/'>Powered</Link>. By Teztar Support
+                   Powered By <Link href='https://www.teztarsupport.com/'>Teztar Support</Link>.  
                   </p>
                 </div>
               </div>
@@ -259,15 +265,16 @@ const FooterOne = () => {
                 <div className='footer__bottom-left'>
                   <ul className='footer__bottom-list justify-content-center justify-content-lg-end'>
                     <li>
-                      <Link href='/terms-conditions'>
+                      <Link href='#'>
+                      {/* terms-conditions */}
                         Terms &amp; Conditions
                       </Link>
                     </li>
                     <li>
-                      <Link href='/privacy-policy'>Privacy Policy</Link>
+                      <Link href='#'>Privacy Policy</Link>
                     </li>
                     <li>
-                      <Link href='/privacy-policy'>Cookie Settings</Link>
+                      <Link href='#'>Cookie Settings</Link>
                     </li>
                   </ul>
                 </div>

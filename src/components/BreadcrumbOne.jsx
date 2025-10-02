@@ -24,7 +24,7 @@ const BreadcrumbOne = ({ title, bgImage }) => {
       "Cause Details": "assets/images/banner/banner-bg.jpg", // Cause Details page
       
       // Donation & Support Pages
-      "Donate Us": "assets/images/banner/donate-2.jpeg", // Donate Us page
+      "Donate Us": "assets/images/banner/donate-2e.jpg", // Donate Us page
       // "One-Time Donation": "assets/images/banner/banner-bg2.jpg", // One-Time Donation page
       // "Zakat & Sadqah": "assets/images/banner/banner-bgs.jpg", // Zakat & Sadqah page
       // "Sponsor a Child": "assets/images/banner/banner-one-bg.png", // Sponsor a Child page

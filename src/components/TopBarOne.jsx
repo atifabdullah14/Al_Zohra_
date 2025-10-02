@@ -34,7 +34,7 @@ const TopBarOne = () => {
                       <li>
                         <a href="tel:2305-587-3407">
                           <i className="fa-solid fa-phone"></i>
-                          +92(200) 205-478
+                          +92(320) 0205-478
                         </a>
                       </li>
                     </ul>
@@ -44,7 +44,7 @@ const TopBarOne = () => {
                   <div className="topbar__extra text-center">
                     <p>
                       <i className="icon-heart-hand"></i> Are you ready to help
-                      them? Let's become a volunteer!
+                      them? Let's become a Donor!
                     </p>
                   </div>
                 </div>
@@ -86,7 +86,7 @@ const TopBarOne = () => {
                     </div> */}
                     <div className="social">
                       <a
-                        href="https://www.facebook.com/"
+                        href="https://www.facebook.com/AlzohraWelfare"
                         target="_blank"
                         rel="noreferrer"
                         title="facebook"
@@ -102,7 +102,7 @@ const TopBarOne = () => {
                         <i className="fa-brands fa-vimeo-v"></i>
                       </a> */}
                       <a
-                        href="https://www.instagram.com/alzohra.welfare/?hl=en"
+                        href="https://www.instagram.com/alzohra.welfare/"
                         target="_blank"
                         rel="noreferrer"
                         title="instagram"
@@ -110,7 +110,7 @@ const TopBarOne = () => {
                         <i className="fa-brands fa-instagram"></i>
                       </a>
                       <a
-                        href="https://x.com/"
+                        href="https://x.com/alzohrawelfare"
                         target="_blank"
                         rel="noreferrer"
                         title="twitter"
@@ -118,7 +118,7 @@ const TopBarOne = () => {
                         <i className="fa-brands fa-twitter"></i>
                       </a>
                       <a
-                        href="https://www.linkedin.com/company/al-zohra-welfare-association"
+                        href="https://www.linkedin.com/company/al-zohra-welfare-association/"
                         target="_blank"
                         rel="noreferrer"
                         title="linkedin"

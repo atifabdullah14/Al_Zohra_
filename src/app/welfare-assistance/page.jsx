@@ -16,7 +16,7 @@ import TestimonialWelfare from "@/components/TestimonialWelfare";
 //   { label: "Cash Disbursements", value: "Countless" },
 // ];
 const stats = [
-  { label: " Serving Karachi", value: "34+" },
+  { label: "Areas of Karachi", value: "34+" },
   { label: " Ration Packs", value: "200+" },
   { label: "Wedding Assistances", value: "300+" },
   { label: "Cash Disbursements", value: "Endless" },
@@ -43,6 +43,8 @@ const WelfareAssistancePage = () => {
                   Ordinance, 1961 for the benefit of women and the destitute families of Karachi. It is a non-profit organization with the dual aim of Empowering women making them self sufficient, providing education and community development alongside caring for our older generation and needy by providing assistance .
 
                 </p>
+                
+                
                 <ul className="list-unstyled mb-4">
                   <li><i className="fa fa-check-circle text-danger me-2"></i>Monthly Zakat Assistance</li>
                   <li><i className="fa fa-check-circle text-danger me-2"></i>Wedding Assistance</li>
@@ -52,10 +54,48 @@ const WelfareAssistancePage = () => {
                   {/* <li><i className="fa fa-check-circle text-success me-2"></i>Cash Disbursement</li> */}
                 </ul>
                 <a href="https://www.facebook.com/AlzohraWelfare/" className="btn btn-danger btn-lg shadow">Follow Us</a>
+                
               </div>
-              <div className="col-md-5 text-center">
+              {/* <div className="col-md-5 text-center">
                 <img src="/assets/images/community/gift.png" alt="Welfare Assistance" className="img-fluid rounded shadow" style={{ maxHeight: 320 }} />
-              </div>
+              </div> */}
+<div className="col-md-5 d-none d-md-block">
+  <div
+    className="help__thumb text-end"
+    style={{
+      position: "relative",
+      width: "100%",
+      display: "inline-block"
+    }}
+  >
+    <img
+      src="/assets/images/donation/1.jpg"
+      alt="Al-Zohra Banner"
+      style={{
+        width: "100%",
+        height: "auto",
+        maxWidth: "100%",
+        borderRadius: "8px",
+        boxShadow: "0 0 10px rgba(0,0,0,0.2)"
+      }}
+    />
+    <div
+      className="vertical-text"
+      style={{
+        position: "absolute",
+        bottom: "10px",
+        right: "-40px",
+        transform: "rotate(90deg)",
+        fontSize: "16px",
+        fontWeight: "bold",
+        color: "#1800ad",
+        whiteSpace: "nowrap"
+      }}
+    >
+      
+    </div>
+  </div>
+</div>
             </div>
           </div>
         </section>
@@ -90,7 +130,7 @@ const WelfareAssistancePage = () => {
                 </p>
                 <h2 className="fw-bold text-danger mb-3 mt-4">How It's Going</h2>
                 <p>
-                  Now, after 34 years, Al-Zohra operates from a six-storey building and a second campus, running a secondary school, two vocational centers, and distributing monthly rations to over 200 families.Our impact is made possible by the donation of generous people and dedicated sincere efforts of our team. 
+                  Now, after 34 years, Al-Zohra operates from a building and a second campus, running a secondary school, two vocational centers, and distributing monthly rations to over 200 families.Our impact is made possible by the donation of generous people and dedicated sincere efforts of our team. 
                 </p>
               </div>
             </div>
@@ -191,7 +231,7 @@ const WelfareAssistancePage = () => {
         <section className="py-5 text-center bg-danger bg-opacity-10">
           <div className="container">
             <h2 className="fw-bold text-danger mb-3">Support Our Welfare Programs</h2>
-            <p className="lead mb-4">Your support helps us provide dignity, hope, and essential resources to Karachi's most vulnerable. Join us as a donor, volunteer, or advocate.</p>
+            <p className="lead mb-4">Your support helps us provide dignity, hope, and essential resources to Karachi's most vulnerable. Join us as a donor or advocate.</p>
             <a href="https://wa.me/message/H4XCFQ5TGB5QN1" className="btn btn-danger btn-lg shadow">Contact Us</a>
           </div>
         </section>

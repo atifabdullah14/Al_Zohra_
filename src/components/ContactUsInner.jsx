@@ -1,3 +1,45 @@
+"use client";
+const handleFormSubmit = async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(e.target);
+
+  try {
+    const response = await fetch("https://admin.alzohra.org/send-mail.php", {
+      method: "POST",
+      body: formData,
+    });
+
+    const result = await response.json();
+
+    if (result.status === "success") {
+      alert("✅ Message sent successfully!");
+      e.target.reset(); // Optional: clear the form
+    } else {
+      alert("❌ Error sending message: " + result.message);
+    }
+  } catch (error) {
+    alert("❌ Failed to send message. Please try again later.");
+    console.error("Send Error:", error);
+  }
+};
+
+// fetch('https://admin.alzohra.org/send-mail.php', {
+//   method: 'POST',
+//   headers: {
+//     'Content-Type': 'application/x-www-form-urlencoded',  // or 'application/json' if you handle JSON
+//   },
+//   body: new URLSearchParams({
+//     name: 'Atif Abdullah',
+//     email: 'atifabdullah8008@gmail.com',
+//     phone: '1234567890',
+//     message: 'Hello from contact form'
+//   })
+// })
+// .then(res => res.json())
+// .then(data => console.log(data))
+// .catch(err => console.error(err));
+
 const ContactUsInner = () => {
   return (
     <section className='contact-main volunteer'>
@@ -31,7 +73,7 @@ const ContactUsInner = () => {
                         target='_blank'
                         rel='noreferrer'
                       >
-                        No: 211 75600, 1 Jami Commercial Street 11, Delhi Colony, Karachi, 75500
+                        Plot No.C-55/24/1, Building No 211/1, Street No 11 Punjab Colony Karachi
                       </a>
                     </p>
                   </div>
@@ -131,11 +173,11 @@ const ContactUsInner = () => {
                   marked *
                 </p>
               </div>
-              <form action='#' method='post' className='cta'>
+              <form onSubmit={handleFormSubmit} className='cta'>
                 <div className='input-single'>
                   <input
                     type='text'
-                    name='full-name'
+                    name='name'
                     id='fullName'
                     placeholder='Enter Name'
                     required=''
@@ -145,7 +187,7 @@ const ContactUsInner = () => {
                 <div className='input-single'>
                   <input
                     type='email'
-                    name='c-email'
+                    name='email'
                     id='cEmail'
                     placeholder='Enter Email'
                     required=''
@@ -155,7 +197,7 @@ const ContactUsInner = () => {
                 <div className='input-single'>
                   <input
                     type='text'
-                    name='phone-number'
+                    name='phone'
                     id='phoneNumber'
                     placeholder='Phone Number'
                     required=''
@@ -164,7 +206,7 @@ const ContactUsInner = () => {
                 </div>
                 <div className='input-single alter-input'>
                   <textarea
-                    name='contact-message'
+                    name='message'
                     id='contactMessage'
                     placeholder='Your Message...'
                     defaultValue={""}
@@ -178,7 +220,7 @@ const ContactUsInner = () => {
                     title='submit message'
                     className='btn--primary'
                   >
-                    Get A Quote <i className='fa-solid fa-arrow-right' />
+                    Submit <i className='fa-solid fa-arrow-right' />
                   </button>
                 </div>
               </form>

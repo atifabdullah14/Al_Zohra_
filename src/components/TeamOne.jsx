@@ -14,7 +14,7 @@ const TeamOne = () => {
               >
                 <span className='sub-title'>
                   <i className='icon-donation' />
-                  Start donating poor people
+                  Please start donating
                 </span>
                 <h2 className='title-animation_inner'>
                   Meet Our Board
@@ -114,7 +114,7 @@ const TeamOne = () => {
                   <div className='team__single-thumb'>
                     <Link href='/team-details'>
                       <img
-                        src='assets/images/team/four.png'
+                        src='assets/images/team/four.jpg'
                         alt='Image_inner'
                       />
                     </Link>                   
@@ -190,7 +190,7 @@ const TeamOne = () => {
               >
                 <span className='sub-title'>
                   <i className='icon-donation' />
-                  Start donating poor people
+                  Please start donating
                 </span>
                 <h2 className='title-animation_inner'>
                   Meet Our Exective <span>members</span>
@@ -231,7 +231,7 @@ const TeamOne = () => {
                 <div className='team__single van-tilt'>
                   <div className='team__single-thumb'>
                     <Link href='/team-details'>
-                      <img src='assets/images/team/NINE.jpg' alt='Image_inner' />
+                      <img src='assets/images/team/NINE10.png' alt='Image_inner' />
                     </Link>                    
                   </div>
                   <div className='team__single-content'>
@@ -336,7 +336,7 @@ const TeamOne = () => {
                 <div className='team__single van-tilt'>
                   <div className='team__single-thumb'>
                     <Link href='/team-details'>
-                      <img src='assets/images/team/18.jpg' alt='Image_inner' />
+                      <img src='assets/images/team/18.png' alt='Image_inner' />
                     </Link>                    
                   </div>
                   <div className='team__single-content'>
@@ -488,7 +488,7 @@ const TeamOne = () => {
             
           
           </div>
-          <div className='row'>
+          {/* <div className='row'>
             <div className='col-12'>
               <div className='section__cta cta text-center'>
                 <Link
@@ -502,7 +502,7 @@ const TeamOne = () => {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className='spade'>
           <img src='assets/images/sprade-green.png' alt='Image_inner' />

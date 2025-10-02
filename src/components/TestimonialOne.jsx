@@ -43,40 +43,40 @@ const TestimonialOne = () => {
   const testimonialVideos = [
     {
       id: 1,
-      video: "/assets/videos/home-1.mp4",
+      video: "/assets/videos/1.mp4",
       author: "",
       company: "",
     },
     {
       id: 2,
-      video: "/assets/videos/home-2.mp4",
+      video: "/assets/videos/2.mp4",
       author: "",
       company: "",
     },
     {
       id: 3,
-      video: "/assets/videos/home-3.mp4",
+      video: "/assets/videos/3.mp4",
       author: "",
       company: "",
     },
     {
       id: 4,
-      video: "/assets/videos/home-4.mp4",
+      video: "/assets/videos/4.mp4",
       author: "",
       company: "",
     },
     {
       id: 5,
-      video: "/assets/videos/home-1.mp4",
+      video: "/assets/videos/5.mp4",
       author: "",
       company: "",
     },
-    {
-      id: 6,
-      video: "/assets/videos/home-2.mp4",
-      author: "",
-      company: "",
-    }
+    // {
+    //   id: 6,
+    //   video: "/assets/videos/home-2.mp4",
+    //   author: "",
+    //   company: "",
+    // }
   ];
 
   const handleVideoClick = (video) => {
@@ -124,7 +124,7 @@ const TestimonialOne = () => {
               >
                 <span className='sub-title'>
                   <i className='icon-donation' />
-                  Start donating poor people
+                  Please start donating
                 </span>
                 <h2 className='title-animation_inner'>
                   Our  <span>Testimonials</span>

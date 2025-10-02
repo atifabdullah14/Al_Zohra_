@@ -1,190 +1,210 @@
+// "use client";
+// import Link from "next/link";
+// import { useState } from "react";
+
+// const CommunityOne = () => {
+//   let [amount, setAmount] = useState(500);
+//   return (
+//     <>
+//       <section className='community'>
+//         <div className='container'>
+//           <div className='row'>
+//             <div className='col-12 col-md-8 col-xl-7'>
+//               <div
+//                 className='section__header'
+//                 data-aos='fade-up'
+//                 data-aos-duration={1000}
+//               >
+//                 <span className='sub-title'>
+//                   <i className='icon-donation' />
+//                   Please start donating
+//                 </span>
+//                 <h2 className='title-animation_inner'>
+//                   Join Us in providing<span>Eduction</span>  For Children
+//                 </h2>
+//               </div>
+//             </div>
+//           </div>
+//           <div className='row'>
+//             <div className='col-12'>
+//               <div
+//                 className='community-donation'
+//                 data-aos='fade-up'
+//                 data-aos-duration={1000}
+//               >
+//                 <div className='community-donation__inner'>
+//                   <h4>Support Where It Counts.</h4>
+                 
+//                   <div className='donation-form'>
+//                     <div className='donation-form__single'>
+//                       <h5>Your Donation:</h5>
+//                       <div className='input-group-icon'>
+//                         <div className='thumb'>
+//                         <span className="text-white">Rs</span>
+                    
+//                         </div>
+//                         <input
+//                           type='text'
+//                           name='donation-amount'
+//                           id='donationAmount'
+//                           value={amount}
+//                           onChange={(e) => setAmount(e.target.value)}
+//                         />
+//                       </div>
+//                       <div className='made-amount'>
+//                         <span
+//                           className={`donation-amount ${
+//                             amount === 500 && "active"
+//                           }`}
+//                           onClick={() => setAmount(500)}
+//                         >
+//                           500
+//                         </span>
+//                         <span
+//                           className={`donation-amount ${
+//                             amount === 1000 && "active"
+//                           }`}
+//                           onClick={() => setAmount(1000)}
+//                         >
+//                           1000
+//                         </span>
+//                         <span
+//                           className={`donation-amount ${
+//                             amount === 2000 && "active"
+//                           }`}
+//                           onClick={() => setAmount(2000)}
+//                         >
+//                           2000
+//                         </span>
+//                         <span
+//                           className={`donation-amount ${
+//                             amount === 5000 && "active"
+//                           }`}
+//                           onClick={() => setAmount(5000)}
+//                         >
+//                           5000
+//                         </span>
+//                         <span
+//                           className={`donation-amount custom-amount ${
+//                             amount === 0 && "active"
+//                           }`}
+//                           onClick={() => setAmount(0)}
+//                         >
+//                           Custom
+//                         </span>
+//                       </div>
+//                     </div>
+//                     {/* <div className='donation-form__single'>
+//                       <h5>Select Payment Method</h5>
+//                       <div className='radio-wrapper'>
+//                         <div className='radio-single'>
+//                           <input
+//                             type='radio'
+//                             id='testDonation'
+//                             name='donation-payment'
+//                             defaultChecked=''
+//                           />
+//                           <label htmlFor='testDonation'>Test Donation</label>
+//                         </div>
+//                         <div className='radio-single'>
+//                           <input
+//                             type='radio'
+//                             id='offlineDonation'
+//                             name='donation-payment'
+//                             defaultChecked=''
+//                           />
+//                           <label htmlFor='offlineDonation'>
+//                             Offline Donation
+//                           </label>
+//                         </div>
+//                         <div className='radio-single'>
+//                           <input
+//                             type='radio'
+//                             id='cardDonation'
+//                             name='donation-payment'
+//                             defaultChecked=''
+//                           />
+//                           <label htmlFor='cardDonation'>Credit Card</label>
+//                         </div>
+//                       </div>
+//                     </div> */}
+//                     <div className='cta'>
+//                       <Link
+//                         href='/donate-us'
+//                         aria-label='donate us'
+//                         title='donate us'
+//                         className='btn--primary'
+//                       >
+//                         Donate Now <i className='fa-solid fa-arrow-right' />
+//                       </Link>
+//                     </div>
+//                   </div>
+//                 </div>
+//                 <div
+//                   className='community__thumb d-none d-lg-block'
+//                   data-aos='fade-left'
+//                   data-aos-duration={1000}
+//                 >
+//                   <img
+//                     src='/assets/images/community/thumb.jpg'
+//                     alt='Image_inner'
+//                   />
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//         <div className='community-bg'>
+//           <img
+//             src='/assets/images/community/comsmunity-bg.jpg'
+//             alt='Image_inner'
+//           />
+//         </div>
+//         <div
+//           className='gift'
+//           data-aos='fade-up'
+//           data-aos-duration={1000}
+//           data-aos-delay={200}
+//         >
+//           <img src='/assets/images/community/gift.png' alt='Image_inner' />
+//         </div>
+//         <div className='spade'>
+//           <img
+//             src='/assets/images/community/spade.png'
+//             alt='Image_inner'
+//             className='base-img'
+//           />
+//         </div>
+//       </section>
+//     </>
+//   );
+// };
+
+// export default CommunityOne;
+
+
 "use client";
-import Link from "next/link";
-import { useState } from "react";
 
 const CommunityOne = () => {
-  let [amount, setAmount] = useState(500);
   return (
-    <>
-      <section className='community'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-12 col-md-8 col-xl-7'>
-              <div
-                className='section__header'
-                data-aos='fade-up'
-                data-aos-duration={1000}
-              >
-                <span className='sub-title'>
-                  <i className='icon-donation' />
-                  Start donating poor people
-                </span>
-                <h2 className='title-animation_inner'>
-                  Join Us in providing<span>Eduction</span>  For Children
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div className='row'>
-            <div className='col-12'>
-              <div
-                className='community-donation'
-                data-aos='fade-up'
-                data-aos-duration={1000}
-              >
-                <div className='community-donation__inner'>
-                  <h4>Support Where It Counts.</h4>
-                  {/* <div className='warning'>
-                    <div className='line'>
-                      <i className='fa-solid fa-triangle-exclamation' />
-                    </div>
-                    <p>
-                      <strong>Notice:</strong> Test mode is enabled. While in
-                      test mode no live donations are processed.
-                    </p>
-                  </div> */}
-                  <div className='donation-form'>
-                    <div className='donation-form__single'>
-                      <h5>Your Donation:</h5>
-                      <div className='input-group-icon'>
-                        <div className='thumb'>
-                        <span className="text-white">Rs</span>
-                          {/* <i className='fa-solid fa-money-bill' /> */}
-                        </div>
-                        <input
-                          type='text'
-                          name='donation-amount'
-                          id='donationAmount'
-                          value={amount}
-                          onChange={(e) => setAmount(e.target.value)}
-                        />
-                      </div>
-                      <div className='made-amount'>
-                        <span
-                          className={`donation-amount ${
-                            amount === 500 && "active"
-                          }`}
-                          onClick={() => setAmount(500)}
-                        >
-                          500
-                        </span>
-                        <span
-                          className={`donation-amount ${
-                            amount === 1000 && "active"
-                          }`}
-                          onClick={() => setAmount(1000)}
-                        >
-                          1000
-                        </span>
-                        <span
-                          className={`donation-amount ${
-                            amount === 2000 && "active"
-                          }`}
-                          onClick={() => setAmount(2000)}
-                        >
-                          2000
-                        </span>
-                        <span
-                          className={`donation-amount ${
-                            amount === 5000 && "active"
-                          }`}
-                          onClick={() => setAmount(5000)}
-                        >
-                          5000
-                        </span>
-                        <span
-                          className={`donation-amount custom-amount ${
-                            amount === 0 && "active"
-                          }`}
-                          onClick={() => setAmount(0)}
-                        >
-                          Custom
-                        </span>
-                      </div>
-                    </div>
-                    {/* <div className='donation-form__single'>
-                      <h5>Select Payment Method</h5>
-                      <div className='radio-wrapper'>
-                        <div className='radio-single'>
-                          <input
-                            type='radio'
-                            id='testDonation'
-                            name='donation-payment'
-                            defaultChecked=''
-                          />
-                          <label htmlFor='testDonation'>Test Donation</label>
-                        </div>
-                        <div className='radio-single'>
-                          <input
-                            type='radio'
-                            id='offlineDonation'
-                            name='donation-payment'
-                            defaultChecked=''
-                          />
-                          <label htmlFor='offlineDonation'>
-                            Offline Donation
-                          </label>
-                        </div>
-                        <div className='radio-single'>
-                          <input
-                            type='radio'
-                            id='cardDonation'
-                            name='donation-payment'
-                            defaultChecked=''
-                          />
-                          <label htmlFor='cardDonation'>Credit Card</label>
-                        </div>
-                      </div>
-                    </div> */}
-                    <div className='cta'>
-                      <Link
-                        href='/donate-us'
-                        aria-label='donate us'
-                        title='donate us'
-                        className='btn--primary'
-                      >
-                        Donate Now <i className='fa-solid fa-arrow-right' />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className='community__thumb d-none d-lg-block'
-                  data-aos='fade-left'
-                  data-aos-duration={1000}
-                >
-                  <img
-                    src='/assets/images/community/thumb.jpg'
-                    alt='Image_inner'
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className='community-bg'>
-          <img
-            src='/assets/images/community/comsmunity-bg.jpg'
-            alt='Image_inner'
-          />
-        </div>
-        <div
-          className='gift'
-          data-aos='fade-up'
-          data-aos-duration={1000}
-          data-aos-delay={200}
-        >
-          <img src='/assets/images/community/gift.png' alt='Image_inner' />
-        </div>
-        <div className='spade'>
-          <img
-            src='/assets/images/community/spade.png'
-            alt='Image_inner'
-            className='base-img'
-          />
-        </div>
-      </section>
-    </>
+    <section className="community" style={{ padding: 0, display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+      <div
+        className="community-donation__inner"
+        style={{
+          display: 'inline-block',
+          borderRadius: "12px",
+          overflow: "hidden",
+          boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
+        }}
+      >
+        <img
+          src="/assets/images/donation/8.jpg" // your image path here
+          alt="Donation Card"
+          style={{ display: "block", maxWidth: "100%", height: "auto" }}
+        />
+      </div>
+    </section>
+    
   );
 };
 

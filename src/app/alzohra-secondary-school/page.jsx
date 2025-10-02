@@ -78,9 +78,48 @@ const AlZohraSecondarySchoolPage = () => {
                 <a href="https://www.facebook.com/AlzohraSchool" className="btn btn-success btn-lg shadow btn-custom-blue">Follow Us 
                 </a>
               </div>
-              <div className="col-md-5 text-center">
+              {/* <div className="col-md-5 text-center">
                 <img src="/assets/images/event/overview.jpg" alt="Secondary School" className="img-fluid rounded shadow" style={{maxHeight: 320}} />
-              </div>
+              </div> */}
+              <div className="col-md-5 d-none d-md-block">
+  <div
+    className="help__thumb text-end"
+    style={{
+      position: "relative",
+      width: "100%",
+      display: "inline-block"
+    }}
+  >
+    <img
+      src="/assets/images/donation/2.jpg"
+      alt="Al-Zohra Banner"
+      style={{
+        width: "100%",
+        height: "auto",
+        maxWidth: "100%",
+        borderRadius: "8px",
+        boxShadow: "0 0 10px rgba(0,0,0,0.2)"
+      }}
+    />
+    <div
+      className="vertical-text"
+      style={{
+        position: "absolute",
+        bottom: "10px",
+        right: "-40px",
+        transform: "rotate(90deg)",
+        fontSize: "16px",
+        fontWeight: "bold",
+        color: "#1800ad",
+        whiteSpace: "nowrap"
+      }}
+    >
+      
+    </div>
+  </div>
+</div>
+
+              
             </div>
           </div>
         </section>
@@ -268,7 +307,7 @@ const AlZohraSecondarySchoolPage = () => {
         <section className="py-5 text-center bg-success bg-opacity-10">
           <div className="container">
             <h2 className="fw-bold text-custom-blue mb-3">Empower a Child's Future</h2>
-            <p className="lead mb-4">Support our mission to provide quality, affordable education to all. Join us as a donor, volunteer, or parent.</p>
+            <p className="lead mb-4">Support our mission to provide quality, affordable education to all. Join us as a donor or parent.</p>
             <a href=" https://wa.me/message/H4XCFQ5TGB5QN1 " className="btn btn-success btn-lg shadow btn-custom-blue">Contact Us </a>
           </div>
         </section>

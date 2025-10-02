@@ -21,6 +21,7 @@ const BannerOne = () => {
       <section className='banner-two'>
         <div className='banner-two__slider swiper'>
           <Slider {...settings} ref={sliderRef} className='swiper-wrapper'>
+          {/* banner 1 image  */}
             <div className='swiper-slide'>
               <div className='banner-two__slider-single'>
                 <div
@@ -36,11 +37,11 @@ const BannerOne = () => {
                       <div className='banner-two__slider-content'>
                         <span className='sub-title'>
                           <i className='icon-donation' />
-                          Start donating poor people
+                          Please start donating 
                         </span>
                         <h1>
                           Empowering <br />
-                          Students for  <span className='bottom-line'><br /></span>
+                          Women for  <span className='bottom-line'><br /></span>
                           a better Future.
                         </h1>
                         <div className='banner__content-cta cta'>
@@ -59,7 +60,7 @@ const BannerOne = () => {
                             title='contact us'
                             className='btn--primary'
                           >
-                            Get A Quote{" "}
+                             Contact Us{" "}
                             <i className='fa-solid fa-arrow-right' />
                           </Link>
                         </div>
@@ -69,6 +70,7 @@ const BannerOne = () => {
                 </div>
               </div>
             </div>
+            {/* banner 2 image  */}
             <div className='swiper-slide'>
               <div className='banner-two__slider-single'>
                 <div
@@ -84,19 +86,19 @@ const BannerOne = () => {
                       <div className='banner-two__slider-content'>
                         <span className='sub-title'>
                           <i className='icon-donation' />
-                          Start donating poor people
+                          Please start donating
                         </span>
                         <h1>
-                          Assisting <br />
-                          Those <span className='bottom-line'><br /></span>
-                          Who Strugle.
+                          Building a <br />
+                          Brighter  <span className='bottom-line'><br /></span>
+                          Future Together.
                         </h1>
                         <div className='banner__content-cta cta'>
                           <Link
-                            href='/our-causes'
-                            aria-label='about us'
-                            title='about us'
-                            className='btn--tertiary'
+                           href='/alzohra-secondary-school'
+                           aria-label='alzohra-secondary-school'
+                           title='alzohra-secondary-school'
+                           className='btn--tertiary'                        
                           >
                             Discover More{" "}
                             <i className='fa-solid fa-arrow-right' />
@@ -107,7 +109,7 @@ const BannerOne = () => {
                             title='contact us'
                             className='btn--primary'
                           >
-                            Get A Quote{" "}
+                            Contact Us{" "}
                             <i className='fa-solid fa-arrow-right' />
                           </Link>
                         </div>
@@ -117,7 +119,8 @@ const BannerOne = () => {
                 </div>
               </div>
             </div>
-            <div className='swiper-slide'>
+            {/* banner 3 image  */}
+            {/* <div className='swiper-slide'>
               <div className='banner-two__slider-single'>
                 <div
                   className='banner-two__slider-bg'
@@ -132,7 +135,7 @@ const BannerOne = () => {
                       <div className='banner-two__slider-content'>
                         <span className='sub-title'>
                           <i className='icon-donation' />
-                          Start donating poor people
+                          Please start donating
                         </span>
                         <h1>
                           Building a <br />
@@ -141,9 +144,9 @@ const BannerOne = () => {
                         </h1>
                         <div className='banner__content-cta cta'>
                           <Link
-                            href='/our-causes'
-                            aria-label='about us'
-                            title='about us'
+                            href='/alzohra-secondary-school'
+                            aria-label='alzohra-secondary-school'
+                            title='alzohra-secondary-school'
                             className='btn--tertiary'
                           >
                             Discover More{" "}
@@ -155,7 +158,7 @@ const BannerOne = () => {
                             title='contact us'
                             className='btn--primary'
                           >
-                            Get A Quote{" "}
+                             Contact Us{" "}
                             <i className='fa-solid fa-arrow-right' />
                           </Link>
                         </div>
@@ -164,7 +167,8 @@ const BannerOne = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
+            {/* banner 4 image  */}
             <div className='swiper-slide'>
               <div className='banner-two__slider-single'>
                 <div
@@ -180,18 +184,18 @@ const BannerOne = () => {
                       <div className='banner-two__slider-content'>
                         <span className='sub-title'>
                           <i className='icon-donation' />
-                          Start donating poor people
+                          Please start donating
                         </span>
                         <h1>
                           Assisting <br />
                           Those <span className='bottom-line'><br /></span>
-                          Who Strugle.
+                          Who Struggle.
                         </h1>
                         <div className='banner__content-cta cta'>
                           <Link
-                            href='/our-causes'
-                            aria-label='about us'
-                            title='about us'
+                            href='/welfare-assistance'
+                            aria-label='welfare-assistance'
+                            title='welfare-assistance'
                             className='btn--tertiary'
                           >
                             Discover More{" "}
@@ -203,7 +207,7 @@ const BannerOne = () => {
                             title='contact us'
                             className='btn--primary'
                           >
-                            Get A Quote{" "}
+                             Contact Us{" "}
                             <i className='fa-solid fa-arrow-right' />
                           </Link>
                         </div>

@@ -9,7 +9,7 @@ const DifferenceTwo = () => {
       <section className='difference-two'>
         <div className='container'>
           <div className='row gutter-40 align-items-center'>
-            <div className='col-12 col-lg-4 col-xxl-5 d-none d-lg-block'>
+            {/* <div className='col-12 col-lg-4 col-xxl-5 d-none d-lg-block'>
               <div className='difference-two__thumb-wrapper'>
                 <div className='difference-two__thumb'>
                   <div
@@ -50,13 +50,28 @@ const DifferenceTwo = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
+            <div className="col-md-5 d-none d-md-block">
+  <div data-aos="fade-right" data-aos-duration="1000">
+    <img
+      src="/assets/images/donation/4.jpg"
+      alt="Support & Donate"
+      className="img-fluid rounded shadow"
+      style={{ maxHeight: 800, objectFit: "cover", width: "100%" }}
+    />
+  </div>
+</div>
+
+
+
+
+
             <div className='col-12 col-lg-8 col-xxl-7'>
               <div className='difference-two__tab'>
                 <div className='difference-two__content'>
                   <span className='sub-title'>
                     <i className='icon-donation' />
-                    Start donating poor people
+                    Please start donating
                   </span>
                   <h2 className='title-animation_inner'>
                     Donate and <span>Support</span> to Make a Difference 
@@ -81,7 +96,7 @@ const DifferenceTwo = () => {
                             aria-label='mission'
                             title='mission'
                           >
-                            Our Mission
+                            {/* Our Mission
                           </button>
                           <button
                             className={`difference-two__tab-btn ${
@@ -90,10 +105,10 @@ const DifferenceTwo = () => {
                             onClick={() => setActiveTab("vision")}
                             aria-label='vision'
                             title='vision'
-                          >
+                          > */}
                             Our Vision
                           </button>
-                          <button
+                          {/* <button
                             className={`difference-two__tab-btn ${
                               activeTab === "excellence" ? "active" : ""
                             }`}
@@ -102,7 +117,7 @@ const DifferenceTwo = () => {
                             title='excellence'
                           >
                             Excellence
-                          </button>
+                          </button> */}
                         </div>
 
                         <div className='difference-two__tab-content'>
@@ -113,11 +128,9 @@ const DifferenceTwo = () => {
                             >
                               <ul>
                                 <li>
-                                  <i className='fa-solid fa-check' />Acquire & 
-                                  apply knowledge and marketable skills, with the fear of 
-                                  Almighty Allah to Transform Citizens into assets of Society.
+                                  <i className='fa-solid fa-ch' />Our vision is to deliver high quality education, skill building and training along with moral and ethical values to encourage students to become confident and responsible citizens. We provide all this at a reasonable cost. We aim to assist the destitute with ration and any other monetary help they may require. We endeavor to make them independent so that they may be an asset to society. Our goal is to help these individuals to utilize their full potential and achieve excellence of life.
                                 </li>
-                                <li>
+                                {/* <li>
                                   <i className='fa-solid fa-check' /> To provide comfort
                                    and full fill the needs of our previous generations
                                     and destitute of our society.
@@ -125,7 +138,7 @@ const DifferenceTwo = () => {
                                 <li>
                                   <i className='fa-solid fa-check' /> Dedicated
                                   Tech Services
-                                </li>
+                                </li> */}
                               </ul>
                             </div>
                           )}
@@ -257,14 +270,14 @@ const DifferenceTwo = () => {
                     </div>
 
                     {/* CARD */}
-                    <div className='difference-two__card'>
+                    {/* <div className='difference-two__card'>
                       <div className='card-group'>
                         <div className='thumb'>
                           <i className='icon-donation-card' />
                         </div>
                         <div className='content'>
                           <h6>Donate Now</h6>
-                          <p>$40,456</p>
+                          <p>Rs:40,456</p>
                         </div>
                       </div>
                       <hr />
@@ -274,10 +287,10 @@ const DifferenceTwo = () => {
                         </div>
                         <div className='content'>
                           <h6>Milestone <span>Achieved</span>: </h6>
-                          <p>$1,540,456</p>
+                          <p>Rs:1,540,456</p>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
