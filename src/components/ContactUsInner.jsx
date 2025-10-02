@@ -1,28 +1,10 @@
 "use client";
-const handleFormSubmit = async (e) => {
-  e.preventDefault();
 
-  const formData = new FormData(e.target);
+import React, { useState } from "react";
+import Swal from "sweetalert2";
 
-  try {
-    const response = await fetch("https://admin.alzohra.org/send-mail.php", {
-      method: "POST",
-      body: formData,
-    });
 
-    const result = await response.json();
 
-    if (result.status === "success") {
-      alert("✅ Message sent successfully!");
-      e.target.reset(); // Optional: clear the form
-    } else {
-      alert("❌ Error sending message: " + result.message);
-    }
-  } catch (error) {
-    alert("❌ Failed to send message. Please try again later.");
-    console.error("Send Error:", error);
-  }
-};
 
 // fetch('https://admin.alzohra.org/send-mail.php', {
 //   method: 'POST',
@@ -41,6 +23,44 @@ const handleFormSubmit = async (e) => {
 // .catch(err => console.error(err));
 
 const ContactUsInner = () => {
+  const [loading, setLoading] = useState(false);
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    const formData = new FormData(e.target);
+  
+    try {
+      const response = await fetch("https://admin.alzohra.org/send-mail.php", {
+        method: "POST",
+        body: formData,
+      });
+  
+      const result = await response.json();
+  
+      if (result.status === "success") {
+        Swal.fire({
+          icon: "success",
+          title: "Message Sent!",
+          text: "Your message has been sent successfully.",
+          confirmButtonColor: "#3085d6",
+        });
+        e.target.reset();
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Error!",
+          text: "Error sending message: " + result.message,
+          confirmButtonColor: "#3085d6",
+        });
+      }
+    } catch (error) {
+      alert("❌ Failed to send message. Please try again later.");
+      console.error("Send Error:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <section className='contact-main volunteer'>
       <div className='container'>
@@ -220,7 +240,8 @@ const ContactUsInner = () => {
                     title='submit message'
                     className='btn--primary'
                   >
-                    Submit <i className='fa-solid fa-arrow-right' />
+                    {loading ? "Sending..." : "Submit"} <i className="fa-solid fa-arrow-right" />
+                    {/* Submit <i className='fa-solid fa-arrow-right' /> */}
                   </button>
                 </div>
               </form>
