@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 import Slider from "react-slick";
 
-const TestimonialOne = () => {
+const TestimonialVTC = () => {
   const sliderRef = useRef(null);
   const [activeVideo, setActiveVideo] = useState(null);
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -43,40 +43,34 @@ const TestimonialOne = () => {
   const testimonialVideos = [
     {
       id: 1,
-      video: "/assets/videos/1.mp4",
-      author: "",
-      company: "",
+      video: "/assets/videos/video-1.mp4",
+      author: "Sewing Course Graduate",
+      company: "Started own tailoring business",
     },
     {
       id: 2,
-      video: "/assets/videos/2.mp4",
-      author: "",
-      company: "",
+      video: "/assets/videos/testimonial-2.mp4",
+      author: "Computer Training Success",
+      company: "Now working in IT field",
     },
     {
       id: 3,
-      video: "/assets/videos/3.mp4",
-      author: "",
-      company: "",
+      video: "/assets/videos/testimonial3.mp4",
+      author: "Beautician Course Graduate",
+      company: "Opened beauty parlor",
     },
     {
       id: 4,
-      video: "/assets/videos/4.mp4",
-      author: "",
-      company: "",
+      video: "/assets/videos/testimonial4.mp4",
+      author: "English Language Success",
+      company: "Improved communication skills",
     },
     {
       id: 5,
-      video: "/assets/videos/5.mp4",
-      author: "",
-      company: "",
+      video: "/assets/videos/video-1.mp4",
+      author: "Fitness Course Graduate",
+      company: "Became fitness instructor",
     },
-    // {
-    //   id: 6,
-    //   video: "/assets/videos/home-2.mp4",
-    //   author: "",
-    //   company: "",
-    // }
   ];
 
   const handleVideoClick = (video) => {
@@ -112,7 +106,8 @@ const TestimonialOne = () => {
           filter: isVideoPlaying ? 'blur(5px)' : 'none',
           transition: 'filter 0.3s ease',
           pointerEvents: isVideoPlaying ? 'none' : 'auto',
-          padding: '100px 0',
+          paddingTop: '60px',
+          paddingBottom: '60px',
         }}
       >
         <div className='container'>
@@ -123,14 +118,16 @@ const TestimonialOne = () => {
                 data-aos='fade-up'
                 data-aos-duration={1000}
               >
-                <span className='sub-title'>
-                  <i className='icon-donation' />
-                  Please start donating
+                <span className='sub-title' style={{ color: '#db567c' }}>
+                  <i className='fa-solid fa-graduation-cap' style={{ marginRight: '8px' }} />
+                  Success Stories
                 </span>
-                <h2 className='title-animation_inner'>
-                  Our  <span>Testimonials</span>
-                  
+                <h2 className='title-animation_inner' style={{ color: '#db567c' }}>
+                  VTC <span style={{ color: '#db567c' }}>Testimonials</span>
                 </h2>
+                <p className="lead text-muted mt-3">
+                  Hear from our graduates who have transformed their lives through our vocational training programs
+                </p>
               </div>
             </div>
           </div>
@@ -188,7 +185,7 @@ const TestimonialOne = () => {
                                 top: '50%',
                                 left: '50%',
                                 transform: 'translate(-50%, -50%)',
-                                background: 'rgba(0,0,0,0.7)',
+                                background: 'rgba(219, 86, 124, 0.9)',
                                 borderRadius: '50%',
                                 width: '80px',
                                 height: '80px',
@@ -196,6 +193,8 @@ const TestimonialOne = () => {
                                 alignItems: 'center',
                                 justifyContent: 'center',
                                 transition: 'all 0.3s ease',
+                                border: '3px solid white',
+                                boxShadow: '0 4px 15px rgba(219, 86, 124, 0.3)',
                               }}
                             >
                               <i 
@@ -213,17 +212,17 @@ const TestimonialOne = () => {
                                 bottom: '0',
                                 left: '0',
                                 right: '0',
-                                background: 'linear-gradient(transparent, rgba(0,0,0,0.8))',
+                                background: 'linear-gradient(transparent, rgba(219, 86, 124, 0.9))',
                                 padding: '20px',
                                 color: 'white',
                               }}
                             >
-                              <h6 style={{ margin: '0', fontSize: '16px', fontWeight: '600' }}>
+                              {/* <h6 style={{ margin: '0', fontSize: '16px', fontWeight: '600' }}>
                                 {testimonial.author}
                               </h6>
                               <p style={{ margin: '5px 0 0 0', fontSize: '14px', opacity: '0.9' }}>
                                 {testimonial.company}
-                              </p>
+                              </p> */}
                             </div>
                           </div>
                         </div>
@@ -241,8 +240,13 @@ const TestimonialOne = () => {
               aria-label='prev slide'
               title='prev slide'
               className='prev-testimonial slider-btn'
+              style={{
+                background: '#db567c',
+                border: '2px solid #db567c',
+                boxShadow: '0 4px 15px rgba(219, 86, 124, 0.3)',
+              }}
             >
-              <i className='fa-solid fa-arrow-left' />
+              <i className='fa-solid fa-arrow-left' style={{ color: '#fff' }} />
             </button>
             <button
               onClick={() => sliderRef.current.slickNext()}
@@ -250,8 +254,13 @@ const TestimonialOne = () => {
               aria-label='next slide'
               title='next slide'
               className='next-testimonial slider-btn slider-btn-next'
+              style={{
+                background: '#db567c',
+                border: '2px solid #db567c',
+                boxShadow: '0 4px 15px rgba(219, 86, 124, 0.3)',
+              }}
             >
-              <i className='fa-solid fa-arrow-right' />
+              <i className='fa-solid fa-arrow-right' style={{ color: '#fff' }} />
             </button>
           </div>
         </div>
@@ -325,7 +334,7 @@ const TestimonialOne = () => {
                 color: 'white',
               }}
             >
-              <h4 style={{ margin: '0', fontSize: '20px' }}>{activeVideo.author}</h4>
+              <h4 style={{ margin: '0', fontSize: '20px', color: '#db567c' }}>{activeVideo.author}</h4>
               <p style={{ margin: '5px 0 0 0', opacity: '0.8' }}>{activeVideo.company}</p>
             </div>
           </div>
@@ -335,6 +344,6 @@ const TestimonialOne = () => {
   );
 };
 
-export default TestimonialOne;
+export default TestimonialVTC;
 
 

@@ -1,72 +1,32 @@
 "use client";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
+
 const DifferenceTwo = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("mission");
+  
   return (
     <>
       <section className='difference-two'>
         <div className='container'>
           <div className='row gutter-40 align-items-center'>
-            {/* <div className='col-12 col-lg-4 col-xxl-5 d-none d-lg-block'>
-              <div className='difference-two__thumb-wrapper'>
-                <div className='difference-two__thumb'>
-                  <div
-                    className='thumb-lg'
-                    data-aos='fade-right'
-                    data-aos-duration={1000}
-                  >
-                    <img
-                      src='assets/images/difference/differ2.jpg'
-                      alt='Image_inner'
-                    />
-                    <div className='grid-line'>
-                      <img
-                        src='assets/images/difference/differ2.jpg'
-                        alt='Image_inner'
-                        className='base-img'
-                      />
-                    </div>
-                    <div className='video-btn-wrapper'>
-                      <button
-                        onClick={() => setIsOpen(true)}
-                        className='open-video-popup'
-                      >
-                        <i className='icon-play' />
-                      </button>
-                    </div>
-                  </div>
-                  <div
-                    className='thumb-sm'
-                    data-aos='fade-up'
-                    data-aos-duration={1000}
-                    data-aos-delay={300}
-                  >
-                    <img
-                      src='assets/images/difference/differ1.jpg'
-                      alt='Image_inner'
-                    />
-                  </div>
-                </div>
+            <div className="col-12 col-md-5 col-lg-4 col-xxl-5 d-none d-md-block">
+              <div data-aos="fade-right" data-aos-duration="1000">
+                <img
+                  src="/assets/images/donation/4.jpg"
+                  alt="Support & Donate"
+                  className="img-fluid rounded shadow"
+                  style={{ maxHeight: 800, objectFit: "cover", width: "100%" }}
+                />
               </div>
-            </div> */}
-            <div className="col-md-5 d-none d-md-block">
-  <div data-aos="fade-right" data-aos-duration="1000">
-    <img
-      src="/assets/images/donation/4.jpg"
-      alt="Support & Donate"
-      className="img-fluid rounded shadow"
-      style={{ maxHeight: 800, objectFit: "cover", width: "100%" }}
-    />
-  </div>
-</div>
+            </div>
 
 
 
 
 
-            <div className='col-12 col-lg-8 col-xxl-7'>
+            <div className='col-12 col-md-7 col-lg-8 col-xxl-7'>
               <div className='difference-two__tab'>
                 <div className='difference-two__content'>
                   <span className='sub-title'>
@@ -96,7 +56,7 @@ const DifferenceTwo = () => {
                             aria-label='mission'
                             title='mission'
                           >
-                            {/* Our Mission
+                            Our Mission
                           </button>
                           <button
                             className={`difference-two__tab-btn ${
@@ -105,19 +65,9 @@ const DifferenceTwo = () => {
                             onClick={() => setActiveTab("vision")}
                             aria-label='vision'
                             title='vision'
-                          > */}
+                          >
                             Our Vision
                           </button>
-                          {/* <button
-                            className={`difference-two__tab-btn ${
-                              activeTab === "excellence" ? "active" : ""
-                            }`}
-                            onClick={() => setActiveTab("excellence")}
-                            aria-label='excellence'
-                            title='excellence'
-                          >
-                            Excellence
-                          </button> */}
                         </div>
 
                         <div className='difference-two__tab-content'>
@@ -128,17 +78,8 @@ const DifferenceTwo = () => {
                             >
                               <ul>
                                 <li>
-                                  <i className='fa-solid fa-ch' />Our vision is to deliver high quality education, skill building and training along with moral and ethical values to encourage students to become confident and responsible citizens. We provide all this at a reasonable cost. We aim to assist the destitute with ration and any other monetary help they may require. We endeavor to make them independent so that they may be an asset to society. Our goal is to help these individuals to utilize their full potential and achieve excellence of life.
+                                  Our vision is to deliver high quality education, skill building and training along with moral and ethical values to encourage students to become confident and responsible citizens. We provide all this at a reasonable cost. We aim to assist the destitute with ration and any other monetary help they may require. We endeavor to make them independent so that they may be an asset to society. Our goal is to help these individuals to utilize their full potential and achieve excellence of life.
                                 </li>
-                                {/* <li>
-                                  <i className='fa-solid fa-check' /> To provide comfort
-                                   and full fill the needs of our previous generations
-                                    and destitute of our society.
-                                </li>
-                                <li>
-                                  <i className='fa-solid fa-check' /> Dedicated
-                                  Tech Services
-                                </li> */}
                               </ul>
                             </div>
                           )}
@@ -149,46 +90,13 @@ const DifferenceTwo = () => {
                             >
                               <ul>
                                 <li>
-                                  <i className='fa-solid fa-check' />To provide very
-                                     high quality
-                                     education at
-                                     nominal cost. 
-
+                                  <i className='fa-solid fa-check' />To provide very high quality education at nominal cost.
                                 </li>
                                 <li>
-                                  <i className='fa-solid fa-check' /> To increase
-                                     women
-                                     participation in
-                                     the development
-                                     of the nation.
+                                  <i className='fa-solid fa-check' />To increase women participation in the development of the nation.
                                 </li>
                                 <li>
-                                  <i className='fa-solid fa-check' /> To improve the
-                                     quality of lives of
-                                     the current and
-                                     the coming
-                                     generations.
-                                </li>
-                              </ul>
-                            </div>
-                          )}
-                          {activeTab === "excellence" && (
-                            <div
-                              className='difference-two__content-single'
-                              id='excellence'
-                            >
-                              <ul>
-                                <li>
-                                  <i className='fa-solid fa-check' /> We help
-                                  companies develop powerful corporate social
-                                </li>
-                                <li>
-                                  <i className='fa-solid fa-check' /> Helped
-                                  fund 3,265 Project powerful corporate poor
-                                </li>
-                                <li>
-                                  <i className='fa-solid fa-check' /> Dedicated
-                                  Tech Services
+                                  <i className='fa-solid fa-check' />To improve the quality of lives of the current and the coming generations.
                                 </li>
                               </ul>
                             </div>
@@ -296,9 +204,6 @@ const DifferenceTwo = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className='spade'>
-          <img src='assets/images/spade-green-two.png' alt='Image_inner' />
         </div>
       </section>
       <ModalVideo

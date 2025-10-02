@@ -187,24 +187,63 @@
 
 const CommunityOne = () => {
   return (
-    <section className="community" style={{ padding: 0, display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+    <>
+      <section className="community" style={{ padding: 0, display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', flexDirection: 'column' }}>
+        {/* First Image - Original Style */}
+        <div
+          className="community-donation__inner"
+          style={{
+            display: 'inline-block',
+            borderRadius: "12px",
+            overflow: "hidden",
+            boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
+            marginBottom: '20px'
+          }}
+        >
+          <img
+            src="/assets/images/donation/8.jpg"
+            alt="Donation Card"
+            style={{ display: "block", maxWidth: "100%", height: "auto" }}
+          />
+        </div>
+      </section>
+      
+      {/* Second Image - Full Screen Width with Professional Styling */}
       <div
-        className="community-donation__inner"
         style={{
-          display: 'inline-block',
-          borderRadius: "12px",
-          overflow: "hidden",
-          boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
+          width: "100vw",
+          marginLeft: "calc(-50vw + 50%)",
+          padding: "20px 0",
+          backgroundColor: "#f8f9fa",
+          position: "relative",
         }}
       >
-        <img
-          src="/assets/images/donation/8.jpg" // your image path here
-          alt="Donation Card"
-          style={{ display: "block", maxWidth: "100%", height: "auto" }}
-        />
+        <div
+          style={{
+            maxWidth: "1200px",
+            margin: "0 auto",
+            padding: "0 20px",
+            borderRadius: "16px",
+            overflow: "hidden",
+            boxShadow: "0 8px 32px rgba(0,0,0,0.12)",
+            backgroundColor: "white",
+          }}
+        >
+          <img
+            src="/assets/images/banner/donate-2e.jpg"
+            alt="Donation Banner"
+            style={{ 
+              display: "block", 
+              width: "100%", 
+              height: "auto",
+              minHeight: "300px",
+              objectFit: "cover",
+              objectPosition: "center"
+            }}
+          />
+        </div>
       </div>
-    </section>
-    
+    </>
   );
 };
 
