@@ -174,9 +174,21 @@ const ContactUsInner = () => {
                   </div>
                 </div>
               </div>
-              <div className='contact-main__thumb cta'>
+              {/* <div className='contact-main__thumb cta'>
                 <img src='assets/images/banner/banner-12.jpg' alt='Image_inner' />
-              </div>
+              </div> */}
+              <div className='contact-main__thumb cta'>
+  <video
+    src='/assets/videos/4.mp4' // Make sure the path is correct
+    autoPlay
+    loop
+    muted
+    playsInline
+    className='contact-video'
+    style={{ width: '100%', height: '580px', objectFit: 'ce' }}
+  />
+</div>
+
             </div>
           </div>
           <div className='col-12 col-xl-6'>

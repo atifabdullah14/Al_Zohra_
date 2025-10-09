@@ -61,7 +61,7 @@ const TestimonialOne = () => {
     },
     {
       id: 4,
-      video: "/assets/videos/4.mp4",
+      video: "/assets/videos/one.mp4",
       author: "",
       company: "",
     },

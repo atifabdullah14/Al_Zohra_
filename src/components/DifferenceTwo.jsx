@@ -14,7 +14,7 @@ const DifferenceTwo = () => {
             <div className="col-12 col-md-5 col-lg-4 col-xxl-5 d-none d-md-block">
               <div data-aos="fade-right" data-aos-duration="1000">
                 <img
-                  src="/assets/images/donation/4.jpg"
+                  src="/assets/images/donation/h-v.jpg"
                   alt="Support & Donate"
                   className="img-fluid rounded shadow"
                   style={{ maxHeight: 800, objectFit: "cover", width: "100%" }}

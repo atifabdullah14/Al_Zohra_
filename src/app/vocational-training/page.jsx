@@ -202,10 +202,49 @@ const VocationalTrainingPage = () => {
                 </ul>
                 <a href="https://www.facebook.com/AlzohraVocational" className="btn btn-success btn-lg shadow" style={{ backgroundColor: '#db567c', borderColor: '#db567c' }}>Follow Us</a>
               </div>
-              <div className="col-md-5 text-center">
+              {/* <div className="col-md-5 text-center">
                 <img src="/assets/images/event/overview1.jpg" alt="Vocational Training" className="img-fluid rounded shadow" style={{maxHeight: 320}} />
-              </div>
+              </div> */}
+              <div className="col-md-5 d-none d-md-block">
+  <div
+    className="help__thumb text-end"
+    style={{
+      position: "relative",
+      width: "100%",
+      display: "inline-block"
+    }}
+  >
+    <img
+      src="/assets/images/donation/3.jpg"
+      alt="Al-Zohra Banner"
+      style={{
+        width: "120%",
+        height: "auto",
+        maxWidth: "150%",
+        height : "120%",
+        borderRadius: "8px",
+        boxShadow: "0 0 10px rgba(0,0,0,0.2)"
+      }}
+    />
+    <div
+      className="vertical-text"
+      style={{
+        position: "absolute",
+        bottom: "10px",
+        right: "-40px",
+        transform: "rotate(90deg)",
+        fontSize: "16px",
+        fontWeight: "bold",
+        color: "#1800ad",
+        whiteSpace: "nowrap"
+      }}
+    >
+      
+    </div>
+  </div>
+</div>
             </div>
+            
           </div>
         </section>
         {/* Stats Section - fixed layout and color */}
