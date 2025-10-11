@@ -185,11 +185,33 @@
 
 "use client";
 
+import { useState, useEffect } from "react";
+
 const CommunityOne = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 788);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   return (
     <>
-      <section className="community" style={{ padding: 0, display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', flexDirection: 'column' }}>
-        {/* First Image - Original Style */}
+      <section className="community" style={{ 
+        padding: '20px 0', 
+        display: 'flex', 
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        minHeight: 'auto',
+        flexDirection: 'column'
+      }}>
+        {/* First Image - Responsive */}
         <div
           className="community-donation__inner"
           style={{
@@ -197,36 +219,46 @@ const CommunityOne = () => {
             borderRadius: "12px",
             overflow: "hidden",
             boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
-            marginBottom: '20px'
+            marginBottom: '20px',
+            width: isMobile ? '95%' : '90%',
+            maxWidth: '500px'
           }}
         >
           <img
             src="/assets/images/donation/8.jpg"
             alt="Donation Card"
-            style={{ display: "block", maxWidth: "100%", height: "auto" }}
+            style={{ 
+              display: "block", 
+              width: "100%", 
+              height: "auto",
+              minHeight: isMobile ? "180px" : "200px",
+              objectFit: "cover"
+            }}
           />
         </div>
       </section>
       
-      {/* Second Image - Full Screen Width with Professional Styling */}
+      {/* Second Image - Full Screen Width with Mobile Responsive */}
       <div
         style={{
-          width: "100vw",
-          marginLeft: "calc(-50vw + 50%)",
-          padding: "20px 0",
+          width: isMobile ? "100%" : "100vw",
+          marginLeft: isMobile ? "0" : "calc(-50vw + 50%)",
+          padding: isMobile ? "10px 15px" : "20px 0",
           backgroundColor: "#f8f9fa",
           position: "relative",
+          boxSizing: "border-box"
         }}
       >
         <div
           style={{
             maxWidth: "1200px",
             margin: "0 auto",
-            padding: "0 20px",
-            borderRadius: "16px",
+            padding: isMobile ? "0" : "0 20px",
+            borderRadius: isMobile ? "8px" : "16px",
             overflow: "hidden",
             boxShadow: "0 8px 32px rgba(0,0,0,0.12)",
             backgroundColor: "white",
+            width: "100%"
           }}
         >
           <img
@@ -236,9 +268,10 @@ const CommunityOne = () => {
               display: "block", 
               width: "100%", 
               height: "auto",
-              minHeight: "300px",
+              minHeight: isMobile ? "200px" : "300px",
               objectFit: "cover",
-              objectPosition: "center"
+              objectPosition: "center",
+              borderRadius: isMobile ? "6px" : "12px"
             }}
           />
         </div>
