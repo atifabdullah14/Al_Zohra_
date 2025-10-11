@@ -1,23 +1,40 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ModalVideo from "react-modal-video";
 
 const DifferenceTwo = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("mission");
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
   
   return (
     <>
       <section className='difference-two'>
         <div className='container'>
           <div className='row gutter-40 align-items-center'>
-            <div className="col-12 col-md-5 col-lg-4 col-xxl-5 d-none d-md-block">
+            <div className="col-12 col-md-5 col-lg-4 col-xxl-5 mb-4 mb-md-0">
               <div data-aos="fade-right" data-aos-duration="1000">
                 <img
                   src="/assets/images/donation/h-v.jpg"
                   alt="Support & Donate"
                   className="img-fluid rounded shadow"
-                  style={{ maxHeight: 800, objectFit: "cover", width: "100%" }}
+                  style={{ 
+                    maxHeight: isMobile ? 400 : 800, 
+                    objectFit: "cover", 
+                    width: "100%",
+                    minHeight: isMobile ? "250px" : "auto"
+                  }}
                 />
               </div>
             </div>
@@ -56,9 +73,9 @@ const DifferenceTwo = () => {
                             aria-label='mission'
                             title='mission'
                           >
-                            Our Mission
+                            Our Vision
                           </button>
-                          <button
+                          {/* <button
                             className={`difference-two__tab-btn ${
                               activeTab === "vision" ? "active" : ""
                             }`}
@@ -67,7 +84,7 @@ const DifferenceTwo = () => {
                             title='vision'
                           >
                             Our Vision
-                          </button>
+                          </button> */}
                         </div>
 
                         <div className='difference-two__tab-content'>
@@ -105,7 +122,7 @@ const DifferenceTwo = () => {
                       </div>
 
                       {/* PROGRESS */}
-                      <div className='difference-two__progress'>
+                      {/* <div className='difference-two__progress'>
                         <div className='difference-progress-single'>
                           <div
                             className='progress-bar-single'
@@ -174,7 +191,7 @@ const DifferenceTwo = () => {
                             </p>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
 
                     {/* CARD */}
