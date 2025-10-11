@@ -239,7 +239,7 @@ const CommunityOne = () => {
       </section>
       
       {/* Second Image - Full Screen Width with Mobile Responsive */}
-      <div
+      {/* <div
         style={{
           width: isMobile ? "100%" : "100vw",
           marginLeft: isMobile ? "0" : "calc(-50vw + 50%)",
@@ -275,8 +275,47 @@ const CommunityOne = () => {
             }}
           />
         </div>
-      </div>
+      </div> */}
+      <div
+  style={{
+    width: "100%",  // Ensure it's always 100% of the container width
+    margin: "0 auto",  // Center the container
+    padding: isMobile ? "10px 15px" : "20px 0",  // Add some padding based on mobile size
+    backgroundColor: "#f8f9fa",
+    position: "relative",
+    boxSizing: "border-box",
+    overflow: "hidden"  // Prevents any overflow from the image
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1200px",  // Limit the maximum width of the container
+      margin: "0 auto",  // Keep the container centered
+      padding: isMobile ? "0" : "0 20px",  // Padding based on mobile or desktop
+      borderRadius: isMobile ? "8px" : "16px",  // Rounded corners based on device
+      boxShadow: "0 8px 32px rgba(0,0,0,0.12)",  // Adds shadow
+      backgroundColor: "white",
+      width: "100%"  // Make sure the image div takes full width
+    }}
+  >
+    <img
+      src="/assets/images/banner/donate-2e.jpg"
+      alt="Donation Banner"
+      style={{
+        display: "block", 
+        width: "100%",  // Ensure image takes full container width
+        height: "auto",  // Maintain aspect ratio
+        minHeight: isMobile ? "200px" : "300px",  // Adjust minimum height for mobile
+        objectFit: isMobile ? "contain" : "cover",  // Use "contain" for mobile to prevent cropping
+        objectPosition: "center",  // Ensure image stays centered
+        borderRadius: isMobile ? "6px" : "12px"  // Rounded corners for mobile vs desktop
+      }}
+    />
+  </div>
+</div>
+
     </>
+
   );
 };
 
