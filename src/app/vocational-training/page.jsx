@@ -242,13 +242,15 @@ const VocationalTrainingPage = () => {
       
     </div>
   </div>
+ 
+  
 </div>
             </div>
             
           </div>
         </section>
         {/* Stats Section - fixed layout and color */}
-        <section className="py-5 bg-danger bg-opacity-10 border-bottom">
+        {/* <section className="py-5 bg-danger bg-opacity-10 border-bottom">
           <div className="container">
             <div className="row text-center">
               {stats.map((stat, idx) => (
@@ -261,7 +263,70 @@ const VocationalTrainingPage = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
+        <section
+  className="py-5 border-bottom"
+  style={{ backgroundColor: 'rgba(220, 53, 69, 0.1)' }} // Bootstrap’s bg-danger with opacity
+>
+  <div className="container">
+    <div className="row text-center">
+      {stats.map((stat, idx) => (
+        <div
+          key={idx}
+          className="mb-4"
+          style={{
+            width: '100%',
+            paddingLeft: '12px',
+            paddingRight: '12px',
+            flex: '0 0 100%',
+            maxWidth: '100%',
+            boxSizing: 'border-box',
+
+            // Responsive breakpoints
+            ...(window.innerWidth >= 576 && {
+              flex: '0 0 50%',
+              maxWidth: '50%',
+            }),
+            ...(window.innerWidth >= 768 && {
+              flex: '0 0 33.3333%',
+              maxWidth: '33.3333%',
+            }),
+            ...(window.innerWidth >= 992 && {
+              flex: '0 0 25%',
+              maxWidth: '25%',
+            }),
+          }}
+        >
+          <div
+            style={{
+              backgroundColor: '#fff',
+              borderRadius: '0.375rem',
+              boxShadow: '0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)',
+              padding: '2rem',
+              height: '100%',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+            }}
+          >
+            <div
+              style={{
+                fontSize: '2.5rem',
+                fontWeight: 'bold',
+                color: '#dc3545', // Bootstrap danger color
+                marginBottom: '2rem',
+              }}
+            >
+              {stat.value}
+            </div>
+            <div style={{ fontWeight: 600, color: '#6c757d' }}>{stat.label}</div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
        
         {/* Courses Section with hover effect */}
         {/* <section className="py-5 border-bottom">
@@ -348,7 +413,7 @@ const VocationalTrainingPage = () => {
     minHeight: "100vh",
   }}
 >
-  <div
+  {/* <div
     className="community-donation__inner"
     style={{
       borderRadius: "12px",
@@ -367,7 +432,30 @@ const VocationalTrainingPage = () => {
         height: "auto",  // Maintain aspect ratio
       }}
     />
-  </div>
+  </div> */}
+  <div
+  className="community-donation__inner mx-auto"
+  style={{
+    borderRadius: "12px",
+    overflow: "hidden",
+    boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
+    width: "100%",
+    maxWidth: "900px"
+  }}
+>
+  <img
+    src="/assets/images/donation/5.jpg"
+    alt="Donation Card"
+    className="img-fluid"
+    style={{
+      display: "block",
+      width: "100%",
+      height: "auto",
+      objectFit: "cover"
+    }}
+  />
+</div>
+
 </section>
 
             {/* <div className="timeline-carousel-wrapper position-relative">

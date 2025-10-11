@@ -78,10 +78,11 @@ const AlZohraSecondarySchoolPage = () => {
                 <a href="https://www.facebook.com/AlzohraSchool" className="btn btn-success btn-lg shadow btn-custom-blue">Follow Us 
                 </a>
               </div>
+              <div className="d-block d-md-none my-4"></div>
               {/* <div className="col-md-5 text-center">
                 <img src="/assets/images/event/overview.jpg" alt="Secondary School" className="img-fluid rounded shadow" style={{maxHeight: 320}} />
               </div> */}
-              <div className="col-md-5 d-none d-md-block">
+              {/* <div className="col-md-5 d-none d-md-block">
   <div
     className="help__thumb text-end"
     style={{
@@ -117,7 +118,42 @@ const AlZohraSecondarySchoolPage = () => {
       
     </div>
   </div>
+</div> */}
+<div className="col-12 col-md-5 col-lg-4 col-xxl-5 mb-4 mb-md-0">
+  <div className="help__thumb text-end" style={{
+    position: "relative",
+    width: "100%",
+    display: "inline-block"
+  }}>
+    <img
+      src="/assets/images/donation/2.jpg"
+      alt="Al-Zohra Banner"
+      className="img-fluid rounded shadow"
+      style={{
+        maxHeight: "800px",
+        minHeight: "250px",
+        objectFit: "cover",
+        width: "100%"
+      }}
+    />
+    <div
+      className="vertical-text"
+      style={{
+        position: "absolute",
+        bottom: "10px",
+        right: "-40px",
+        transform: "rotate(90deg)",
+        fontSize: "16px",
+        fontWeight: "bold",
+        color: "#1800ad",
+        whiteSpace: "nowrap"
+      }}
+    >
+      {/* Optional Text Here */}
+    </div>
+  </div>
 </div>
+
 
               
             </div>
