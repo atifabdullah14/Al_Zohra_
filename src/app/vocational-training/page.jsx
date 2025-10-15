@@ -381,6 +381,7 @@ const VocationalTrainingPage = () => {
         src="/assets/images/event/vtc.mp4" 
         title="School Journey Video" 
         allowFullScreen
+        // google 
       ></iframe>
     </div>
   </div>
