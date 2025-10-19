@@ -136,21 +136,22 @@ const WelfareAssistancePage = () => {
           </div>
         </section>
         {/* Stats Section */}
-        {/* <section className="py-5 bg-danger bg-opacity-10 border-bottom">
-          <div className="container">
-            <div className="row text-center">
-              {stats.map((stat, idx) => (
-                <div className="col-6 col-md-4 mb-4" key={idx}>
-                  <div className="bg-white rounded shadow p-5 h-10">
-                    <div className="display-5 fw-bold text-danger mb-5">{stat.value}</div>
-                    <div className="fw-semibold text-secondary">{stat.label}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
+        <section className="py-5 bg-danger bg-opacity-10 border-bottom">
+  <div className="container">
+    <div className="row text-center">
+      {stats.map((stat, idx) => (
+        <div key={idx} className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div className="bg-white rounded shadow-sm p-4 h-100 d-flex flex-column justify-content-center">
+            <div className="display-5 fw-bold text-danger mb-4">{stat.value}</div>
+            <div className="fw-semibold text-secondary">{stat.label}</div>
           </div>
-        </section>
-       */}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+      
        
 
         {/* How It Started / How It's Going */}

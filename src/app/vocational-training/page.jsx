@@ -271,32 +271,7 @@ const VocationalTrainingPage = () => {
   <div className="container">
     <div className="row text-center">
       {stats.map((stat, idx) => (
-        <div
-          key={idx}
-          className="mb-4"
-          style={{
-            width: '100%',
-            paddingLeft: '12px',
-            paddingRight: '12px',
-            flex: '0 0 100%',
-            maxWidth: '100%',
-            boxSizing: 'border-box',
-
-            // Responsive breakpoints
-            ...(window.innerWidth >= 576 && {
-              flex: '0 0 50%',
-              maxWidth: '50%',
-            }),
-            ...(window.innerWidth >= 768 && {
-              flex: '0 0 33.3333%',
-              maxWidth: '33.3333%',
-            }),
-            ...(window.innerWidth >= 992 && {
-              flex: '0 0 25%',
-              maxWidth: '25%',
-            }),
-          }}
-        >
+        <div key={idx} className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
           <div
             style={{
               backgroundColor: '#fff',
