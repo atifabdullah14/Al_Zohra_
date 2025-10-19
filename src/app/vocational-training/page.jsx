@@ -205,7 +205,7 @@ const VocationalTrainingPage = () => {
               {/* <div className="col-md-5 text-center">
                 <img src="/assets/images/event/overview1.jpg" alt="Vocational Training" className="img-fluid rounded shadow" style={{maxHeight: 320}} />
               </div> */}
-              <div className="col-md-5 d-none d-md-block">
+              <div className="col-md-3 d-none d-md-block">
   <div
     className="help__thumb text-end"
     style={{
