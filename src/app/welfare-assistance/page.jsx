@@ -97,7 +97,7 @@ const WelfareAssistancePage = () => {
     </div>
   </div>
 </div> */}
-<div className="col-12 col-md-5 col-lg-4 col-xxl-5 mb-4 mb-md-0">
+<div className="col-12 col-md-3 col-lg-4 col-xxl-5 mb-4 mb-md-0">
   <div className="help__thumb text-end" style={{
     position: "relative",
     width: "100%",
