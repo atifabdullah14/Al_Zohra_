@@ -74,6 +74,10 @@ const courses = [
   {
     title: "Cooking",
     image: "/assets/images/programs/cooking.jpg"
+  },
+  {
+    title: "Cooking",
+    image: "/assets/images/programs/fs.jpg"
   }
 ];
 

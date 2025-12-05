@@ -11,6 +11,11 @@ import React from "react";
 
 const reports = [
   {
+    year:'2024-2025',
+    summary: "Adapting to challenges, supporting families through the pandemic, and digital transformation in education.",
+    file: "/assets/reports/Audit Report 24-25 with UDIN Number.pdf"
+  },
+  {
     year: 2023,
     summary: "A year of resilience and impact—expanding education, welfare, and vocational programs for Karachi's most vulnerable.",
     file: "/assets/reports/Activity Report June 2023 - July 2024.pdf"
@@ -25,6 +30,7 @@ const reports = [
     summary: "Adapting to challenges, supporting families through the pandemic, and digital transformation in education.",
     file: "/assets/reports/ACTIVITY REPORT JUNE 2021 - JUNE 22.pdf"
   },
+  
 ];
 
 const placeholder = "/assets/images/fc-four.png";

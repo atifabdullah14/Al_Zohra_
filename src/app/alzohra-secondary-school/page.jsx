@@ -40,6 +40,14 @@ const feeStructure = [
   {
     title: "Beautician Course",
     image: "/assets/images/programs/fee4.jpg"
+  },
+  {
+    title: "Beautician Course",
+    image: "/assets/images/programs/fee5.jpg"
+  },
+  {
+    title: "Beautician Course",
+    image: "/assets/images/programs/fee6.jpg"
   }
 ];
 
