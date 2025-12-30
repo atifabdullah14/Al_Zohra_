@@ -182,7 +182,7 @@ const TeamOne = () => {
                 </div>
               </div>
             </div>
-            {/* Meet our exective members  */}
+            {/* Meet our executive members  */}
             <div
                 className='section__header text-center'
                 data-aos='fade-up'
@@ -193,7 +193,7 @@ const TeamOne = () => {
                   Please start donating
                 </span>
                 <h2 className='title-animation_inner'>
-                  Meet Our Exective <span>members</span>
+                  Meet Our Executive <span>members</span>
                    
                 </h2>
               </div>
@@ -214,7 +214,7 @@ const TeamOne = () => {
                     <h6>
                       <Link href='/team-details'>Ms.Mehmooda zarin Burghari</Link>
                     </h6>
-                    <p>Exective member
+                    <p>Executive member
                     </p>
                   </div>
                 </div>
@@ -265,7 +265,7 @@ const TeamOne = () => {
                     <h6>
                       <Link href='/team-details'>Bibi Naila Naveen</Link>
                     </h6>
-                    <p>  Exective member </p>
+                    <p>  Executive member </p>
                   </div>
                 </div>
               </div>
@@ -291,7 +291,7 @@ const TeamOne = () => {
                     <h6>
                       <Link href='/team-details'>Ms. Mehnaz Mahmud</Link>
                     </h6>
-                    <p> Exective member</p>
+                    <p> Executive member</p>
                   </div>
                 </div>
               </div>
@@ -318,7 +318,7 @@ const TeamOne = () => {
                     <h6>
                       <Link href='/team-details'>Syed Hassan Javed</Link>
                     </h6>
-                    <p> Exective member</p>
+                    <p> Executive member</p>
                   </div>
                 </div>
               </div>
@@ -343,7 +343,7 @@ const TeamOne = () => {
                     <h6>
                       <Link href='/team-details'>Ms. Sakeena Bhurgri</Link>
                     </h6>
-                    <p>Exective members</p>
+                    <p>Executive members</p>
                   </div>
                 </div>
               </div>
@@ -366,7 +366,7 @@ const TeamOne = () => {
                     <h6>
                       <Link href='/team-details'> Mr.Hafiz  M Faisal  </Link>
                     </h6>
-                    <p>Exective member
+                    <p>Executive member
                     </p>
                   </div>
                 </div>
@@ -393,7 +393,7 @@ const TeamOne = () => {
                     <h6>
                       <Link href='/team-details'>Mr. Khalid Hassan  </Link>
                     </h6>
-                    <p> Exective member </p>
+                    <p> Executive member </p>
                   </div>
                 </div>
               </div>
@@ -421,7 +421,7 @@ const TeamOne = () => {
                     <h6>
                       <Link href='/team-details'>Ms. Kinza Imran </Link>
                     </h6>
-                    <p> Exective member</p>
+                    <p> Executive member</p>
                   </div>
                 </div>
               </div>
@@ -451,7 +451,7 @@ const TeamOne = () => {
                     <h6>
                       <Link href='/team-details'>Ms.Maria khalid </Link>
                     </h6>
-                    <p> Exective member </p>
+                    <p> Executive member </p>
                   </div>
                 </div>
               </div>
