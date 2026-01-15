@@ -2,7 +2,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "react-modal-video/scss/modal-video.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./globals.scss";
+// import "./globals.scss";
+import GlobalStyles from "./GlobalStyles";
 
 import InitializeAOS from "@/helper/InitializeAOS";
 import RouteScrollToTop from "@/helper/RouteScrollToTop";
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -55,6 +57,7 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="/assets/css/dark-mode.css" />
       </head>
       <body suppressHydrationWarning={true}>
+        <GlobalStyles />
         <InitializeAOS />
         <RouteScrollToTop />
 {/*         <ColorPalate /> */}

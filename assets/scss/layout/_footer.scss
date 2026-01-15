@@ -1,6 +1,8 @@
 /* ==== 
  --------- (4.03) footer styles start ---------
  ==== */
+ @use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
 .footer {
   padding-top: 100px;
   background-color: #0b1312;

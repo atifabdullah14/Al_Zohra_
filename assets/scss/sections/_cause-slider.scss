@@ -1,6 +1,8 @@
 /* ==== 
  --------- (5.04) cause slider section styles start ---------
  ==== */
+ @use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
 .cause {
   padding: 100px 0px;
   background-color: #edeeef;

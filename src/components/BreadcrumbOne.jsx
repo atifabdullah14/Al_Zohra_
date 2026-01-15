@@ -59,7 +59,7 @@ const BreadcrumbOne = ({ title, bgImage }) => {
 
   // Use provided bgImage or get from mapping based on title
   const finalBgImage = bgImage || getBreadcrumbImage(title);
-console.log(finalBgImage);
+// console.log(finalBgImage);
   return (
     <section className='common-banner'>
       <div className='container'>

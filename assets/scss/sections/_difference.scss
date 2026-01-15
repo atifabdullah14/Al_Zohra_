@@ -1,6 +1,8 @@
 /* ==== 
  --------- (5.02) difference section styles start ---------
  ==== */
+ @use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
 .difference {
   padding-top: 100px;
   position: relative;

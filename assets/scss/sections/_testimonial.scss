@@ -1,6 +1,8 @@
 /* ==== 
  --------- (5.08) testimonial section styles start ---------
  ==== */
+ @use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
 .testimonial {
   padding: 240px 0px 100px;
   background-repeat: no-repeat;

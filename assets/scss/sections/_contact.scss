@@ -1,6 +1,8 @@
 /* ==== 
  --------- (5.16) contact section styles start ---------
  ==== */
+ @use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
 .contact {
   position: relative;
   z-index: 1;

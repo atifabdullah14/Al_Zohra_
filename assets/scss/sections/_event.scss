@@ -1,6 +1,8 @@
 /* ==== 
  --------- (5.15) event section styles start ---------
  ==== */
+ @use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
 .event {
   padding: 100px 0px;
   position: relative;

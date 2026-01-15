@@ -1,0 +1,53 @@
+/*
+ * THEME UPDATE: Primary Red (#d32f2f), White Background (#fff),
+ * Soft Grey (#6c757d/#adb5bd), Green Accent (#388e3c)
+ */
+
+// ================= ABSTRACTS =================
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+// ================= BASE =================
+@use "base/reset";
+@use "base/typography";
+@use "base/global";
+
+// ================= COMPONENTS =================
+@use "components/buttons";
+@use "components/forms";
+@use "components/preloader";
+
+// ================= LAYOUT =================
+@use "layout/header";
+@use "layout/banner";
+@use "layout/footer";
+
+// ================= SECTIONS =================
+@use "sections/partner";
+@use "sections/difference";
+@use "sections/help";
+@use "sections/cause-slider";
+@use "sections/cta-section";
+@use "sections/team";
+@use "sections/community";
+@use "sections/testimonial";
+@use "sections/blog";
+@use "sections/award";
+@use "sections/faq";
+@use "sections/overview";
+@use "sections/donation";
+@use "sections/counter";
+@use "sections/event";
+@use "sections/contact";
+@use "sections/shop";
+@use "sections/volunteer";
+@use "sections/error";
+@use "sections/coming-soon";
+@use "sections/home-four";
+@use "sections/color-switcher";
+@use "sections/image-marquee";
+@use "sections/image-marquee-two";
+
+// ================= UTILITIES =================
+@use "responsive";
+@use "extra";

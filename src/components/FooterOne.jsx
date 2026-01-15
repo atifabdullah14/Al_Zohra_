@@ -265,13 +265,13 @@ const FooterOne = () => {
                 <div className='footer__bottom-left'>
                   <ul className='footer__bottom-list justify-content-center justify-content-lg-end'>
                     <li>
-                      <Link href='#'>
+                      <Link href='terms-conditions'>
                       {/* terms-conditions */}
                         Terms &amp; Conditions
                       </Link>
                     </li>
                     <li>
-                      <Link href='#'>Privacy Policy</Link>
+                      <Link href='privacy-policy'>Privacy Policy</Link>
                     </li>
                     <li>
                       <Link href='#'>Cookie Settings</Link>

@@ -1,10 +1,18 @@
 'use client';
 
-import BreadcrumbOne from "@/components/BreadcrumbOne";
-import FooterOne from "@/components/FooterOne";
-import HeaderOne from "@/components/HeaderOne";
+import dynamic from "next/dynamic";
+
+// Dynamic imports with SSR disabled
+const HeaderOne = dynamic(() => import('@/components/HeaderOne'), { ssr: false });
+const FooterOne = dynamic(() => import('@/components/FooterOne'), { ssr: false });
+const TopBarOne = dynamic(() => import('@/components/TopBarOne'), { ssr: false });
+const BreadcrumbOne = dynamic(() => import('@/components/BreadcrumbOne'), { ssr: false });
+
+// import BreadcrumbOne from "@/components/BreadcrumbOne";
+// import FooterOne from "@/components/FooterOne";
+// import HeaderOne from "@/components/HeaderOne";
 import Preloader from "@/components/Preloader";
-import TopBarOne from "@/components/TopBarOne";
+// import TopBarOne from "@/components/TopBarOne";
 import AOSWrap from "@/helper/AOSWrap";
 import CustomCursor from "@/helper/CustomCursor";
 import React, { useRef, useState, useEffect } from "react";

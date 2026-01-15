@@ -1,6 +1,8 @@
 /* ==== 
  --------- (5.14) counter section styles start ---------
  ==== */
+ @use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
 .counter {
   position: relative;
   z-index: 1;

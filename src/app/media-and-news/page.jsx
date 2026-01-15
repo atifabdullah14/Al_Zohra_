@@ -1,8 +1,13 @@
 
-import HeaderOne from '@/components/HeaderOne';
-import FooterOne from '@/components/FooterOne';
-import TopBarOne from "@/components/TopBarOne";
-import BreadcrumbOne from '@/components/BreadcrumbOne';
+"use client";
+
+import dynamic from "next/dynamic";
+
+// Dynamic imports with SSR disabled
+const HeaderOne = dynamic(() => import('@/components/HeaderOne'), { ssr: false });
+const FooterOne = dynamic(() => import('@/components/FooterOne'), { ssr: false });
+const TopBarOne = dynamic(() => import('@/components/TopBarOne'), { ssr: false });
+const BreadcrumbOne = dynamic(() => import('@/components/BreadcrumbOne'), { ssr: false });
 
 export default function MediaAndNewsPage() {
   return (

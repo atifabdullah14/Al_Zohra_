@@ -1,4 +1,4 @@
-@use "../../assets/scss/main" as *;
+@use "./main" as *; // ✅ main.scss is in the same folder
 
 .text-custom-blue {
   color: #1800ad;

@@ -1,6 +1,8 @@
 /* ==== 
  --------- (5.03) help section styles start ---------
  ==== */
+ @use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
 .help {
   padding: 100px 0px;
   overflow: hidden;

@@ -1,6 +1,8 @@
 /* ==== 
  --------- (5.13) donation section styles start ---------
  ==== */
+ @use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
 .donation-future {
   position: relative;
   z-index: 1;

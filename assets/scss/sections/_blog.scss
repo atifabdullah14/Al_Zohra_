@@ -1,7 +1,8 @@
 /* ==== 
  --------- (5.09) blog section styles start ---------
  ==== */
-
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
 .blog {
   padding: 100px 0px;
   position: relative;
