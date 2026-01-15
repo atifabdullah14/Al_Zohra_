@@ -238,7 +238,7 @@ const TeamOne = () => {
                     <h6>
                       <Link href='/team-details'>Mr. Asad Ali Shah </Link>
                     </h6>
-                    <p>Exective member
+                    <p>executive member
                     </p>
                   </div>
                 </div>
